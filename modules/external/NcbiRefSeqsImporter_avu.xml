@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ncbiImporter>
+    <sourceName>ncbi-refseqs</sourceName> <!--Change name folder if needed-->
+	<sequenceFormat>GENBANK_XML</sequenceFormat>
+	<sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
+	<specificPrimaryAccessions>
+	
+	<!-- Confirmed genotypes and subtypes 2019
+	https://talk.ictvonline.org/ictv_wikis/flaviviridae/w/sg_flavi/634/table-1---confirmed-hcv-genotypes-subtypes-may-2019 -->
+		<!-- Confirmed genotype/subtype references -->
+		<primaryAccession>NC_004102</primaryAccession> <!-- Geno 1 / 1a refseq mentioned in Smith et al. as AF009606 -->
+		<primaryAccession> 	AF009606	</primaryAccession>		<!-- Subtype 1a -->
+		<primaryAccession> 	M62321	</primaryAccession>		<!-- Subtype 1a -->
+		<primaryAccession> 	M67463	</primaryAccession>		<!-- Subtype 1a -->
+		<primaryAccession> 	HQ850279	</primaryAccession>		<!-- Subtype 1a -->
+		<primaryAccession> 	EF407457	</primaryAccession>		<!-- Subtype 1a -->
+		<primaryAccession> 	D90208	</primaryAccession>		<!-- Subtype 1b -->
+		<primaryAccession> 	M58335	</primaryAccession>		<!-- Subtype 1b -->
+		<primaryAccession> 	EU781827	</primaryAccession>		<!-- Subtype 1b -->
+		<primaryAccession> 	EU781828	</primaryAccession>		<!-- Subtype 1b -->
+		<primaryAccession> 	D14853	</primaryAccession>		<!-- Subtype 1c -->
+		<primaryAccession> 	AY051292	</primaryAccession>		<!-- Subtype 1c -->
+		<primaryAccession> 	AY651061	</primaryAccession>		<!-- Subtype 1c -->
+		<primaryAccession> 	KJ439768	</primaryAccession>		<!-- Subtype 1d -->
+		<primaryAccession> 	KC248194	</primaryAccession>		<!-- Subtype 1e -->
+		<primaryAccession> 	AM910652	</primaryAccession>		<!-- Subtype 1g -->
+		<primaryAccession> 	KC248198	</primaryAccession>		<!-- Subtype 1h -->
+		<primaryAccession> 	KC248199	</primaryAccession>		<!-- Subtype 1h -->
+		<primaryAccession> 	KJ439772	</primaryAccession>		<!-- Subtype 1i -->
+		<primaryAccession> 	KJ439773	</primaryAccession>		<!-- Subtype 1j -->
+		<primaryAccession> 	KJ439774	</primaryAccession>		<!-- Subtype 1k -->
+		<primaryAccession> 	KC248193	</primaryAccession>		<!-- Subtype 1l -->
+		<primaryAccession> 	KC248197	</primaryAccession>		<!-- Subtype 1l -->
+		<primaryAccession> 	KC248196	</primaryAccession>		<!-- Subtype 1l -->
+		<primaryAccession> 	KJ439778	</primaryAccession>		<!-- Subtype 1m -->
+		<primaryAccession> 	KJ439782	</primaryAccession>		<!-- Subtype 1m -->
+		<primaryAccession> 	KJ439781	</primaryAccession>		<!-- Subtype 1n -->
+		<primaryAccession> 	KJ439775	</primaryAccession>		<!-- Subtype 1n -->
+		<primaryAccession> 	KJ439779	</primaryAccession>		<!-- Subtype 1o -->
+		<primaryAccession> 	MH885469	</primaryAccession>		<!-- Subtype 1o -->
+		<primaryAccession> 	HQ537007	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	AJ851228	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	KC248195	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	KJ439780	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	KJ439776	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	KJ439777	</primaryAccession>		<!-- Genotype 1 -->
+		<primaryAccession> 	D00944	</primaryAccession>		<!-- Subtype 2a -->
+		<primaryAccession> 	AB047639	</primaryAccession>		<!-- Subtype 2a -->
+		<primaryAccession> 	HQ639944	</primaryAccession>		<!-- Subtype 2a -->
+		<primaryAccession> 	D10988	</primaryAccession>		<!-- Subtype 2b -->
+		<primaryAccession> 	AB030907	</primaryAccession>		<!-- Subtype 2b -->
+		<primaryAccession> 	AB661388	</primaryAccession>		<!-- Subtype 2b -->
+		<primaryAccession> 	AB661382	</primaryAccession>		<!-- Subtype 2b -->
+		<primaryAccession> 	D50409	</primaryAccession>		<!-- Subtype 2c -->
+		<primaryAccession> 	JX227949	</primaryAccession>		<!-- Subtype 2c -->
+		<primaryAccession> 	JF735114	</primaryAccession>		<!-- Subtype 2d -->
+		<primaryAccession> 	JF735120	</primaryAccession>		<!-- Subtype 2e -->
+		<primaryAccession> 	KC844042	</primaryAccession>		<!-- Subtype 2f -->
+		<primaryAccession> 	KC844050	</primaryAccession>		<!-- Subtype 2f -->
+		<primaryAccession> 	DQ155561	</primaryAccession>		<!-- Subtype 2i -->
+		<primaryAccession> 	HM777358	</primaryAccession>		<!-- Subtype 2j -->
+		<primaryAccession> 	JF735113	</primaryAccession>		<!-- Subtype 2j -->
+		<primaryAccession> 	HM777359	</primaryAccession>		<!-- Subtype 2j -->
+		<primaryAccession> 	AB031663	</primaryAccession>		<!-- Subtype 2k -->
+		<primaryAccession> 	JX227953	</primaryAccession>		<!-- Subtype 2k -->
+		<primaryAccession> 	JF735111	</primaryAccession>		<!-- Subtype 2m -->
+		<primaryAccession> 	JX227967	</primaryAccession>		<!-- Subtype 2m -->
+		<primaryAccession> 	FN666428	</primaryAccession>		<!-- Subtype 2q -->
+		<primaryAccession> 	FN666429	</primaryAccession>		<!-- Subtype 2q -->
+		<primaryAccession> 	JF735115	</primaryAccession>		<!-- Subtype 2r -->
+		<primaryAccession> 	KC197238	</primaryAccession>		<!-- Subtype 2t -->
+		<primaryAccession> 	JF735112	</primaryAccession>		<!-- Subtype 2u -->
+		<primaryAccession> 	JF735116	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	JF735118	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	JF735117	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	JF735119	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	JF735110	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	KC197236	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	KC197237	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	KC197239	</primaryAccession>		<!-- Genotype 2 -->
+		<primaryAccession> 	D17763	</primaryAccession>		<!-- Subtype 3a -->
+		<primaryAccession> 	D28917	</primaryAccession>		<!-- Subtype 3a -->
+		<primaryAccession> 	X76918	</primaryAccession>		<!-- Subtype 3a -->
+		<primaryAccession> 	JN714194	</primaryAccession>		<!-- Subtype 3a -->
+		<primaryAccession> 	D49374	</primaryAccession>		<!-- Subtype 3b -->
+		<primaryAccession> 	JQ065709	</primaryAccession>		<!-- Subtype 3b -->
+		<primaryAccession> 	KJ470619	</primaryAccession>		<!-- Subtype 3d -->
+		<primaryAccession> 	KJ470618	</primaryAccession>		<!-- Subtype 3e -->
+		<primaryAccession> 	JX227954	</primaryAccession>		<!-- Subtype 3g -->
+		<primaryAccession> 	JF735123	</primaryAccession>		<!-- Subtype 3g -->
+		<primaryAccession> 	JF735126	</primaryAccession>		<!-- Subtype 3h -->
+		<primaryAccession> 	JF735121	</primaryAccession>		<!-- Subtype 3h -->
+		<primaryAccession> 	FJ407092	</primaryAccession>		<!-- Subtype 3i -->
+		<primaryAccession> 	JX227955	</primaryAccession>		<!-- Subtype 3i -->
+		<primaryAccession> 	D63821	</primaryAccession>		<!-- Subtype 3k -->
+		<primaryAccession> 	JF735122	</primaryAccession>		<!-- Subtype 3k -->
+		<primaryAccession> 	JF735124	</primaryAccession>		<!-- Genotype 3 -->
+		<primaryAccession> 	Y11604	</primaryAccession>		<!-- Subtype 4a -->
+		<primaryAccession> 	DQ988074	</primaryAccession>		<!-- Subtype 4a -->
+		<primaryAccession> 	DQ418789	</primaryAccession>		<!-- Subtype 4a -->
+		<primaryAccession> 	FJ462435	</primaryAccession>		<!-- Subtype 4b -->
+		<primaryAccession> 	FJ462436	</primaryAccession>		<!-- Subtype 4c -->
+		<primaryAccession> 	DQ418786	</primaryAccession>		<!-- Subtype 4d -->
+		<primaryAccession> 	FJ462437	</primaryAccession>		<!-- Subtype 4d -->
+		<primaryAccession> 	EU392172	</primaryAccession>		<!-- Subtype 4d -->
+		<primaryAccession> 	EF589161	</primaryAccession>		<!-- Subtype 4f -->
+		<primaryAccession> 	EU392175	</primaryAccession>		<!-- Subtype 4f -->
+		<primaryAccession> 	EU392174	</primaryAccession>		<!-- Subtype 4f -->
+		<primaryAccession> 	FJ462432	</primaryAccession>		<!-- Subtype 4g -->
+		<primaryAccession> 	JX227971	</primaryAccession>		<!-- Subtype 4g -->
+		<primaryAccession> 	JX227963	</primaryAccession>		<!-- Subtype 4g? -->
+		<primaryAccession> 	EU392173	</primaryAccession>		<!-- Subtype 4k -->
+		<primaryAccession> 	FJ462438	</primaryAccession>		<!-- Subtype 4k -->
+		<primaryAccession> 	EU392171	</primaryAccession>		<!-- Subtype 4k -->
+		<primaryAccession> 	FJ839870	</primaryAccession>		<!-- Subtype 4l -->
+		<primaryAccession> 	JX227957	</primaryAccession>		<!-- Subtype 4l -->
+		<primaryAccession> 	FJ462433	</primaryAccession>		<!-- Subtype 4m -->
+		<primaryAccession> 	JX227972	</primaryAccession>		<!-- Subtype 4m -->
+		<primaryAccession> 	FJ462441	</primaryAccession>		<!-- Subtype 4n -->
+		<primaryAccession> 	JX227970	</primaryAccession>		<!-- Subtype 4n -->
+		<primaryAccession> 	FJ462440	</primaryAccession>		<!-- Subtype 4o -->
+		<primaryAccession> 	JX227977	</primaryAccession>		<!-- Subtype 4o -->
+		<primaryAccession> 	FJ462431	</primaryAccession>		<!-- Subtype 4p -->
+		<primaryAccession> 	FJ462434	</primaryAccession>		<!-- Subtype 4q -->
+		<primaryAccession> 	FJ462439	</primaryAccession>		<!-- Subtype 4r -->
+		<primaryAccession> 	JX227976	</primaryAccession>		<!-- Subtype 4r -->
+		<primaryAccession> 	JF735136	</primaryAccession>		<!-- Subtype 4s -->
+		<primaryAccession> 	FJ839869	</primaryAccession>		<!-- Subtype 4t -->
+		<primaryAccession> 	HQ537009	</primaryAccession>		<!-- Subtype 4v -->
+		<primaryAccession> 	JX227959	</primaryAccession>		<!-- Subtype 4v -->
+		<primaryAccession> 	HQ537008	</primaryAccession>		<!-- Subtype 4v -->
+		<primaryAccession> 	JX227960	</primaryAccession>		<!-- Subtype 4v -->
+		<primaryAccession> 	FJ025855	</primaryAccession>		<!-- Subtype 4w -->
+		<primaryAccession> 	FJ025856	</primaryAccession>		<!-- Subtype 4w -->
+		<primaryAccession> 	FJ025854	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JX227964	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735127	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735132	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735131	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735130	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735129	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735138	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735135	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	JF735134	</primaryAccession>		<!-- Genotype 4 -->
+		<primaryAccession> 	AF064490	</primaryAccession>		<!-- Subtype 5a -->
+		<primaryAccession> 	Y13184	</primaryAccession>		<!-- Subtype 5a -->
+		<primaryAccession> 	KT595242	</primaryAccession>		<!-- Genotype 5 -->
+		<primaryAccession> 	Y12083	</primaryAccession>		<!-- Subtype 6a -->
+		<primaryAccession> 	AY859526	</primaryAccession>		<!-- Subtype 6a -->
+		<primaryAccession> 	HQ639936	</primaryAccession>		<!-- Subtype 6a -->
+		<primaryAccession> 	EU246930	</primaryAccession>		<!-- Subtype 6a -->
+		<primaryAccession> 	D84262	</primaryAccession>		<!-- Subtype 6b -->
+		<primaryAccession> 	EF424629	</primaryAccession>		<!-- Subtype 6c -->
+		<primaryAccession> 	D84263	</primaryAccession>		<!-- Subtype 6d -->
+		<primaryAccession> 	DQ314805	</primaryAccession>		<!-- Subtype 6e -->
+		<primaryAccession> 	EU246932	</primaryAccession>		<!-- Subtype 6e -->
+		<primaryAccession> 	EU246931	</primaryAccession>		<!-- Subtype 6e? -->
+		<primaryAccession> 	DQ835760	</primaryAccession>		<!-- Subtype 6f -->
+		<primaryAccession> 	EU246936	</primaryAccession>		<!-- Subtype 6f -->
+		<primaryAccession> 	D63822	</primaryAccession>		<!-- Subtype 6g -->
+		<primaryAccession> 	DQ314806	</primaryAccession>		<!-- Subtype 6g -->
+		<primaryAccession> 	D84265	</primaryAccession>		<!-- Subtype 6h -->
+		<primaryAccession> 	DQ835770	</primaryAccession>		<!-- Subtype 6i -->
+		<primaryAccession> 	DQ835762	</primaryAccession>		<!-- Subtype 6i -->
+		<primaryAccession> 	DQ835769	</primaryAccession>		<!-- Subtype 6j -->
+		<primaryAccession> 	DQ835761	</primaryAccession>		<!-- Subtype 6j -->
+		<primaryAccession> 	D84264	</primaryAccession>		<!-- Subtype 6k -->
+		<primaryAccession> 	EF424628	</primaryAccession>		<!-- Subtype 6l -->
+		<primaryAccession> 	JX183556	</primaryAccession>		<!-- Subtype 6l -->
+		<primaryAccession> 	DQ835767	</primaryAccession>		<!-- Subtype 6m -->
+		<primaryAccession> 	DQ835766	</primaryAccession>		<!-- Subtype 6m -->
+		<primaryAccession> 	DQ278894	</primaryAccession>		<!-- Subtype 6n -->
+		<primaryAccession> 	DQ835768	</primaryAccession>		<!-- Subtype 6n -->
+		<primaryAccession> 	EU246938	</primaryAccession>		<!-- Subtype 6n -->
+		<primaryAccession> 	EF424627	</primaryAccession>		<!-- Subtype 6o -->
+		<primaryAccession> 	EU246934	</primaryAccession>		<!-- Subtype 6o -->
+		<primaryAccession> 	EF424626	</primaryAccession>		<!-- Subtype 6p -->
+		<primaryAccession> 	EF424625	</primaryAccession>		<!-- Subtype 6q -->
+		<primaryAccession> 	EU408328	</primaryAccession>		<!-- Subtype 6r -->
+		<primaryAccession> 	EU408329	</primaryAccession>		<!-- Subtype 6s -->
+		<primaryAccession> 	EF632071	</primaryAccession>		<!-- Subtype 6t -->
+		<primaryAccession> 	EU246939	</primaryAccession>		<!-- Subtype 6t -->
+		<primaryAccession> 	EU246940	</primaryAccession>		<!-- Subtype 6u -->
+		<primaryAccession> 	EU158186	</primaryAccession>		<!-- Subtype 6v -->
+		<primaryAccession> 	EU798760	</primaryAccession>		<!-- Subtype 6v -->
+		<primaryAccession> 	EU798761	</primaryAccession>		<!-- Subtype 6v -->
+		<primaryAccession> 	DQ278892	</primaryAccession>		<!-- Subtype 6w -->
+		<primaryAccession> 	EU643834	</primaryAccession>		<!-- Subtype 6w -->
+		<primaryAccession> 	EU643836	</primaryAccession>		<!-- Subtype 6w -->
+		<primaryAccession> 	EU408330	</primaryAccession>		<!-- Subtype 6xa -->
+		<primaryAccession> 	EU408332	</primaryAccession>		<!-- Subtype 6xa -->
+		<primaryAccession> 	EU408331	</primaryAccession>		<!-- Subtype 6xa -->
+		<primaryAccession> 	JX183552	</primaryAccession>		<!-- Subtype 6xb -->
+		<primaryAccession> 	KJ567645	</primaryAccession>		<!-- Subtype 6xb -->
+		<primaryAccession> 	KJ567651	</primaryAccession>		<!-- Subtype 6xc -->
+		<primaryAccession> 	KM252789	</primaryAccession>		<!-- Subtype 6xd -->
+		<primaryAccession> 	KM252790	</primaryAccession>		<!-- Subtype 6xd -->
+		<primaryAccession> 	KM252791	</primaryAccession>		<!-- Subtype 6xd -->
+		<primaryAccession> 	JX183557	</primaryAccession>		<!-- Subtype 6xe -->
+		<primaryAccession> 	KM252792	</primaryAccession>		<!-- Subtype 6xe -->
+		<primaryAccession> 	KJ567646	</primaryAccession>		<!-- Subtype 6xf -->
+		<primaryAccession> 	KJ567647	</primaryAccession>		<!-- Subtype 6xf -->
+		<primaryAccession> 	MH492361	</primaryAccession>		<!-- Subtype 6xg -->
+		<primaryAccession> 	MH492360	</primaryAccession>		<!-- Subtype 6xg -->
+		<primaryAccession> 	MH492362	</primaryAccession>		<!-- Subtype 6xg -->
+		<primaryAccession> 	MG879000	</primaryAccession>		<!-- Subtype 6xh -->
+		<primaryAccession> 	DQ278891	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	DQ278893	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183558	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183553	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183554	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183551	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183549	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	JX183550	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470620	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470621	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470622	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470623	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470624	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ470625	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KC844039	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KC844040	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ567652	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ567650	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ567649	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ567648	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	KJ567644	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	MG878999	</primaryAccession>		<!-- Genotype 6 -->
+		<primaryAccession> 	EF108306	</primaryAccession>		<!-- Subtype 7a -->
+		<primaryAccession> 	KX092342	</primaryAccession>		<!-- Subtype 7b -->
+		<primaryAccession> 	MH590698	</primaryAccession>		<!-- Subtype 8a -->
+		<primaryAccession> 	MH590699	</primaryAccession>		<!-- Subtype 8a -->
+		<primaryAccession> 	MH590700	</primaryAccession>		<!-- Subtype 8a -->
+		<primaryAccession> 	MH590701	</primaryAccession>		<!-- Subtype 8a -->
+
+
+
+		<!-- 2l references mentioned in "Note added in proofs" at end of Smith et al. 2014 -->
+		<!-- <primaryAccession>KC197235</primaryAccession>
+		<primaryAccession>KC197240</primaryAccession> -->		
+				
+		
+
+		<!-- Documented inter-genotype recombinants -->
+		<primaryAccession>AY587845</primaryAccession> <!--RF2k_1b -->
+		<primaryAccession>DQ155560</primaryAccession> <!--RF2i_6p -->
+		<primaryAccession>DQ364460</primaryAccession> <!--RF2b_1b_1 -->
+		<primaryAccession>AM408911</primaryAccession> <!-- RF2_5-->
+		<primaryAccession>EU643835</primaryAccession> <!--RF2b_6w -->
+		<primaryAccession>AB622121</primaryAccession> <!-- RF2b_1b_2-->
+		<primaryAccession>JF779679</primaryAccession> <!-- RF2b_1a-->
+		<primaryAccession>AB677530</primaryAccession> <!--RF2b_1b_3 -->
+		<primaryAccession>AB677527</primaryAccession> <!--RF2b_1b_4 -->
+
+		<!-- Outgroup: equine hepacivirus. use for Phylogeny-->
+		<primaryAccession>JQ434008</primaryAccession>
+
+		<!-- Another outgroup possibility would be the closely-related canine hepacivirus (CHV) -->
+		<!-- <primaryAccession>JF744991</primaryAccession>  -->
+
+	</specificPrimaryAccessions>
+	<eFetchBatchSize>20</eFetchBatchSize>
+</ncbiImporter>

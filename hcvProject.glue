@@ -1,0 +1,65 @@
+delete project antiviral_unit_hcv-glue # change name
+
+create project antiviral_unit_hcv-glue "Hepatitis C variation analysis" --minVersion 1.1.107 # change name
+
+# extensions in tables sequence, alignment, variation, var_almt_note, member_floc_note
+# custom tables: who_country, who regions...
+run file glue/SchemaExtensions.glue
+ 
+project antiviral_unit_hcv-glue 
+
+  run file glue/ProjectSettings.glue
+  
+  # create modules from files
+  run file glue/Modules.glue
+
+  # WHO regions / countries etc (M49 standard)
+  run file glue/who_countries/populateWhoCountries.glue
+
+  # reference sequences and their unconstrained alignment are imported in this step
+  #run file glue/hcvReferenceSequences.glue
+  
+  # substituted by A)
+  # before importing the sources, the reference sequences need to be  imported from genbank
+  # using the modules NcbiRefSeqsImporter_avu.xml
+  # they specify the accession number to import, the format (genbank xml) and the directory to save them
+  # they must be run independently, outside and before the master porject file is execute. 
+  
+  
+  # A)
+  # import the REFERENCE SEQUENCES from folder SOURCES (NC_004102 "H77" will be is in the folder as well)
+  import source sources/ncbi-refseqs
+  
+  module reference-genotypes-subtypes-populator populate -f tabular/Smith2019_IDs_Genotype_Subtype.csv
+  
+  # add "Provided with alignment" as field for column genotyping method in table sequence. Alternative, "Refseqs recommended by Smith2019"
+  multi-set field sequence -w "source.name = 'ncbi-refseqs'" genotyping_method "Provided with alignment"
+
+
+
+
+  # build master reference, with features.
+  ##run file glue/hcvFeatures.glue
+
+  # outgroup alignment
+  ##run file glue/hcvOutgroupAlignment.glue
+  
+  # build tree of alignments, with relevant reference sequences.
+  ##run file glue/hcvAlignmentTree.glue
+
+  # add feature locations
+  ##run file glue/hcvFeatureLocations.glue
+
+  # import phylogeny
+  ##run file glue/importPhylogeny.glue
+  
+  #### AVU SEQUENCES
+  ##### import some data in the table sequence 
+
+  # epitopes
+  # run file glue/hcvEpitopes.glue
+
+  validate
+
+  exit  
+  

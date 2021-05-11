@@ -1,0 +1,30 @@
+<!-- This module populate the genotype and subtypes of the reference sequences from a csv file-->
+<textFilePopulator>
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>ID</header>
+		<property>sequenceID</property>
+	</textFileColumn>
+	<textFileColumn>
+		<header>genotype</header>
+		<property>genotype</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>subtype</header>
+		<property>subtype</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>reference_status</header>
+		<property>reference_status</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+</textFilePopulator>
+
+<!--
+Genotype and subtype are included from a tabular file.
+The info comes from a link with classification from 2019. 
+That data come be exported from genbank but not always is available. 
+-->
