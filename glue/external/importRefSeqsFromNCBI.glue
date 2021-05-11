@@ -1,0 +1,12 @@
+# This script downloades the reference sequences and 
+# saves them create a folder called source/ncbi-refseqs in the project (computer)
+# the script MUST be ran in root 
+
+project antiviral_unit_hcv_glue
+
+module ncbi-hcv-refseqs-importer
+    sync --detailed 
+    exit
+
+# usage: export source [-b <batchSize>] [-p <parentDir/Destination>] <sourceName> [-w <whereClause>] [-t <idTemplate>]
+export source -p sources ncbi-refseqs
