@@ -1,45 +1,55 @@
-delete project antiviral_unit_hcv-glue # change name
+delete project antiviral_unit_hcv_glue 
 
-create project antiviral_unit_hcv-glue "Hepatitis C variation analysis" --minVersion 1.1.107 # change name
+create project antiviral_unit_hcv_glue "Hepatitis C variation analysis" --minVersion 1.1.107 
 
 # extensions in tables sequence, alignment, variation, var_almt_note, member_floc_note
 # custom tables: who_country, who regions...
 run file glue/SchemaExtensions.glue
  
-project antiviral_unit_hcv-glue 
+project antiviral_unit_hcv_glue 
 
   run file glue/ProjectSettings.glue
   
-  # create modules from files
+  # create modules: define the configuration in files
   run file glue/Modules.glue
 
-  # WHO regions / countries etc (M49 standard)
+  # WHO regions / countries etc (M49 standard) 
   run file glue/who_countries/populateWhoCountries.glue
 
-  # reference sequences and their unconstrained alignment are imported in this step
-  #run file glue/hcvReferenceSequences.glue
-  
-  # substituted by A)
-  # before importing the sources, the reference sequences need to be  imported from genbank
-  # using the modules NcbiRefSeqsImporter_avu.xml
-  # they specify the accession number to import, the format (genbank xml) and the directory to save them
-  # they must be run independently, outside and before the master porject file is execute. 
+  # before importing the sources, the reference sequences need to be imported from genbank using the modules NcbiRefSeqsImporter_avu.xml
+  # the module specifies the accession number to import, the format (genbank xml) and the directory to save them
+  # this is executed independently to the master project. It needs to be run before thes project is built. 
   
   
-  # A)
   # import the REFERENCE SEQUENCES from folder SOURCES (NC_004102 "H77" will be is in the folder as well)
   import source sources/ncbi-refseqs
-  
+
+  # update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status
   module reference-genotypes-subtypes-populator populate -f tabular/Smith2019_IDs_Genotype_Subtype.csv
   
   # add "Provided with alignment" as field for column genotyping method in table sequence. Alternative, "Refseqs recommended by Smith2019"
   multi-set field sequence -w "source.name = 'ncbi-refseqs'" genotyping_method "Provided with alignment"
 
 
+  # import UNCONSTRAINED alignment Smith 2019, sequences from ICTV and aligned using HCValign (HCV los alamos)
+  # Although HCValign aligns the sequences considering codons,  manual editing was done for some positions. 
+  # usage: module <name> import <name for the alignment in GLUE> --fileName <path to the alignment in computer>
+  # all the sequences in the alignment MUST be already in sequence. If H77 is needed for any pourpose it must be incldued in the source/ncbi-refseqs
+  # the sequence are added and a table displayed the segments (blocks aligned) an the coverage
+  module smith2019-alignment-importer import AL_UNCONSTRAINED_Smith2019 --fileName alignments/Smith_2019_refseqs_filename_NC_004102_edited_v2.fas
 
+  # build master reference sequences (NC_004102) and the features (CDS and non coding regions).
+  run file glue/Features.glue
+  
+  # create the reference sequences of the project 
+  run file glue/ReferenceSequences.glue
+  
+  
+  run file glue/InheritFeatureLocationsFromNC_004102.glue
+  #ADDING WG AND 5 AND 3 UTR
 
-  # build master reference, with features.
-  ##run file glue/hcvFeatures.glue
+  run file glue/AlignmentTree.glue
+  #### SUCCESSFULLY CREATED. 
 
   # outgroup alignment
   ##run file glue/hcvOutgroupAlignment.glue
@@ -47,14 +57,17 @@ project antiviral_unit_hcv-glue
   # build tree of alignments, with relevant reference sequences.
   ##run file glue/hcvAlignmentTree.glue
 
-  # add feature locations
-  ##run file glue/hcvFeatureLocations.glue
-
   # import phylogeny
   ##run file glue/importPhylogeny.glue
   
-  #### AVU SEQUENCES
-  ##### import some data in the table sequence 
+  #### AVU SEQUENCES, better to get an independent script to update new AVU sequences
+  import source sources/NGS91
+  import source sources/NGS92
+  # module molis-to-sequence-populator populate -f tabular/test.csv
+  # Error: Input "MARTINS"" was incorrectly formatted to produce Integer value: Not an integer
+  # there is a "," that changes the way everyhting is imported
+
+
 
   # epitopes
   # run file glue/hcvEpitopes.glue

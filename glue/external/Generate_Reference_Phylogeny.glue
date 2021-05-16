@@ -1,0 +1,49 @@
+
+project avu_hcv_glue
+
+# a newick file with the phylogeny must be generated using raxml. 
+# the ouptput from running the three modules together generates the newick file with the annotations already included. 
+# ALTERNATIVE: as it can take a while fasttree or any other software that creates phylogeny in NEWICK can be used instead
+# 
+
+module RaxmlPhylogenyGenerator
+	#generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --selectorName PhylogenyColumnsSelector --whereClause "sequence.source.name='ncbi-refseqs' and sequence.sequenceID != 'NC_004102'" --outputFile trees/Smith2019_referencePhylogeny.nwk NEWICK_BOOTSTRAPS
+	generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 --featureName precursor_polyprotein --whereClause "sequence.source.name='ncbi-refseqs'" --outputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --dataDir referencePhylogenyData
+	exit
+ 
+
+# ANNOTATION
+module FigTreeAnnotationExporter
+	# generate the figtree annotation for alignment UNCONSTRAINED and the constrained (refseqs_avu_H77)
+	#export figtree-annotation refseqs_avu_H77 --whereClause "sequence.source.name='210416_refs' and sequence.sequenceID != 'H77'" --fileName tree/figtree_annotation_refseqs_avu_UNcostrained.txt
+	#exit
+	
+	#Example
+	#    taxon	genotype	genotypeSubtype	genotypeSubtypePrimaryAcc
+	#alignment/refseqs_avu_H77/member/210416_refs/AB030907	2	2/b	2/b/AB030907
+	#alignment/refseqs_avu_H77/member/210416_refs/AB031663	2	2/k	2/k/AB031663
+	#alignment/refseqs_avu_H77/member/210416_refs/AB047639	2	2/a	2/a/AB047639
+	#alignment/refseqs_avu_H77/member/210416_refs/AB661382	2	2/b	2/b/AB661382
+
+	# generate the figtree annotation for alignment CONSTRAINED and the constrained (AL_MASTER)
+	# running the code without -c (recursive) referenceMember = false will give just the 8 refseqs selected for genotype 1-8
+	export figtree-annotation AL_MASTER -c --whereClause "sequence.source.name='210416_refs' and sequence.sequenceID != 'H77' and referenceMember = false" --fileName tree/figtree_annotation_AL_MASTER_constrained.txt
+	exit	
+
+	#	taxon	genotype	genotypeSubtype	genotypeSubtypePrimaryAcc
+	#alignment/AL_Subtype_1a/member/210416_refs/AF009606	1	1/a	1/a/AF009606
+	#alignment/AL_Subtype_1a/member/210416_refs/EF407457	1	1/a	1/a/EF407457
+	#alignment/AL_Subtype_1a/member/210416_refs/HQ850279	1	1/a	1/a/HQ850279
+	#alignment/AL_Subtype_1a/member/210416_refs/M62321	1	1/a	1/a/M62321
+
+	export figtree-annotation AL_UNCONSTRAINED_Smith2019 --whereClause "sequence.source.name='ncbi-refseqs'" -f trees/figtreeAnnotations_UNconstrained.txt
+    export figtree-annotation AL_MASTER -c --whereClause "sequence.source.name='ncbi-refseqs' and referenceMember = false" --fileName trees/figtreeAnnotations_Constrained.txt
+    exit
+
+
+module PhyloUtility
+	reroot-phylogeny --inputFile tree/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --midpoint --outputFile tree/Smith2019_phylogeny_rerootedMidpoint.txt NEWICK_BOOTSTRAPS
+	exit
+
+
+exit

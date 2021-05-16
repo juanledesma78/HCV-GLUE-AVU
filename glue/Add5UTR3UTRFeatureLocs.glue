@@ -1,9 +1,9 @@
-reference REF_1_NC_004102       
-  add feature-location 5UTR    
-  feature-location 5UTR add segment 1 341 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment 9378 9646 
-  exit      
+#reference REF_1_NC_004102       
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment 1 341 
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment 9378 9646 
+#  exit      
         
 reference REF_1a_AF009606       
   add feature-location 5UTR    
@@ -47,9 +47,9 @@ reference REF_1_KJ439777
         
 reference REF_1o_MH885469       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ?  
+  feature-location 5UTR add segment 1 283  
   add feature-location 3UTR    
-  feature-location 3UTR add segment ?  
+  feature-location 3UTR add segment 9327 9359  
   exit      
         
 reference REF_1o_KJ439779       
@@ -427,18 +427,18 @@ reference REF_2k_JX227953
   feature-location 3UTR add segment 9365 9380 
   exit      
         
-reference REF_2b_AB661388 # not added to source code      
-  add feature-location 5UTR    
-  feature-location 5UTR add segment ?  
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ?  
-  exit      
-reference REF_2b_AB661382 was renamed NC_009824      
-  add feature-location 5UTR    
-  feature-location 5UTR add segment ?  
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ?  
-  exit      
+#reference REF_2b_AB661388 # not added to source code      
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment ?  
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment ?  
+#  exit      
+#reference REF_2b_AB661382 was renamed NC_009824      
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment ?  
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment ?  
+#  exit      
         
         
 reference REF_2m_JF735111       
@@ -964,9 +964,7 @@ reference REF_5a_AF064490
         
 reference REF_5_KT595242       
   add feature-location 5UTR    
-  feature-location 5UTR add segment 1 279 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment 9325 9343 
+  feature-location 5UTR add segment 1 246 
   exit      
         
 reference REF_5a_Y13184       
@@ -1444,142 +1442,150 @@ reference REF_6xe_KM252792
         
 reference REF_6xf_KJ567646       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9399 9428 
   exit      
         
 reference REF_6xf_KJ567647       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9391 9421 
   exit      
         
 reference REF_6xg_MH492361       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 272 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? 9318 # not defined
   exit      
         
 reference REF_6xg_MH492360       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 272 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? 9318 # not defined
   exit      
         
 reference REF_6xg_MH492362       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
-  exit      
+  feature-location 5UTR add segment 1 272 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? 9318 # not defined
+  exit          
         
-reference REF_6xh_MG879000       
-  add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
-  exit      
+#reference REF_6xh_MG879000  # 1-9057      
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment ? ? 
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment ? ? 
+#  exit      
         
 reference REF_6_KJ567652       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9402 9434 
   exit      
         
 reference REF_6_KJ567650       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9405 9469 
   exit      
         
 reference REF_6_KJ567649       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9405 9471 
   exit      
         
 reference REF_6_KJ567648       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9394 9485 
   exit      
         
 reference REF_6_KJ567644       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 323 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9375 9397 
   exit      
         
-reference REF_6_MG878999       
-  add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
-  exit      
+#reference REF_6_MG878999       # 1..9057
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment ? ? 
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment ? ? 
+#  exit      
         
 reference REF_7_EF108306       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? ? 
   exit      
         
 reference REF_7a_EF108306       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? ? 
   exit      
         
-reference REF_7b_KX092342       
+reference REF_7b_KX092342    #343..>9382   
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 342 
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? ? 
   exit      
         
-reference REF_8_MH590698       
-  add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
-  exit      
+#reference REF_8_MH590698       
+#  add feature-location 5UTR    
+#  feature-location 5UTR add segment 1 339
+#  add feature-location 3UTR    
+#  feature-location 3UTR add segment 9391 9409
+#  exit      
         
 reference REF_8a_MH590698       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9391 9409
   exit      
         
-reference REF_8a_MH590699       
+reference REF_8a_MH590699       #322..>9351
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
-  add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 5UTR add segment 1 321
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? ? 
   exit      
+
+reference REF_8_MH590699       #322..>9351 # added
+  add feature-location 5UTR    
+  feature-location 5UTR add segment 1 321
+  #add feature-location 3UTR    
+  #feature-location 3UTR add segment ? ? 
+  exit      
+        
         
 reference REF_8a_MH590700       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9391 9547 
   exit      
         
 reference REF_8a_MH590701       
   add feature-location 5UTR    
-  feature-location 5UTR add segment ? ? 
+  feature-location 5UTR add segment 1 339  
   add feature-location 3UTR    
-  feature-location 3UTR add segment ? ? 
+  feature-location 3UTR add segment 9394 9437 
   exit      
         
         

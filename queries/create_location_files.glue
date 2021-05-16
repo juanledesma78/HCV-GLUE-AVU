@@ -1,0 +1,45 @@
+console set cmd-output-file-format tab
+
+console set next-cmd-output-file debugging/locations/precursor_polyprotein.txt
+feature precursor_polyprotein show location
+
+console set next-cmd-output-file debugging/locations/core.txt
+feature Core show location
+
+console set next-cmd-output-file debugging/locations/E1.txt
+feature E1 show location
+
+console set next-cmd-output-file debugging/locations/E2.txt
+feature E2 show location
+
+console set next-cmd-output-file debugging/locations/NS2.txt
+feature NS2 show location
+
+console set next-cmd-output-file debugging/locations/NS3.txt
+feature NS3 show location
+
+console set next-cmd-output-file debugging/locations/NS4A.txt
+feature NS4A show location
+
+console set next-cmd-output-file debugging/locations/NS4B.txt
+feature NS4B show location
+
+console set next-cmd-output-file debugging/locations/NS5A.txt
+feature NS5A show location
+
+console set next-cmd-output-file debugging/locations/NS5B.txt
+feature NS5B show location
+
+console set next-cmd-output-file debugging/locations/p7.txt
+feature p7 show location
+
+console set next-cmd-output-file debugging/locations/3UTR.txt
+feature 3UTR show location
+
+console set next-cmd-output-file debugging/locations/5UTR.txt
+feature 5UTR show location
+
+console set next-cmd-output-file debugging/locations/whole_genome.txt
+feature whole_genome show location
+
+

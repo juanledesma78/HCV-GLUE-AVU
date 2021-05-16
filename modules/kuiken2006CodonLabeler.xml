@@ -1,0 +1,5 @@
+<!-- Define the numbering for the codons-->
+<kuiken2006CodonLabeler>
+	<rootReferenceName>REF_MASTER_NC_004102</rootReferenceName>
+	<linkingAlignmentName>AL_UNCONSTRAINED_Smith2019</linkingAlignmentName>
+</kuiken2006CodonLabeler>

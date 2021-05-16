@@ -1,5 +1,5 @@
-module hcvPhyloImporter
+module PhyloImporter
 
-  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and referenceMember = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
+  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name= 'ncbi-refseqs' and referenceMember = false" --inputFile trees/Smith2019_phylogeny_rerootedMidpoint.txt NEWICK_BOOTSTRAPS --fieldName phylogeny
 
   exit

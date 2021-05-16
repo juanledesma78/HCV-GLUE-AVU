@@ -1,10 +1,10 @@
-reference REF_1_NC_004102       
-  add feature-location whole_genome    
-  feature-location whole_genome add segment 1 9646 
-  exit      
+#reference REF_1_NC_004102       
+#  add feature-location whole_genome    
+#  feature-location whole_genome add segment 1 9646 
+#  exit      
 reference REF_1a_AF009606       
   add feature-location whole_genome    
-  feature-location whole_genome add segment ? ? 
+  feature-location whole_genome add segment 1 9646 
   exit      
 reference REF_1_AJ851228       
   add feature-location whole_genome    
@@ -28,7 +28,7 @@ reference REF_1_KJ439777
   exit      
 reference REF_1o_MH885469       
   add feature-location whole_genome    
-  feature-location whole_genome add segment ? ? 
+  feature-location whole_genome add segment 1 9359 
   exit      
 reference REF_1o_KJ439779       
   add feature-location whole_genome    
@@ -567,10 +567,10 @@ reference REF_5a_Y13184
   add feature-location whole_genome    
   feature-location whole_genome add segment 1 9343 
   exit      
-reference REF_6b_D84262       
-  add feature-location whole_genome    
-  feature-location whole_genome add segment 1 9628 
-  exit      
+#reference REF_6b_D84262       
+#  add feature-location whole_genome    
+#  feature-location whole_genome add segment 1 9628 
+#  exit      
 reference REF_6_DQ278891       
   add feature-location whole_genome    
   feature-location whole_genome add segment 1 9440 
@@ -853,83 +853,87 @@ reference REF_6xe_KM252792
   exit      
 reference REF_6xf_KJ567646       
   add feature-location whole_genome    
-  feature-location whole_genome add segment ? ? 
+  feature-location whole_genome add segment 1 9428 
   exit      
 reference REF_6xf_KJ567647       
   add feature-location whole_genome    
-  feature-location whole_genome add segment ? ? 
+  feature-location whole_genome add segment 1 9421 
   exit      
 reference REF_6xg_MH492361       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9318
   exit      
 reference REF_6xg_MH492360       
-  add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  add feature-location whole_genome
+  feature-location whole_genome add segment 1 9318   
   exit      
 reference REF_6xg_MH492362       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9318  
   exit      
 reference REF_6xh_MG879000       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9057
   exit      
 reference REF_6_KJ567652       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9434
   exit      
 reference REF_6_KJ567650       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9469
   exit      
 reference REF_6_KJ567649       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9471
   exit      
 reference REF_6_KJ567648       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9485
   exit      
 reference REF_6_KJ567644       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9397 
   exit      
 reference REF_6_MG878999       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9057 
   exit      
 reference REF_7_EF108306       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9443
   exit      
 reference REF_7a_EF108306       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9443 
   exit      
 reference REF_7b_KX092342       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9382  
   exit      
-reference REF_8_MH590698       
-  add feature-location whole_genome    
-  feature-location whole_genome add segment   
-  exit      
+#reference REF_8_MH590698       
+ # add feature-location whole_genome    
+ # feature-location whole_genome add segment 1 9409
+ # exit      
 reference REF_8a_MH590698       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
-  exit      
-reference REF_8a_MH590699       
+  feature-location whole_genome add segment 1 9409
+  exit  
+reference REF_8_MH590699       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9351
+  exit          
+reference REF_8a_MH590699       # added
+  add feature-location whole_genome    
+  feature-location whole_genome add segment 1 9351
   exit      
 reference REF_8a_MH590700       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9547
   exit      
 reference REF_8a_MH590701       
   add feature-location whole_genome    
-  feature-location whole_genome add segment   
+  feature-location whole_genome add segment 1 9437
   exit      
         
 # reference REF_RF2_5_AM408911      

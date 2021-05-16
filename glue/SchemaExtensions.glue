@@ -1,4 +1,4 @@
-schema-project hcv_antiviral_unit # change name
+schema-project antiviral_unit_hcv_glue
   table sequence
     create field gb_gi_number VARCHAR
     create field gb_primary_accession VARCHAR
@@ -40,6 +40,19 @@ schema-project hcv_antiviral_unit # change name
 
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
+    
+    # Antiviral Unit fields
+    create field molis VARCHAR
+    create field previous_genotyping VARCHAR
+    create field sample_date DATE
+    create field reception_date DATE
+    create field hospital_code VARCHAR # create a custom table for hospitals
+    create field date_of_birth DATE
+    create field nhs_number INTEGER #VARCHAR
+    create field gender VARCHAR # create script to format F and M before importing data
+    create field ref_external VARCHAR
+
+  
     exit
 
   table alignment

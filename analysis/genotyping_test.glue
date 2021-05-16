@@ -1,0 +1,16 @@
+# 1) add sequences to alignment
+# run in mode project
+
+#project avu_hcv_glue
+
+alignment AL_MASTER add member --whereClause "source.name ='NGS91'"
+
+##>>>> 2) THE COMPOUND ALIGNER NEEDS TO BE ADDED
+
+#module MaxLikelihoodGenotyper
+compute alignment AL_MASTER CompoundAligner --whereClause "sequence.source.name= 'NGS91'"
+
+###>>>> 3) genotyping and saving result in directory genotyping_results_NGS91
+
+module MaxLikelihoodGenotyper
+genotype sequence --whereClause "source.name= 'NGS91'" --detailLevel HIGH --dataDir genotyping_test

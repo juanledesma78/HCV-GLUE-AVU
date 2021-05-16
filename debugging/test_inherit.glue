@@ -1,0 +1,124 @@
+
+
+
+###########################################################################  --spanGaps
+# reference REF_2i_DQ155561 inherit feature-location --recursive --truncateCdn AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+
+
+delete reference REF_2i_DQ155561
+create reference REF_2i_DQ155561 ncbi-refseqs DQ155561
+
+#error: Cause: Failed to label codons for feature NS5A on reference REF_2i_DQ155561 (NT locations [Ref: [6842, 6844]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 203 on the root reference (6864) but not the correct region -- [Ref: [6864, 6865] <-> Query: [6842, 6843], Ref: [6867, 6867] <-> Query: [6844, 6844]] rather than [Ref: [6864, 6866]]
+# REF_2i_DQ155561	[6242, 7636], REmove 6982 A NS5A
+# REF_2i_DQ155561	[314, 9354] 9338-9, This is UTR 9355, 9359-60, 9370
+# REF_2i_DQ155561	[7637, 9354] NS5B
+reference REF_2i_DQ155561 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2i_DQ155561 feature-location precursor_polyprotein remove segment  314 9354
+reference REF_2i_DQ155561 feature-location NS5A remove segment 6242 7636
+reference REF_2i_DQ155561 feature-location NS5B remove segment 7637 9354
+#si
+
+reference REF_2i_DQ155561 feature-location precursor_polyprotein add segment 314 6241
+
+reference REF_2i_DQ155561 feature-location precursor_polyprotein add segment 314 6981 # NS5A
+reference REF_2i_DQ155561 feature-location precursor_polyprotein add segment 6983 7636 #NS5A
+#reference REF_2i_DQ155561 feature-location precursor_polyprotein add segment 7637 9337 #NS5B
+#reference REF_2i_DQ155561 feature-location precursor_polyprotein add segment 9340 9354 #NS5B
+
+
+reference REF_2i_DQ155561 feature-location NS5A add segment 6242 6981
+reference REF_2i_DQ155561 feature-location NS5A add segment 6983 7636 #NS5A
+
+#reference REF_2i_DQ155561 feature-location NS5B add segment 7637 9337
+#reference REF_2i_DQ155561 feature-location NS5B add segment 9340 9354 # NS5B 
+
+
+validate
+
+WORKS AFTER TRUNCATED
+
+
+
+
+
+#######################################
+##############################
+
+delete reference REF_6_MG878999
+create reference REF_6_MG878999 ncbi-refseqs MG878999
+
+#error:  Failed to label codons for feature precursor_polyprotein on reference REF_6_MG878999 (NT locations [Ref: [2236, 2238]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 742 on the root reference (2565) but not the correct region -- [Ref: [2565, 2566] <-> Query: [2237, 2238]] rather than [Ref: [2565, 2567]] 
+# REF_6_MG878999	[2441, 3090] NS2 Remove 2594-5
+#REF_6_MG878999	[1, 9057]
+reference REF_6_MG878999 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_MG878999 feature-location precursor_polyprotein remove segment 1 9057
+reference REF_6_MG878999 feature-location NS2 remove segment 2441 3090
+reference REF_6_MG878999 feature-location precursor_polyprotein add segment 1 2593
+reference REF_6_MG878999 feature-location precursor_polyprotein add segment 2596 9053 #9057
+reference REF_6_MG878999 feature-location NS2 add segment 2441 2593
+reference REF_6_MG878999 feature-location NS2 add segment 2596 3090
+
+validate
+
+
+ALTERNATIVE SOLUTION
+reference REF_6_MG878999 inherit feature-location --recursive --truncateCdn AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+
+##########################333
+
+delete reference REF_7b_KX092342
+create reference REF_7b_KX092342 ncbi-refseqs KX092342
+
+
+validate
+
+TRY WITH NEW ALIGNMENT
+
+
+##############################
+############################################################
+delete reference 
+create reference REF ncbi-refseqs acc
+
+
+reference NAME feature-location precursor_polyprotein remove segment  
+reference NAME feature-location FEATURE remove segment 
+reference NAME feature-location precursor_polyprotein add segment 
+reference NAME feature-location FEATURE add segment 
+#####################################################
+
+delete reference REF_8_MH590698
+create reference REF_8_MH590698 ncbi-refseqs MH590698
+
+#error: ailed to label codons for feature NS5B on reference REF_8_MH590698 (NT locations [Ref: [9283, 9285]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 557 on the root reference (9272) but not the correct region -- [Ref: [9272, 9272] <-> Query: [9285, 9285]] rather than [Ref: [9270, 9272]] 
+#REF_8_MH590698	[7615, 9390] 
+#REF_8_MH590698	[340, 9390]
+reference REF_8_MH590698 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_8_MH590698 feature-location precursor_polyprotein remove segment  340 9390
+reference REF_8_MH590698 feature-location NS5B remove segment 7615 9390
+reference REF_8_MH590698 feature-location precursor_polyprotein add segment 340 9222
+reference REF_8_MH590698 feature-location precursor_polyprotein add segment 9225 9390
+reference REF_8_MH590698 feature-location NS5B add segment 7615 9222
+reference REF_8_MH590698 feature-location NS5B add segment 9225 9390
+validate
+
+ALTERNATIVE
+
+reference REF_8_MH590698 inherit feature-location --recursive --truncateCdn AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+
+
+##############################
+#Error: Validation error for object reference/REF_8a_MH590698/feature-location/NS5B: Failed to label codons for feature NS5B on reference REF_8a_MH590698 (NT locations [Ref: [9283, 9285]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 557 on the root reference (9272) but not the correct region -- [Ref: [9272, 9272] <-> Query: [9285, 9285]] rather than [Ref: [9270, 9272]] 
+#Cause: Failed to label codons for feature NS5B on reference REF_8a_MH590698 (NT locations [Ref: [9283, 9285]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 557 on the root reference (9272) but not the correct region -- [Ref: [9272, 9272] <-> Query: [9285, 9285]] rather than [Ref: [9270, 9272]]
+#reference REF_8a_MH590698 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+
+
+TRY IT AGAIN
+
+
+
+
+
+
+
+

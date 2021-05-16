@@ -1,15 +1,51 @@
   # usage: create <nameModule> --fileName <path to the directory where xml file is> <name for the module (optional)>
   
   # DOWNLOAD REFSEQS FROM GENBANK
-  create module --fileName modules/external/NcbiRefSeqsImporter_avu.xml ncbi-refseqs-importer
+  create module --fileName modules/external/NcbiRefSeqsImporter_Smith2019.xml ncbi-hcv-refseqs-importer
   #create module --fileName modules/external/NcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer #No needed for AVU
   
   # populate the genotype/subtype data for the reference sequences from a file.
   create module --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml reference-genotypes-subtypes-populator
   
+  # populate data from molis (i.e HCVGEN_NGS91&NGS92.csv) to AVU fields in table sequence
+  create module --fileName modules/TextFilePopulator_Molis_TableSequence.xml molis-to-sequence-populator
   
+
+  # import Smith2019 alignment 
+  create module --fileName modules/blastFastaAlignmentImporter_avu.xml smith2019-alignment-importer
+
+  # the line above substitude all of this
+  # module to import the Smith 2015 alignment 
+  ###create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
+  # modules to import the edited alignment
+  ###create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
+  ###create module --fileName modules/blastFastaAlignmentImporter.xml blastFastaAlignmentImporter
+
+  ###create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
+  # as above but uses blastFastaImporter
+  ###create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
+
+  #Feature creation 
+  create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+
+  # populateWhoCountries.glue
+  create module -f modules/whoRegionsTextToCustomTableRows.xml 
+  create module -f modules/whoSubRegionsTextToCustomTableRows.xml
+  create module -f modules/whoIntermediateRegionsTextToCustomTableRows.xml
+  create module -f modules/whoCountriesTextToCustomTableRows.xml  
   
-  
+  #to create the phylogeny, it must be ran independently
+  ###create module --fileName modules/hcvModelTester.xml
+  create module --fileName modules/external/RaxmlPhylogenyGenerator.xml
+  create moduel --fileName modules/external/PhylogenyColumnsSelector.xml #use to select th features (column-selector) for the phylogeny
+  create module --fileName modules/external/FigTreeAnnotationExporter.xml 
+  create module --fileName modules/external/PhyloUtility.xml
+  create module --fileName modules/external/PhyloExporter.xml 
+  create module --fileName modules/external/PhyloImporter.xml 
+
+
+
+##################################################################
   ###create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
   ###create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
 
@@ -18,7 +54,7 @@
 
   ###create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   ###create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
-  ###create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+  
 
   ###create module --fileName modules/hcvMaxLikelihoodPlacer.xml maxLikelihoodPlacer
   ###create module --fileName modules/hcvMaxLikelihoodGenotyper.xml maxLikelihoodGenotyper
@@ -32,22 +68,9 @@
 
   ###create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
 
-  ###create module --fileName modules/hcvModelTester.xml
-  ###create module --fileName modules/raxmlPhylogenyGenerator.xml
-  ###create module --fileName modules/figTreeAnnotationExporter.xml
-  ###create module --fileName modules/hcvPhyloUtility.xml
-  ###create module --fileName modules/hcvPhyloImporter.xml
-  ###create module --fileName modules/hcvPhyloExporter.xml
+  
      
-  # module to import the Smith 2015 alignment 
-  ###create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
-  # modules to import the edited alignment
-  ###create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
-  ###create module --fileName modules/blastFastaAlignmentImporter.xml blastFastaAlignmentImporter
-
-  ###create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
-  # as above but uses blastFastaImporter
-  ###create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
+  
 
   
 
@@ -64,12 +87,6 @@
   ###create module --fileName modules/whoRegionTreeRenderer.xml --loadResources
   
   
-  # populateWhoCountries.glue
-  ###create module -f modules/whoRegionsTextToCustomTableRows.xml 
-  ###create module -f modules/whoSubRegionsTextToCustomTableRows.xml
-  ###create module -f modules/whoIntermediateRegionsTextToCustomTableRows.xml
-  ###create module -f modules/whoCountriesTextToCustomTableRows.xml  
-  #
   
   ###create module -f modules/hcvSequenceRecogniser.xml  
 

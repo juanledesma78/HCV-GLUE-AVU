@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastFastaAlignmentImporter/>
+
+<!--Default configuration above
+If the configuration needs to be changed enter the VALUES and remove line 1-5 and 16:
+<blastFastaAlignmentImporter>
+	<ignoreMissingSequences> VALUE </ignoreMissingSequences>
+	<ignoreRegexMatchFailures> VALUE </ignoreRegexMatchFailures>
+	<logLevel> VALUE </logLevel>
+	<minRowCorrectPercent> VALUE </minRowCorrectPercent>
+	<minRowCoveragePercent> VALUE </minRowCoveragePercent>
+	<updateExistingAlignment> VALUE </updateExistingAlignment>
+	<updateExistingMembers> VALUE </updateExistingMembers>
+</blastFastaAlignmentImporter>
+
+-->

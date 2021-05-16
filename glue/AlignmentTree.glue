@@ -1,0 +1,399 @@
+# create alignment for all the genotypes and the subtypes
+# the sequences, from the folder ncbi-refseqs, are included in the alignments 
+
+create alignment AL_MASTER --refSeqName REF_MASTER_NC_004102  
+
+alignment AL_MASTER
+    set field displayName "Hepatitis C virus (HCV)"
+    set field description "Object with the references for each geneotype from folder ncbi-refseqs. AL_MASTER>>ALX>>AL_Subtype"
+    add member --whereClause "source.name = 'ncbi-refseqs'" 
+    
+    # the alignment object is the main table with ALL the reference sequences in ncbi-refseqs (234) but they are not aligned yet
+    # now from the AL_MASTER subtrees/alignments are going to be created but still linked to the master 
+    
+    extract child AL_1 --refName REF_1_NC_004102 # create a child alignment (another table), using REF_1_NC_004102 from AL_MASTER as reference sequence
+    demote member AL_1 --whereClause "sequence.genotype ='1'" # move sequences with genotype 1 to AL_1
+    extract child AL_2 --refName REF_2_D00944 
+    demote member AL_2 --whereClause "sequence.genotype ='2'" 
+    extract child AL_3 --refName REF_3_D17763
+    demote member AL_3 --whereClause "sequence.genotype ='3'" 
+    extract child AL_4 --refName REF_4_Y11604
+    demote member AL_4 --whereClause "sequence.genotype ='4'" 
+    extract child AL_5 --refName REF_5_AF064490
+    demote member AL_5 --whereClause "sequence.genotype ='5'" 
+    extract child AL_6 --refName REF_6_Y12083
+    demote member AL_6 --whereClause "sequence.genotype ='6'" 
+    extract child AL_7 --refName REF_7_EF108306
+    demote member AL_7 --whereClause "sequence.genotype ='7'" 
+    extract child AL_8 --refName REF_8_MH590699
+    demote member AL_8 --whereClause "sequence.genotype ='8'" 
+    exit
+
+    # after using the lines below (extract child AL_1...), the AL_MASTER just contains the refseqs for the eight genotypes
+    # and these originates branches of subtypes and subbranches connected to the parent (new relational tables) 
+    #list children/descendent 
+    #+===============+==========================+
+    #|     name      |     refSequence.name     |
+    #+===============+==========================+
+    #| AL_1 | REF_1_NC_004102 |
+    #| AL_2 | REF_2_D00944    |
+    #| AL_3 | REF_3_D17763    |
+    #| AL_4 | REF_4_Y11604    |
+    #| AL_5 | REF_5_AF064490  |
+    #| AL_6 | REF_6_Y12083    |
+    #| AL_7 | REF_7_EF108306  |
+    #| AL_8 | REF_8_MH590699  |
+    #+===============+==========================+
+    #Alignments found: 8
+
+
+
+alignment AL_1
+    set field displayName "Genotype 1"
+    extract child AL_1a --refName REF_1a_NC_004102
+    demote member AL_1a --whereClause "sequence.subtype ='a'" 
+    extract child AL_1b --refName REF_1b_D90208
+    demote member AL_1b --whereClause "sequence.subtype ='b'"
+    extract child AL_1c --refName REF_1c_D14853
+    demote member AL_1c --whereClause "sequence.subtype ='c'"
+    extract child AL_1d --refName REF_1d_KJ439768
+    demote member AL_1d --whereClause "sequence.subtype ='d'"
+    extract child AL_1e --refName REF_1e_KC248194
+    demote member AL_1e --whereClause "sequence.subtype ='e'"
+    extract child AL_1g --refName REF_1g_AM910652
+    demote member AL_1g --whereClause "sequence.subtype ='g'"
+    extract child AL_1h --refName REF_1h_KC248198
+    demote member AL_1h --whereClause "sequence.subtype ='h'"
+    extract child AL_1i --refName REF_1i_KJ439772
+    demote member AL_1i --whereClause "sequence.subtype ='i'"
+    extract child AL_1j --refName REF_1j_KJ439773
+    demote member AL_1j --whereClause "sequence.subtype ='j'"
+    extract child AL_1k --refName REF_1k_KJ439774
+    demote member AL_1k --whereClause "sequence.subtype ='k'"
+    extract child AL_1l --refName REF_1l_KC248193
+    demote member AL_1l --whereClause "sequence.subtype ='l'"
+    extract child AL_1m --refName REF_1m_KJ439778
+    demote member AL_1m --whereClause "sequence.subtype ='m'"
+    extract child AL_1n --refName REF_1n_KJ439781
+    demote member AL_1n --whereClause "sequence.subtype ='n'" 
+    extract child AL_1o --refName REF_1o_KJ439779
+    demote member AL_1o --whereClause "sequence.subtype ='o'" 
+    exit
+
+
+alignment AL_2
+    set field displayName "Genotype 2"
+    extract child AL_2a --refName REF_2a_D00944
+    demote member AL_2a --whereClause "sequence.subtype ='a'" 
+    extract child AL_2b --refName REF_2b_D10988
+    demote member AL_2b --whereClause "sequence.subtype ='b'"
+    extract child AL_2c --refName REF_2c_D50409
+    demote member AL_2c --whereClause "sequence.subtype ='c'"
+    extract child AL_2d --refName REF_2d_JF735114
+    demote member AL_2d --whereClause "sequence.subtype ='d'"
+    extract child AL_2e --refName REF_2e_JF735120
+    demote member AL_2e --whereClause "sequence.subtype ='e'"
+    extract child AL_2f --refName REF_2f_KC844042
+    demote member AL_2f --whereClause "sequence.subtype ='f'"
+    extract child AL_2i --refName REF_2i_DQ155561
+    demote member AL_2i --whereClause "sequence.subtype ='i'"
+    extract child AL_2j --refName REF_2j_JF735113
+    demote member AL_2j --whereClause "sequence.subtype ='j'"
+    extract child AL_2k --refName REF_2k_AB031663
+    demote member AL_2k --whereClause "sequence.subtype ='k'"
+    extract child AL_2m --refName REF_2m_JF735111
+    demote member AL_2m --whereClause "sequence.subtype ='m'"
+    extract child AL_2q --refName REF_2q_FN666428
+    demote member AL_2q --whereClause "sequence.subtype ='q'"
+    extract child AL_2r --refName REF_2r_JF735115
+    demote member AL_2r --whereClause "sequence.subtype ='r'"
+    extract child AL_2t --refName REF_2t_KC197238
+    demote member AL_2t --whereClause "sequence.subtype ='t'"
+    extract child AL_2u --refName REF_2u_JF735112
+    demote member AL_2u --whereClause "sequence.subtype ='u'"
+    exit
+
+
+alignment AL_3
+    set field displayName "Genotype 3"
+    extract child AL_3a --refName REF_3a_D17763
+    demote member AL_3a --whereClause "sequence.subtype ='a'" 
+    extract child AL_3b --refName REF_3b_D49374
+    demote member AL_3b --whereClause "sequence.subtype ='b'"
+    extract child AL_3d --refName REF_3d_KJ470619
+    demote member AL_3d --whereClause "sequence.subtype ='d'"
+    extract child AL_3e --refName REF_3e_KJ470618
+    demote member AL_3e --whereClause "sequence.subtype ='e'"
+    extract child AL_3g --refName REF_3g_JX227954
+    demote member AL_3g --whereClause "sequence.subtype ='g'"
+    extract child AL_3h --refName REF_3h_JF735126
+    demote member AL_3h --whereClause "sequence.subtype ='h'"
+    extract child AL_3i --refName REF_3i_FJ407092
+    demote member AL_3i --whereClause "sequence.subtype ='i'"
+    extract child AL_3k --refName REF_3k_D63821
+    demote member AL_3k --whereClause "sequence.subtype ='k'"
+    exit
+
+
+alignment AL_4
+    set field displayName "Genotype 4"
+    extract child AL_4a --refName REF_4a_Y11604
+    demote member AL_4a --whereClause "sequence.subtype ='a'" 
+    extract child AL_4b --refName REF_4b_FJ462435
+    demote member AL_4b --whereClause "sequence.subtype ='b'"
+    extract child AL_4c --refName REF_4c_FJ462436
+    demote member AL_4c --whereClause "sequence.subtype ='c'"
+    extract child AL_4d --refName REF_4d_DQ418786
+    demote member AL_4d --whereClause "sequence.subtype ='d'"
+    extract child AL_4f --refName REF_4f_EF589161
+    demote member AL_4f --whereClause "sequence.subtype ='f'"
+    extract child AL_4g --refName REF_4g_FJ462432
+    demote member AL_4g --whereClause "sequence.subtype ='g'"
+    extract child AL_4k --refName REF_4k_EU392173
+    demote member AL_4k --whereClause "sequence.subtype ='k'"
+    extract child AL_4l --refName REF_4l_FJ839870
+    demote member AL_4l --whereClause "sequence.subtype ='l'"
+    extract child AL_4m --refName REF_4m_FJ462433
+    demote member AL_4m --whereClause "sequence.subtype ='m'"
+    extract child AL_4n --refName REF_4n_FJ462441
+    demote member AL_4n --whereClause "sequence.subtype ='n'"
+    extract child AL_4o --refName REF_4o_JX227977 # changed
+    demote member AL_4o --whereClause "sequence.subtype ='o'"
+    extract child AL_4p --refName REF_4p_FJ462431
+    demote member AL_4p --whereClause "sequence.subtype ='p'"
+    extract child AL_4q --refName REF_4q_FJ462434
+    demote member AL_4q --whereClause "sequence.subtype ='q'"
+    extract child AL_4r --refName REF_4r_FJ462439
+    demote member AL_4r --whereClause "sequence.subtype ='r'"
+    extract child AL_4s --refName REF_4s_JF735136
+    demote member AL_4s --whereClause "sequence.subtype ='s'"
+    extract child AL_4t --refName REF_4t_FJ839869
+    demote member AL_4t --whereClause "sequence.subtype ='t'"
+    extract child AL_4v --refName REF_4v_JX227959
+    demote member AL_4v --whereClause "sequence.subtype ='v'"
+    extract child AL_4w --refName REF_4w_FJ025855
+    demote member AL_4w --whereClause "sequence.subtype ='w'"
+    exit
+
+
+alignment AL_5
+    set field displayName "Genotype 5"
+    extract child AL_5a --refName REF_5a_AF064490
+    demote member AL_5a --whereClause "sequence.subtype ='a'" 
+    exit
+
+
+alignment AL_6
+    set field displayName "Genotype 6"
+    extract child AL_6a --refName REF_6a_Y12083
+    demote member AL_6a --whereClause "sequence.subtype ='a'" 
+    extract child AL_6b --refName REF_6b_D84262
+    demote member AL_6b --whereClause "sequence.subtype ='b'"
+    extract child AL_6c --refName REF_6c_EF424629
+    demote member AL_6c --whereClause "sequence.subtype ='c'"
+    extract child AL_6d --refName REF_6d_D84263
+    demote member AL_6d --whereClause "sequence.subtype ='d'"
+    extract child AL_6e --refName REF_6e_DQ314805
+    demote member AL_6e --whereClause "sequence.subtype ='e'"
+    extract child AL_6f --refName REF_6f_DQ835760
+    demote member AL_6f --whereClause "sequence.subtype ='f'"
+    extract child AL_6g --refName REF_6g_D63822
+    demote member AL_6g --whereClause "sequence.subtype ='g'"
+    extract child AL_6h --refName REF_6h_D84265
+    demote member AL_6h --whereClause "sequence.subtype ='h'"
+    extract child AL_6i --refName REF_6i_DQ835770
+    demote member AL_6i --whereClause "sequence.subtype ='i'"
+    extract child AL_6j --refName REF_6j_DQ835769
+    demote member AL_6j --whereClause "sequence.subtype ='j'"
+    extract child AL_6k --refName REF_6k_D84264
+    demote member AL_6k --whereClause "sequence.subtype ='k'"
+    extract child AL_6l --refName REF_6l_EF424628
+    demote member AL_6l --whereClause "sequence.subtype ='l'"
+    extract child AL_6m --refName REF_6m_DQ835767
+    demote member AL_6m --whereClause "sequence.subtype ='m'"
+    extract child AL_6n --refName REF_6n_DQ278894
+    demote member AL_6n --whereClause "sequence.subtype ='n'" 
+    extract child AL_6o --refName REF_6o_EF424627
+    demote member AL_6o --whereClause "sequence.subtype ='o'"
+    extract child AL_6p --refName REF_6p_EF424626
+    demote member AL_6p --whereClause "sequence.subtype ='p'"
+    extract child AL_6q --refName REF_6q_EF424625
+    demote member AL_6q --whereClause "sequence.subtype ='q'"
+    extract child AL_6r --refName REF_6r_EU408328
+    demote member AL_6r --whereClause "sequence.subtype ='r'"
+    extract child AL_6s --refName REF_6s_EU408329
+    demote member AL_6s --whereClause "sequence.subtype ='s'"
+    extract child AL_6t --refName REF_6t_EF632071
+    demote member AL_6t --whereClause "sequence.subtype ='t'"
+    extract child AL_6u --refName REF_6u_EU246940
+    demote member AL_6u --whereClause "sequence.subtype ='u'"
+    extract child AL_6v --refName REF_6v_EU798760 #changed
+    demote member AL_6v --whereClause "sequence.subtype ='v'"
+    extract child AL_6w --refName REF_6w_DQ278892
+    demote member AL_6w --whereClause "sequence.subtype ='w'"
+    extract child AL_6xa --refName REF_6xa_EU408330
+    demote member AL_6xa --whereClause "sequence.subtype ='xa'"
+    extract child AL_6xb --refName REF_6xb_JX183552
+    demote member AL_6xb --whereClause "sequence.subtype ='xb'"
+    extract child AL_6xc --refName REF_6xc_KJ567651
+    demote member AL_6xc --whereClause "sequence.subtype ='xc'"
+    extract child AL_6xd --refName REF_6xd_KM252789
+    demote member AL_6xd --whereClause "sequence.subtype ='xd'"
+    extract child AL_6xe --refName REF_6xe_JX183557
+    demote member AL_6xe --whereClause "sequence.subtype ='xe'"
+    extract child AL_6xf --refName REF_6xf_KJ567647 #changed
+    demote member AL_6xf --whereClause "sequence.subtype ='xf'"
+    extract child AL_6xg --refName REF_6xg_MH492361
+    demote member AL_6xg --whereClause "sequence.subtype ='xg'"
+    extract child AL_6xh --refName REF_6xh_MG879000
+    demote member AL_6xh --whereClause "sequence.subtype ='xh'"
+    exit
+
+alignment AL_7
+    set field displayName "Genotype 7"
+    extract child AL_7a --refName REF_7a_EF108306
+    demote member AL_7a --whereClause "sequence.subtype ='a'" 
+    extract child AL_7b --refName REF_7b_KX092342
+    demote member AL_7b --whereClause "sequence.subtype ='b'"
+    exit
+
+
+alignment AL_8
+    set field displayName "Genotype 8"
+    extract child AL_8a --refName REF_8a_MH590698
+    demote member AL_8a --whereClause "sequence.subtype ='a'" 
+    exit
+
+# derive constrained segments throughout the tree from the uncostrained AL_MASTER 
+# the members of AL_MASTER are AF064490          
+#| D00944              | 2                
+#| D17763              | 3                
+#| EF108306            | 7                
+#| MH590698            | 8                
+#| NC_004102           | 1                
+#| Y11604              | 4                
+#| Y12083
+# Usage: derive segments <sourceAlmtName> [-r] [-l <linkingReference>] [-s] [-e] (-w <whereClause> | -a) [-m <mergeStrategy>]
+# 
+# Options:
+#   -r, --recursive                                               Include descendent alignments
+#   -l <linkingReference>, --linkingReference <linkingReference>  Reference linking source and target
+#   -s, --suppressSkippedWarning                                  Skip targets without warning
+#   -w <whereClause>, --whereClause <whereClause>                 Qualify source members
+#   -a, --allMembers                                              Select all source members
+#   -e, --existingMembersOnly                                     Derive only for existing
+#   -m <mergeStrategy>, --mergeStrategy <mergeStrategy>           Segment merge strategy
+
+
+# The alignmentTrees above (constrained) have been defined but the sequences are not aligned.
+# You derive the alignment/segments from the uncostrained alignment added at the beginning.
+
+alignment AL_MASTER
+    derive segments AL_UNCONSTRAINED_Smith2019 --recursive --existingMembersOnly --allMembers
+    exit 
+
+# targetAlmtName | sequence.source.name | sequence.sequenceID | prevRefCoveragePct | newRefCoveragePct |
+#+================+======================+=====================+====================+===================+
+#| AL_MASTER      | ncbi-refseqs          | AF064490            | 0.0                | 96.3611859838275  |
+#| AL_MASTER      | ncbi-refseqs          | D00944              | 0.0                | 97.11797636325939 |
+#| AL_MASTER      | ncbi-refseqs          | D17763              | 0.0                | 97.31494920174165 |
+#| AL_MASTER      | ncbi-refseqs          | EF108306            | 0.0                | 96.37155297532657 |
+#| AL_MASTER      | ncbi-refseqs          | MH590698            | 0.0                | 96.5166908563135  |
+#| AL_MASTER      | ncbi-refseqs          | NC_004102           | 0.0                | 100.0             |
+#| AL_MASTER      | ncbi-refseqs          | Y11604              | 0.0                | 96.6099937798051  |
+#| AL_MASTER      | ncbi-refseqs          | Y12083              | 0.0                | 96.3611859838275  |
+#+================+======================+=====================+====================+===================+
+
+
+
+
+
+# set the label displayName for each subtype alignment 
+alignment AL_1b  set field displayName "Subtype 1b"
+alignment AL_1c  set field displayName "Subtype 1c"
+alignment AL_1d  set field displayName "Subtype 1d"
+alignment AL_1e  set field displayName "Subtype 1e"
+alignment AL_1g  set field displayName "Subtype 1g"
+alignment AL_1h  set field displayName "Subtype 1h"
+alignment AL_1i  set field displayName "Subtype 1i"
+alignment AL_1j  set field displayName "Subtype 1j"
+alignment AL_1k  set field displayName "Subtype 1k"
+alignment AL_1l  set field displayName "Subtype 1l"
+alignment AL_1m  set field displayName "Subtype 1m"
+alignment AL_1n  set field displayName "Subtype 1n"
+alignment AL_1o  set field displayName "Subtype 1o"
+alignment AL_2a  set field displayName "Subtype 2a"
+alignment AL_2b  set field displayName "Subtype 2b"
+alignment AL_2c  set field displayName "Subtype 2c"
+alignment AL_2d  set field displayName "Subtype 2d"
+alignment AL_2e  set field displayName "Subtype 2e"
+alignment AL_2f  set field displayName "Subtype 2f"
+alignment AL_2i  set field displayName "Subtype 2i"
+alignment AL_2j  set field displayName "Subtype 2j"
+alignment AL_2k  set field displayName "Subtype 2k"
+alignment AL_2m  set field displayName "Subtype 2m"
+alignment AL_2q  set field displayName "Subtype 2q"
+alignment AL_2r  set field displayName "Subtype 2r"
+alignment AL_2t  set field displayName "Subtype 2t"
+alignment AL_2u  set field displayName "Subtype 2u"
+alignment AL_3a  set field displayName "Subtype 3a"
+alignment AL_3b  set field displayName "Subtype 3b"
+alignment AL_3d  set field displayName "Subtype 3d"
+alignment AL_3e  set field displayName "Subtype 3e"
+alignment AL_3g  set field displayName "Subtype 3g"
+alignment AL_3h  set field displayName "Subtype 3h"
+alignment AL_3i  set field displayName "Subtype 3i"
+alignment AL_3k  set field displayName "Subtype 3k"
+alignment AL_4a  set field displayName "Subtype 4a"
+alignment AL_4b  set field displayName "Subtype 4b"
+alignment AL_4c  set field displayName "Subtype 4c"
+alignment AL_4d  set field displayName "Subtype 4d"
+alignment AL_4f  set field displayName "Subtype 4f"
+alignment AL_4g  set field displayName "Subtype 4g"
+alignment AL_4k  set field displayName "Subtype 4k"
+alignment AL_4l  set field displayName "Subtype 4l"
+alignment AL_4m  set field displayName "Subtype 4m"
+alignment AL_4n  set field displayName "Subtype 4n"
+alignment AL_4o  set field displayName "Subtype 4o"
+alignment AL_4p  set field displayName "Subtype 4p"
+alignment AL_4q  set field displayName "Subtype 4q"
+alignment AL_4r  set field displayName "Subtype 4r"
+alignment AL_4s  set field displayName "Subtype 4s"
+alignment AL_4t  set field displayName "Subtype 4t"
+alignment AL_4v  set field displayName "Subtype 4v"
+alignment AL_4w  set field displayName "Subtype 4w"
+alignment AL_5a  set field displayName "Subtype 5a"
+alignment AL_6a  set field displayName "Subtype 6a"
+alignment AL_6b  set field displayName "Subtype 6b"
+alignment AL_6c  set field displayName "Subtype 6c"
+alignment AL_6d  set field displayName "Subtype 6d"
+alignment AL_6e  set field displayName "Subtype 6e"
+alignment AL_6f  set field displayName "Subtype 6f"
+alignment AL_6g  set field displayName "Subtype 6g"
+alignment AL_6h  set field displayName "Subtype 6h"
+alignment AL_6i  set field displayName "Subtype 6i"
+alignment AL_6j  set field displayName "Subtype 6j"
+alignment AL_6k  set field displayName "Subtype 6k"
+alignment AL_6l  set field displayName "Subtype 6l"
+alignment AL_6m  set field displayName "Subtype 6m"
+alignment AL_6n  set field displayName "Subtype 6n"
+alignment AL_6o  set field displayName "Subtype 6o"
+alignment AL_6p  set field displayName "Subtype 6p"
+alignment AL_6q  set field displayName "Subtype 6q"
+alignment AL_6r  set field displayName "Subtype 6r"
+alignment AL_6s  set field displayName "Subtype 6s"
+alignment AL_6t  set field displayName "Subtype 6t"
+alignment AL_6u  set field displayName "Subtype 6u"
+alignment AL_6v  set field displayName "Subtype 6v"
+alignment AL_6w  set field displayName "Subtype 6w"
+alignment AL_6xa  set field displayName "Subtype 6xa"
+alignment AL_6xb  set field displayName "Subtype 6xb"
+alignment AL_6xc  set field displayName "Subtype 6xc"
+alignment AL_6xd  set field displayName "Subtype 6xd"
+alignment AL_6xe  set field displayName "Subtype 6xe"
+alignment AL_6xf  set field displayName "Subtype 6xf"
+alignment AL_6xg  set field displayName "Subtype 6xg"
+alignment AL_6xh  set field displayName "Subtype 6xh"
+alignment AL_7a  set field displayName "Subtype 7a"
+alignment AL_7b  set field displayName "Subtype 7b"
+alignment AL_8a  set field displayName "Subtype 8a"
