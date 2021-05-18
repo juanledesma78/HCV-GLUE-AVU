@@ -48,21 +48,20 @@ project antiviral_unit_hcv_glue
   run file glue/InheritFeatureLocationsFromNC_004102.glue
   #ADDING WG AND 5 AND 3 UTR
 
-  run file glue/AlignmentTree.glue
-  #### SUCCESSFULLY CREATED. 
-
   # outgroup alignment
   ##run file glue/hcvOutgroupAlignment.glue
-  
   # build tree of alignments, with relevant reference sequences.
   ##run file glue/hcvAlignmentTree.glue
+
+  run file glue/AlignmentTree.glue
+  #### SUCCESSFULLY CREATED. 
 
   # import phylogeny
   ##run file glue/importPhylogeny.glue
   
   #### AVU SEQUENCES, better to get an independent script to update new AVU sequences
-  import source sources/NGS91
-  import source sources/NGS92
+  #import source sources/NGS91
+  #import source sources/NGS92
   # module molis-to-sequence-populator populate -f tabular/test.csv
   # Error: Input "MARTINS"" was incorrectly formatted to produce Integer value: Not an integer
   # there is a "," that changes the way everyhting is imported

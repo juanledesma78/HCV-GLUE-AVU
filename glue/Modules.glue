@@ -37,7 +37,7 @@
   #to create the phylogeny, it must be ran independently
   ###create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/external/RaxmlPhylogenyGenerator.xml
-  create moduel --fileName modules/external/PhylogenyColumnsSelector.xml #use to select th features (column-selector) for the phylogeny
+  create module --fileName modules/external/PhylogenyColumnsSelector.xml 
   create module --fileName modules/external/FigTreeAnnotationExporter.xml 
   create module --fileName modules/external/PhyloUtility.xml
   create module --fileName modules/external/PhyloExporter.xml 

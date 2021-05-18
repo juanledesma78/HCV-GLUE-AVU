@@ -1,5 +1,5 @@
 
-project avu_hcv_glue
+project antiviral_unit_hcv_glue
 
 # a newick file with the phylogeny must be generated using raxml. 
 # the ouptput from running the three modules together generates the newick file with the annotations already included. 
