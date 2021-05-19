@@ -23,9 +23,6 @@
 <alignmentColumnsSelector>
 	<relRefName>REF_MASTER_NC_004102</relRefName>
 	<aminoAcidRegionSelector>
-		<featureName>whole_genome</featureName>
-	</aminoAcidRegionSelector>
-	<aminoAcidRegionSelector>
 		<featureName>precursor_polyprotein</featureName>
 	</aminoAcidRegionSelector>
 	<aminoAcidRegionSelector>
