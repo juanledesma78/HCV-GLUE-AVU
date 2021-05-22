@@ -1,0 +1,245 @@
+# create all the features and assigned the master reference sequence for features
+# usage: create feature <name>
+#        feature <name>
+# It can be created in a single line like:
+#create feature Core --parentName structural_proteins "Core" <--description
+#feature Core set metatag OWN_CODON_NUMBERING true
+# but it is more intuitive as follows:
+
+create feature whole_genome 
+feature whole_genome
+  set field displayName "Whole genome"
+  set field description "Whole HCV genome"
+  set metatag INCLUDE_IN_SUMMARY true
+  exit
+
+# the rest of the features are derived from whole genome --paretnName from
+
+create feature 5UTR --parentName whole_genome 
+feature 5UTR 
+  set field displayName "5' UTR"
+  set field description "5' untranslated region"
+  set metatag INCLUDE_IN_SUMMARY true
+  exit
+
+create feature precursor_polyprotein --parentName whole_genome 
+feature precursor_polyprotein 
+  set field displayName "Precursor polyprotein"
+  set field description "Precursor polyprotein, structural and non-proteins proteins"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+# this derives from precursor_polyprotein
+create feature structural_proteins --parentName precursor_polyprotein 
+feature structural_proteins 
+  set field displayName "Structural proteins"
+  set field description "Structural proteins"
+  set metatag INFORMATIONAL true
+  exit
+
+create feature Core --parentName structural_proteins "Core"
+feature Core 
+  set field displayName "Core"
+  set field description "Core, viral capside protein"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature E1 --parentName structural_proteins 
+feature E1 
+  set field displayName "E1"
+  set field description "E1, envelope protein "
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature E2 --parentName structural_proteins 
+feature E2 
+  set field displayName "E2"
+  set field description "E2, envelope protein "
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature non_structural_proteins --parentName precursor_polyprotein 
+feature non_structural_proteins 
+  set field displayName "Non-structural proteins" 
+  set field description "Non-structural proteins"
+  set metatag INFORMATIONAL true
+  exit
+
+create feature p7 --parentName non_structural_proteins 
+feature p7 
+  set field displayName "p7"
+  set field description "p7, non-structural protein"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS2 --parentName non_structural_proteins 
+feature NS2 
+  set field displayName "NS2"
+  set field description "NS2, non-structural protein"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS3 --parentName non_structural_proteins
+feature NS3 
+  set field displayName "NS3"
+  set field description "NS3, protease/helicase protein"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS4A --parentName non_structural_proteins 
+feature NS4A 
+  set field displayName "NS4A"
+  set field description "NS4A, cofactor for the NS3 protease"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS4B --parentName non_structural_proteins
+feature NS4B 
+  set field displayName "NS4B" 
+  set field description "NS4B, membrane protein; negative regulator of the NS3-NS5B replication complex"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS5A --parentName non_structural_proteins
+feature NS5A 
+  set field displayName "NS5A"
+  set field description "NS5A, phosphorylated; associated with interferon sensitivity"
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature NS5B --parentName non_structural_proteins
+feature NS5B 
+  set field displayName "NS5B"
+  set field description "NS5B, RNA-dependent RNA polymerase "
+  set metatag OWN_CODON_NUMBERING true
+  set metatag INCLUDE_IN_SUMMARY true
+  set metatag CODES_AMINO_ACIDS true
+  set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+  exit
+
+create feature 3UTR --parentName whole_genome 
+feature 3UTR 
+  set field displayName "3' UTR"
+  set field description "3' UTR"
+  exit
+
+
+
+### ADD FEATURES TO A SEQUENCE, TO USE AS REFERENCE NUMBERING
+
+# usage: craete reference NAME path-to-file-in-sources-folder filename
+# access the reference sequence
+# add feature-location <each gene> 
+# access feature-location
+# add segment <refstart> <refend>
+
+#create reference REF_FEATURES_H77 210416_refs H77 
+#H77 is NC_004102 but if the latter is used it gives an error becuase is found in every alignment as reference and in SUbtype 1 and Genotype 1
+#reference  REF_FEATURES_H77
+#create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102 # Smith does not cosider NC_004102 as reference so it will be used for features
+
+# NC_004102 is just used for feature porpuse
+create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
+reference REF_MASTER_NC_004102
+
+add feature-location whole_genome
+feature-location whole_genome
+  add segment 1 9646
+  exit
+
+add feature-location 5UTR
+feature-location 5UTR
+  add segment 1 341
+  exit
+
+add feature-location precursor_polyprotein
+feature-location precursor_polyprotein
+  add segment 342 9377
+  exit
+
+  
+add feature-location Core
+feature-location Core
+  add segment 342 914
+  exit
+  
+add feature-location E1
+feature-location E1
+  add segment 915 1490
+  exit
+  
+add feature-location E2
+feature-location E2
+  add segment 1491 2579
+  exit
+  
+add feature-location p7
+feature-location p7
+  add segment 2580 2768
+  exit
+  
+add feature-location NS2
+feature-location NS2
+  add segment 2769 3419
+  exit
+  
+add feature-location NS3
+feature-location NS3
+  add segment 3420 5312
+exit
+
+add feature-location NS4A
+feature-location NS4A
+  add segment 5313 5474
+  exit
+
+add feature-location NS4B
+feature-location NS4B
+  add segment 5475 6257
+  exit
+
+add feature-location NS5A
+feature-location NS5A
+  add segment 6258 7601
+exit
+
+add feature-location NS5B
+feature-location NS5B
+  add segment 7602 9377
+exit
+
+add feature-location 3UTR
+feature-location 3UTR
+  add segment 9378 9620
+  exit
+
+exit  
