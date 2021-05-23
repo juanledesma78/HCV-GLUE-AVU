@@ -1,4 +1,6 @@
 #### AVU SEQUENCES, better to get an independent script to update new AVU sequences
+project antiviral_unit_hcv_glue 
+
   import source sources/NGS91
   import source sources/NGS92
   # module molis-to-sequence-populator populate -f tabular/test.csv
