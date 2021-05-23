@@ -50,13 +50,13 @@ for(var i = 0; i < genotypingResults.length; i++) {
 	glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() {
 
 		if(genotypeAlmt != null) {
-			var gtRegex = /AL_Genotype_([\d])/;
+			var gtRegex = /AL_([\d])/;
 			var gtMatch = gtRegex.exec(genotypeAlmt);
 			if(gtMatch) {
 				glue.command(["set", "field", "genotype", gtMatch[1]]);
 			}
 			if(subtypeAlmt != null) {
-				var stRegex = /AL_Subtype_[\d](.+)/;
+				var stRegex = /AL_[\d](.+)/;
 				var stMatch = stRegex.exec(subtypeAlmt);
 				if(stMatch) {
 					glue.command(["set", "field", "subtype", stMatch[1]]);
