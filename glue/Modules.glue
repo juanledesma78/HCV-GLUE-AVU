@@ -43,10 +43,14 @@
   create module --fileName modules/external/PhyloExporter.xml 
   create module --fileName modules/external/PhyloImporter.xml 
 
-
+  # GENOTYPING
+  create module --fileName modules/CompoundAligner.xml 
+  create module --fileName modules/MaxLikelihoodPlacer.xml
+  create module --fileName modules/MaxLikelihoodGenotyper.xml
+  
 
 ##################################################################
-  ###create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
+  
   ###create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
 
   ###create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
@@ -55,9 +59,6 @@
   ###create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   ###create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
   
-
-  ###create module --fileName modules/hcvMaxLikelihoodPlacer.xml maxLikelihoodPlacer
-  ###create module --fileName modules/hcvMaxLikelihoodGenotyper.xml maxLikelihoodGenotyper
 
   ###create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
   ###create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
