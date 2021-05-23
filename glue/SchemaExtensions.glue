@@ -23,7 +23,7 @@ schema-project antiviral_unit_hcv_glue
     create field gb_update_date DATE
     create field genotype VARCHAR
     create field subtype VARCHAR
-    create field genotyping_method VARCHAR
+    create field genotyping_method VARCHAR 200
     create field gb_genotype VARCHAR
     create field gb_subtype VARCHAR
     create field vipr_genotype VARCHAR 10
