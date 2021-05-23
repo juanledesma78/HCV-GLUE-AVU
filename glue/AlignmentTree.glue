@@ -6,10 +6,11 @@ create alignment AL_MASTER --refSeqName REF_MASTER_NC_004102
 alignment AL_MASTER
     set field displayName "Hepatitis C virus (HCV)"
     set field description "Object with the references for each geneotype from folder ncbi-refseqs. AL_MASTER>>ALX>>AL_Subtype"
-    add member --whereClause "source.name = 'ncbi-refseqs'" 
-    
+    # DO NOT include recombinats in MASTER, it is better to delete them from ncbi-refseqs?  alternative way for filtering them --whereClause "source.name = 'ncbi-refseqs' and genotype not like 'RF%'" 
+    add member --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" # nor recombinant neither outgroup
+
     # the alignment object is the main table with ALL the reference sequences in ncbi-refseqs (234) but they are not aligned yet
-    # now from the AL_MASTER subtrees/alignments are going to be created but still linked to the master 
+    # now from the AL_MASTER subtrees/alignments are going to be created but still linked to the master (relational tables/alignments)
     
     extract child AL_1 --refName REF_1_NC_004102 # create a child alignment (another table), using REF_1_NC_004102 from AL_MASTER as reference sequence
     demote member AL_1 --whereClause "sequence.genotype ='1'" # move sequences with genotype 1 to AL_1
@@ -30,7 +31,7 @@ alignment AL_MASTER
     exit
 
     # after using the lines below (extract child AL_1...), the AL_MASTER just contains the refseqs for the eight genotypes
-    # and these originates branches of subtypes and subbranches connected to the parent (new relational tables) 
+    # and these originate branches of subtypes and subbranches connected to the parent (new relational tables connected by indexes/refSequence.name) 
     #list children/descendent 
     #+===============+==========================+
     #|     name      |     refSequence.name     |
@@ -265,14 +266,17 @@ alignment AL_8
     exit
 
 # derive constrained segments throughout the tree from the uncostrained AL_MASTER 
-# the members of AL_MASTER are AF064490          
-#| D00944              | 2                
-#| D17763              | 3                
-#| EF108306            | 7                
-#| MH590698            | 8                
-#| NC_004102           | 1                
-#| Y11604              | 4                
-#| Y12083
+# the members of AL_MASTER are 
+# sequence.sequenceID | sequence.genotype | sequence.subtype |
+#+=====================+===================+==================+
+#| AF064490            | 5                 | a                |
+#| D00944              | 2                 | a                |
+#| D17763              | 3                 | a                |
+#| EF108306            | 7                 | a                |
+#| MH590699            | 8                 | a                |
+#| NC_004102           | 1                 | a                |
+#| Y11604              | 4                 | a                |
+#| Y12083              | 6                 | a                
 # Usage: derive segments <sourceAlmtName> [-r] [-l <linkingReference>] [-s] [-e] (-w <whereClause> | -a) [-m <mergeStrategy>]
 # 
 # Options:
