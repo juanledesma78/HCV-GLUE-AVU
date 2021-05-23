@@ -1,0 +1,65 @@
+ <!-- The made-up project used the definitions from line 15-->
+
+
+
+ <compoundAligner>
+	<aligners>
+		<codonAwareBlastAligner>
+			<featureName>precursor_polyprotein</featureName>
+		</codonAwareBlastAligner>
+		<blastAligner/>
+	</aligners>
+</compoundAligner>
+
+<!-- 
+<compoundAligner>
+	
+<aligners>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>Core</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>E1</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>E2</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>p7</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS2</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS3</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS4A</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS4B</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS5A</featureName>
+		</codonAwareBlastAligner>
+		<codonAwareBlastAligner>
+			<minimumBitScore>50</minimumBitScore>
+			<featureName>NS5B</featureName>
+		</codonAwareBlastAligner>
+		
+
+		<blastAligner>
+			<minimumBitScore>50</minimumBitScore>
+		</blastAligner>
+	</aligners>
+</compoundAligner>
+ -->
