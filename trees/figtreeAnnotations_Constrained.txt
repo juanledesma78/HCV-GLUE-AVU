@@ -2,18 +2,13 @@ taxon	genotype	genotypeSubtype	genotypeSubtypePrimaryAcc
 alignment/AL_2b/member/ncbi-refseqs/AB030907	2	2/b	2/b/AB030907
 alignment/AL_2k/member/ncbi-refseqs/AB031663	2	2/k	2/k/AB031663
 alignment/AL_2a/member/ncbi-refseqs/AB047639	2	2/a	2/a/AB047639
-alignment/AL_MASTER/member/ncbi-refseqs/AB622121	RF2b_1b_2	RF2b_1b_2/-	RF2b_1b_2/-/AB622121
 alignment/AL_2b/member/ncbi-refseqs/AB661382	2	2/b	2/b/AB661382
 alignment/AL_2b/member/ncbi-refseqs/AB661388	2	2/b	2/b/AB661388
-alignment/AL_MASTER/member/ncbi-refseqs/AB677527	RF2b_1b_4	RF2b_1b_4/-	RF2b_1b_4/-/AB677527
-alignment/AL_MASTER/member/ncbi-refseqs/AB677530	RF2b_1b_3	RF2b_1b_3/-	RF2b_1b_3/-/AB677530
 alignment/AL_1a/member/ncbi-refseqs/AF009606	1	1/a	1/a/AF009606
 alignment/AL_5a/member/ncbi-refseqs/AF064490	5	5/a	5/a/AF064490
 alignment/AL_1/member/ncbi-refseqs/AJ851228	1	1/-	1/-/AJ851228
-alignment/AL_MASTER/member/ncbi-refseqs/AM408911	RF2_5	RF2_5/-	RF2_5/-/AM408911
 alignment/AL_1g/member/ncbi-refseqs/AM910652	1	1/g	1/g/AM910652
 alignment/AL_1c/member/ncbi-refseqs/AY051292	1	1/c	1/c/AY051292
-alignment/AL_MASTER/member/ncbi-refseqs/AY587845	RF2k_1b	RF2k_1b/-	RF2k_1b/-/AY587845
 alignment/AL_1c/member/ncbi-refseqs/AY651061	1	1/c	1/c/AY651061
 alignment/AL_6a/member/ncbi-refseqs/AY859526	6	6/a	6/a/AY859526
 alignment/AL_2a/member/ncbi-refseqs/D00944	2	2/a	2/a/D00944
@@ -30,7 +25,6 @@ alignment/AL_6d/member/ncbi-refseqs/D84263	6	6/d	6/d/D84263
 alignment/AL_6k/member/ncbi-refseqs/D84264	6	6/k	6/k/D84264
 alignment/AL_6h/member/ncbi-refseqs/D84265	6	6/h	6/h/D84265
 alignment/AL_1b/member/ncbi-refseqs/D90208	1	1/b	1/b/D90208
-alignment/AL_MASTER/member/ncbi-refseqs/DQ155560	RF2i_6p	RF2i_6p/-	RF2i_6p/-/DQ155560
 alignment/AL_2i/member/ncbi-refseqs/DQ155561	2	2/i	2/i/DQ155561
 alignment/AL_6/member/ncbi-refseqs/DQ278891	6	6/-	6/-/DQ278891
 alignment/AL_6w/member/ncbi-refseqs/DQ278892	6	6/w	6/w/DQ278892
@@ -38,7 +32,6 @@ alignment/AL_6/member/ncbi-refseqs/DQ278893	6	6/-	6/-/DQ278893
 alignment/AL_6n/member/ncbi-refseqs/DQ278894	6	6/n	6/n/DQ278894
 alignment/AL_6e/member/ncbi-refseqs/DQ314805	6	6/e	6/e/DQ314805
 alignment/AL_6g/member/ncbi-refseqs/DQ314806	6	6/g	6/g/DQ314806
-alignment/AL_MASTER/member/ncbi-refseqs/DQ364460	RF2b_1b_1	RF2b_1b_1/-	RF2b_1b_1/-/DQ364460
 alignment/AL_4d/member/ncbi-refseqs/DQ418786	4	4/d	4/d/DQ418786
 alignment/AL_4a/member/ncbi-refseqs/DQ418789	4	4/a	4/a/DQ418789
 alignment/AL_6f/member/ncbi-refseqs/DQ835760	6	6/f	6/f/DQ835760
@@ -79,7 +72,6 @@ alignment/AL_6xa/member/ncbi-refseqs/EU408330	6	6/xa	6/xa/EU408330
 alignment/AL_6xa/member/ncbi-refseqs/EU408331	6	6/xa	6/xa/EU408331
 alignment/AL_6xa/member/ncbi-refseqs/EU408332	6	6/xa	6/xa/EU408332
 alignment/AL_6w/member/ncbi-refseqs/EU643834	6	6/w	6/w/EU643834
-alignment/AL_MASTER/member/ncbi-refseqs/EU643835	RF2b_6w	RF2b_6w/-	RF2b_6w/-/EU643835
 alignment/AL_6w/member/ncbi-refseqs/EU643836	6	6/w	6/w/EU643836
 alignment/AL_1b/member/ncbi-refseqs/EU781827	1	1/b	1/b/EU781827
 alignment/AL_1b/member/ncbi-refseqs/EU781828	1	1/b	1/b/EU781828
@@ -137,10 +129,8 @@ alignment/AL_4/member/ncbi-refseqs/JF735134	4	4/-	4/-/JF735134
 alignment/AL_4/member/ncbi-refseqs/JF735135	4	4/-	4/-/JF735135
 alignment/AL_4s/member/ncbi-refseqs/JF735136	4	4/s	4/s/JF735136
 alignment/AL_4/member/ncbi-refseqs/JF735138	4	4/-	4/-/JF735138
-alignment/AL_MASTER/member/ncbi-refseqs/JF779679	RF2b_1a	RF2b_1a/-	RF2b_1a/-/JF779679
 alignment/AL_3a/member/ncbi-refseqs/JN714194	3	3/a	3/a/JN714194
 alignment/AL_3b/member/ncbi-refseqs/JQ065709	3	3/b	3/b/JQ065709
-alignment/AL_MASTER/member/ncbi-refseqs/JQ434008	-	-/-	-/-/JQ434008
 alignment/AL_6/member/ncbi-refseqs/JX183549	6	6/-	6/-/JX183549
 alignment/AL_6/member/ncbi-refseqs/JX183550	6	6/-	6/-/JX183550
 alignment/AL_6/member/ncbi-refseqs/JX183551	6	6/-	6/-/JX183551
