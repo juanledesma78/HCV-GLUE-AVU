@@ -3,12 +3,13 @@ project antiviral_unit_hcv_glue
 
 # a newick file with the phylogeny must be generated using raxml. 
 # the ouptput from running the three modules together generates the newick file with the annotations already included. 
-# ALTERNATIVE: as it can take a while fasttree or any other software that creates phylogeny in NEWICK can be used instead
+# ALTERNATIVE: as it can take a while, fasttree or any other software that creates phylogeny in NEWICK can be used instead
 # 
 
 module RaxmlPhylogenyGenerator
 	#generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --selectorName PhylogenyColumnsSelector --whereClause "sequence.source.name='ncbi-refseqs' and sequence.sequenceID != 'NC_004102'" --outputFile trees/Smith2019_referencePhylogeny.nwk NEWICK_BOOTSTRAPS
-	generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 --featureName precursor_polyprotein --whereClause "sequence.source.name='ncbi-refseqs'" --outputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --dataDir referencePhylogenyData
+	#generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 --featureName precursor_polyprotein --whereClause "sequence.source.name='ncbi-refseqs'" --outputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --dataDir referencePhylogenyData
+	generate nucleotide phylogeny AL_UNCONSTRAINED_Smith2019 --selectorName PhylogenyColumnsSelector --whereClause "sequence.source.name='ncbi-refseqs'" --outputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --dataDir referencePhylogenyData
 	exit
  
 
@@ -36,13 +37,13 @@ module FigTreeAnnotationExporter
 	#alignment/AL_Subtype_1a/member/210416_refs/HQ850279	1	1/a	1/a/HQ850279
 	#alignment/AL_Subtype_1a/member/210416_refs/M62321	1	1/a	1/a/M62321
 
-	export figtree-annotation AL_UNCONSTRAINED_Smith2019 --whereClause "sequence.source.name='ncbi-refseqs'" -f trees/figtreeAnnotations_UNconstrained.txt
+	export figtree-annotation AL_UNCONSTRAINED_Smith2019 --whereClause "sequence.source.name='ncbi-refseqs'" -f trees/figtreeAnnotations_UNconstrained_Smith2019.txt
     export figtree-annotation AL_MASTER -c --whereClause "sequence.source.name='ncbi-refseqs' and referenceMember = false" --fileName trees/figtreeAnnotations_Constrained.txt
     exit
 
 
 module PhyloUtility
-	reroot-phylogeny --inputFile tree/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --midpoint --outputFile tree/Smith2019_phylogeny_rerootedMidpoint.txt NEWICK_BOOTSTRAPS
+	reroot-phylogeny --inputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --midpoint --outputFile trees/Smith2019_phylogeny_rerootedMidpoint.txt NEWICK_BOOTSTRAPS
 	exit
 
 
