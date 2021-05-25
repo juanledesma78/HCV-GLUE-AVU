@@ -6,12 +6,12 @@
 		<property>sequenceID</property>
 	</textFileColumn>
     <textFileColumn>
-		<header>molis</header>
+		<header>MOLIS</header>
 		<property>molis</property>
 	</textFileColumn>
 	<textFileColumn>
 		<header>HCVGEN</header>
-		<property>previous_genotyping</property>
+		<property>initial_genotyping</property>
 	</textFileColumn>
 	<textFileColumn>
 		<header>SAMPLE_DT</header>
@@ -28,10 +28,6 @@
 	<textFileColumn>
 		<header>ORDPATBIRTHDT</header>
 		<property>date_of_birth</property>
-	</textFileColumn>
-	<textFileColumn>
-		<header>NHS</header>
-		<property>nhs_number</property>
 	</textFileColumn>
 	<textFileColumn>
 		<header>ORDPATSX</header>
