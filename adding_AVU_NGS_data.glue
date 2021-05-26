@@ -2,8 +2,7 @@
 project antiviral_unit_hcv_glue 
 
   import source sources/NGS91
-  import source sources/NGS92
-  # module molis-to-sequence-populator populate -f tabular/test.csv
-  # Error: Input "MARTINS"" was incorrectly formatted to produce Integer value: Not an integer
-  # there is a "," that changes the way everyhting is imported
+  #import source sources/NGS92
+  module molis-to-sequence-populator populate --fileName tabular/made-up_MolisData_test_NGS91.csv
+  
 
