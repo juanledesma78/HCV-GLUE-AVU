@@ -2,7 +2,7 @@
 	<columnDelimiterRegex>,</columnDelimiterRegex> 
 	<textFileColumn>
 		<identifier>true</identifier>
-		<header>header_sequence</header>
+		<header>sequenceID</header>
 		<property>sequenceID</property>
 	</textFileColumn>
     <textFileColumn>
@@ -33,10 +33,10 @@
 		<header>ORDPATSX</header>
 		<property>gender</property>
 	</textFileColumn>
-	<textFileColumn>
+<!--	<textFileColumn>
 		<header>REFEXT</header>
 		<property>ref_external</property>
-	</textFileColumn>
+	</textFileColumn> -->
 	
 </textFilePopulator>
 
