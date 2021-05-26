@@ -43,14 +43,14 @@ schema-project antiviral_unit_hcv_glue
     
     # Antiviral Unit fields
     create field molis VARCHAR
-    create field previous_genotyping VARCHAR
+    create field initial_genotyping VARCHAR
     create field sample_date DATE
     create field reception_date DATE
     create field hospital_code VARCHAR # create a custom table for hospitals
     create field date_of_birth DATE
-    create field nhs_number INTEGER #VARCHAR
+    #create field nhs_number INTEGER #VARCHAR
     create field gender VARCHAR # create script to format F and M before importing data
-    create field ref_external VARCHAR
+    #create field ref_external VARCHAR
 
   
     exit
