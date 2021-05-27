@@ -6,7 +6,8 @@
 	<cladeCategory>
 		<name>genotype</name>	
 		<displayName>Genotype</displayName>	
-		<whereClause>displayName like 'Genotype%'</whereClause>
+		<!--<whereClause>displayName like 'Genotype%'</whereClause>-->
+		<whereClause>parent.name = 'AL_MASTER'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
 		<distanceCutoff>0.4</distanceCutoff>
 		<finalCladeCutoff>80.0</finalCladeCutoff>
@@ -14,9 +15,16 @@
 	<cladeCategory>
 		<name>subtype</name>	
 		<displayName>Subtype</displayName>	
-		<whereClause>displayName like 'Subtype%'</whereClause>
+		<!--<whereClause>displayName like 'Subtype%'</whereClause>-->
+		<whereClause>parent.parent.name = 'AL_MASTER'</whereClause>
 		<distanceScalingExponent>-4.5</distanceScalingExponent>
 	    <distanceCutoff>0.26</distanceCutoff>
-		<finalCladeCutoff>61.0</finalCladeCutoff>
+		<finalCladeCutoff>80.0</finalCladeCutoff>
 	</cladeCategory>
+	<!--<useSingleReference>true</useSingleReference> -->
 </maxLikelihoodGenotyper>
+
+<!--16:10:50.905 MaxLikelihoodGenotyper WARNING: Module 'MaxLikelihoodGenotyper' of type maxLikelihoodGenotyper: consider setting <useSingleReference> to true, to avoid the bias towards clades with more references defined.
+add property useSingleReference true
+However I added phdrRefSeqeunceRecogniser.xml that identifies the sequences 
+-->
