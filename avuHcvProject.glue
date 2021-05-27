@@ -4,6 +4,7 @@ create project antiviral_unit_hcv_glue "Hepatitis C virus GLUE project at AVU" -
 
 # extensions in tables sequence, alignment, variation, var_almt_note, member_floc_note
 # custom tables: who_country, who regions...
+
 run file glue/SchemaExtensions.glue
  
 project antiviral_unit_hcv_glue 
@@ -53,10 +54,12 @@ project antiviral_unit_hcv_glue
   run file glue/importPhylogeny.glue
   
   # project built successfully
-
-  # Add PHE-HCV-DRUG-RESISTANCE
   
   validate
 
   exit  
+  
+  # Add PHE-HCV-DRUG-RESISTANCE extensions
+
+  #run file phdrExtension_avu.glue
   
