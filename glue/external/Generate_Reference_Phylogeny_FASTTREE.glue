@@ -1,5 +1,5 @@
 
-project antiviral_unit_hcv_glue
+project hcv_glue_avu
 
 # a newick file with the phylogeny must be generated using raxml. 
 # the ouptput from running the three modules together generates the newick file with the annotations already included. 
@@ -15,8 +15,11 @@ module FigTreeAnnotationExporter
 
 
 module PhyloUtility
+	# the notation for raxml is newick_boostraps
 	#reroot-phylogeny --inputFile trees/Smith2019_referencePhylogeny.tree NEWICK_BOOTSTRAPS --midpoint --outputFile trees/Smith2019_phylogeny_rerootedMidpoint.txt NEWICK_BOOTSTRAPS
-    reroot-phylogeny --inputFile trees/Smith2019_referencePhylogeny_fasttree.nwk NEWICK_TRANSFER_BOOTSTRAPS --midpoint --outputFile trees/Smith2019_phylogeny_rerootedMidpoint_fasttree.txt NEWICK_BOOTSTRAPS
+	
+	#In order to keep the boostrap values (1.000 as 100) 
+    	reroot-phylogeny --inputFile trees/Smith2019_referencePhylogeny_fasttree.nwk NEWICK --midpoint --outputFile trees/Smith2019_phylogeny_rerootedMidpoint_fasttree.txt NEWICK
 	exit
 
 
