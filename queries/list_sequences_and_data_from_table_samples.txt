@@ -1,0 +1,3 @@
+list sequence sequenceID molis_ids.molis molis_ids.samples.sample_dt
+
+list sequence --whereClause "source.name='NGS91'"sequenceID molis_ids.molis molis_ids.samples.sample_dt molis_ids.samples.recept_dt molis_ids.samples.hcvgen molis_ids.samples.nhs
