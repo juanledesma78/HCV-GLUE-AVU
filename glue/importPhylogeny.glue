@@ -1,5 +1,5 @@
 module PhyloImporter
-
-  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name= 'ncbi-refseqs' and referenceMember = false" --inputFile trees/Smith2019_phylogeny_rerootedMidpoint_fasttree_annotated.nwk NEWICK_BOOTSTRAPS --fieldName phylogeny
+# for RAXML it my work NEWICK_BOOTSTRAPS, for fasttree NEWICK
+  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name= 'ncbi-refseqs' and referenceMember = false" --inputFile trees/Smith2019_phylogeny_rerootedMidpoint_fasttree_annotated.nwk NEWICK --fieldName phylogeny
 
   exit
