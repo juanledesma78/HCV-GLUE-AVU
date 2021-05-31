@@ -1,4 +1,4 @@
-schema-project antiviral_unit_hcv_glue
+schema-project hcv_glue_avu
   table sequence
     create field gb_gi_number VARCHAR
     create field gb_primary_accession VARCHAR
@@ -41,17 +41,9 @@ schema-project antiviral_unit_hcv_glue
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
     
-    # Antiviral Unit fields
-    create field molis VARCHAR
-    create field initial_genotyping VARCHAR
-    create field sample_date DATE
-    create field reception_date DATE
-    create field hospital_code VARCHAR # create a custom table for hospitals
-    create field date_of_birth DATE
-    #create field nhs_number INTEGER #VARCHAR
-    create field gender VARCHAR # create script to format F and M before importing data
-    #create field ref_external VARCHAR
-
+    create field hcv_wg_pipeline VARCHAR 50
+    create field pipeline_version INTEGER
+    create field genomacer VARCHAR 50
   
     exit
 
@@ -95,5 +87,11 @@ schema-project antiviral_unit_hcv_glue
   run file glue/who_countries/whoCountriesSchemaExtension.glue
     
   create link sequence who_country -m MANY_TO_ONE
+
+  #AVU custom tables
+  run file glue/avuCustomTables.glue
+  
+  
+
 
   exit
