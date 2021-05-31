@@ -52,12 +52,12 @@ reference REF_1n_KJ439781 inherit feature-location --recursive --spanGaps AL_UNC
 reference REF_1n_KJ439775 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_1o_KJ439779 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_1o_MH885469 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_HQ537007 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_AJ851228 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_KC248195 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_KJ439780 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_KJ439776 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_1_KJ439777 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_HQ537007 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_AJ851228 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_KC248195 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_KJ439780 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_KJ439776 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_1_unassigned_KJ439777 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_2_D00944 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_2a_D00944 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_2a_AB047639 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
@@ -158,17 +158,17 @@ reference REF_2t_KC197238 feature-location NS5B add segment 9304 9324
 reference REF_2t_KC197238 feature-location NS5B add segment 9326 9421
 
 reference REF_2u_JF735112 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_JF735116 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_JF735118 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_JF735117 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_JF735119 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_JF735110 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_KC197236 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_2_KC197237 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_JF735116 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_JF735118 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_JF735117 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_JF735119 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_JF735110 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_KC197236 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_2_unassigned_KC197237 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
-#Validation error for object reference/REF_2_KC197239/feature-location/NS5A: Failed to label codons for feature NS5A on reference REF_2_KC197239 (NT locations [Ref: [7439, 7441]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 398 on the root reference (7449) but not the correct region -- [Ref: [7449, 7449] <-> Query: [7439, 7439], Ref: [7452, 7453] <-> Query: [7440, 7441]] rather than [Ref: [7449, 7451]] 
-#Cause: Failed to label codons for feature NS5A on reference REF_2_KC197239 (NT locations [Ref: [7439, 7441]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 398 on the root reference (7449) but not the correct region -- [Ref: [7449, 7449] <-> Query: [7439, 7439], Ref: [7452, 7453] <-> Query: [7440, 7441]] rather than [Ref: [7449, 7451]] 
-reference REF_2_KC197239 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+#Validation error for object reference/REF_2_unassigned_KC197239/feature-location/NS5A: Failed to label codons for feature NS5A on reference REF_2_unassigned_KC197239 (NT locations [Ref: [7439, 7441]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 398 on the root reference (7449) but not the correct region -- [Ref: [7449, 7449] <-> Query: [7439, 7439], Ref: [7452, 7453] <-> Query: [7440, 7441]] rather than [Ref: [7449, 7451]] 
+#Cause: Failed to label codons for feature NS5A on reference REF_2_unassigned_KC197239 (NT locations [Ref: [7439, 7441]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 398 on the root reference (7449) but not the correct region -- [Ref: [7449, 7449] <-> Query: [7439, 7439], Ref: [7452, 7453] <-> Query: [7440, 7441]] rather than [Ref: [7449, 7451]] 
+reference REF_2_unassigned_KC197239 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
 
 reference REF_3_D17763 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
@@ -188,7 +188,7 @@ reference REF_3i_FJ407092 inherit feature-location --recursive --spanGaps AL_UNC
 reference REF_3i_JX227955 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_3k_D63821 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_3k_JF735122 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_3_JF735124 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_3_unassigned_JF735124 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_4_Y11604 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_4a_Y11604 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
@@ -268,28 +268,28 @@ reference REF_4v_HQ537008 remove feature-location 3UTR
 reference REF_4v_JX227960 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_4w_FJ025855 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_4w_FJ025856 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_FJ025854 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JX227964 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735127 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735132 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735131 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735130 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735129 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735138 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735135 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_4_JF735134 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_FJ025854 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JX227964 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735127 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735132 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735131 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735130 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735129 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735138 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735135 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_4_unassigned_JF735134 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_5_AF064490 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_5a_AF064490 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_5a_Y13184 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
-#error: Coding feature location NS5B on reference REF_5_KT595242 has uncoded regions in its segments: [Ref: [9100, 9100]]
-#REF_5_KT595242	[247, 9100]
-#REF_5_KT595242	[7519, 9100]
-reference REF_5_KT595242 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_5_KT595242 feature-location precursor_polyprotein remove segment 247 9100
-reference REF_5_KT595242 feature-location NS5B remove segment 7519 9100
-reference REF_5_KT595242 feature-location precursor_polyprotein add segment 247 9099
-reference REF_5_KT595242 feature-location NS5B add segment 7519 9099
+#error: Coding feature location NS5B on reference REF_5_unassigned_KT595242 has uncoded regions in its segments: [Ref: [9100, 9100]]
+#REF_5_unassigned_KT595242	[247, 9100]
+#REF_5_unassigned_KT595242	[7519, 9100]
+reference REF_5_unassigned_KT595242 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_5_unassigned_KT595242 feature-location precursor_polyprotein remove segment 247 9100
+reference REF_5_unassigned_KT595242 feature-location NS5B remove segment 7519 9100
+reference REF_5_unassigned_KT595242 feature-location precursor_polyprotein add segment 247 9099
+reference REF_5_unassigned_KT595242 feature-location NS5B add segment 7519 9099
 
 reference REF_6_Y12083 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 reference REF_6a_Y12083 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
@@ -404,34 +404,34 @@ reference REF_6xg_MH492362 feature-location precursor_polyprotein add segment 27
 reference REF_6xg_MH492362 feature-location NS5B add segment 7548 9317
 
 reference REF_6xh_MG879000 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_DQ278891 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_DQ278893 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_JX183558 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_JX183553 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_JX183554 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_JX183551 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_DQ278891 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_DQ278893 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183558 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183553 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183554 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183551 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
-reference REF_6_JX183549 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183549 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
-reference REF_6_JX183550 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470620 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470621 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470622 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470623 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470624 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ470625 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KC844039 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KC844040 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ567652 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ567650 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ567649 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ567648 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
-reference REF_6_KJ567644 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_JX183550 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470620 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470621 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470622 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470623 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470624 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ470625 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KC844039 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KC844040 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ567652 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ567650 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ567649 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ567648 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+reference REF_6_unassigned_KJ567644 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
-#error:  Failed to label codons for feature precursor_polyprotein on reference REF_6_MG878999 (NT locations [Ref: [2236, 2238]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 742 on the root reference (2565) but not the correct region -- [Ref: [2565, 2566] <-> Query: [2237, 2238]] rather than [Ref: [2565, 2567]] 
-# REF_6_MG878999	[2441, 3090] NS2 Remove 2594-5
-#REF_6_MG878999	[1, 9057]
-reference REF_6_MG878999 inherit feature-location --recursive --truncateCdn AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
+#error:  Failed to label codons for feature precursor_polyprotein on reference REF_6_unassigned_MG878999 (NT locations [Ref: [2236, 2238]], root reference REF_MASTER_NC_004102): Codon matches some coordinate of codon 742 on the root reference (2565) but not the correct region -- [Ref: [2565, 2566] <-> Query: [2237, 2238]] rather than [Ref: [2565, 2567]] 
+# REF_6_unassigned_MG878999	[2441, 3090] NS2 Remove 2594-5
+#REF_6_unassigned_MG878999	[1, 9057]
+reference REF_6_unassigned_MG878999 inherit feature-location --recursive --truncateCdn AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
 
 
 reference REF_7_EF108306 inherit feature-location --recursive --spanGaps AL_UNCONSTRAINED_Smith2019 --relRefName REF_MASTER_NC_004102 precursor_polyprotein
