@@ -1,13 +1,12 @@
-delete project antiviral_unit_hcv_glue 
+delete project hcv_glue_avu
 
-create project antiviral_unit_hcv_glue "Hepatitis C virus GLUE project at AVU" --minVersion 1.1.107 
+create project hcv_glue_avu "Hepatitis C virus GLUE project at AVU" --minVersion 1.1.107 
 
 # extensions in tables sequence, alignment, variation, var_almt_note, member_floc_note
-# custom tables: who_country, who regions...
-
+# custom tables: who_country, who regions... avu tables
 run file glue/SchemaExtensions.glue
  
-project antiviral_unit_hcv_glue 
+project hcv_glue_avu 
 
   run file glue/ProjectSettings.glue
   
@@ -28,6 +27,8 @@ project antiviral_unit_hcv_glue
 
   # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
   module reference-genotypes-subtypes-populator populate -f tabular/Smith2019_IDs_Genotype_Subtype.csv
+
+  # NEED TO POPULATE MORE DATA FROM THE REFERENCES
   
   #add a comment to field "genotyping method" to identify the refrence sequence by Smith 2019 that are in the uncostrained alignment
   multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
@@ -53,10 +54,8 @@ project antiviral_unit_hcv_glue
   # import phylogeny, using either raxml or fasttree(external) calculate the distances between nodes and add to the table alignments, field phylogeny
   run file glue/importPhylogeny.glue
   
-  # project built successfully
-  
   validate
-
+   
   exit  
   
   # Add PHE-HCV-DRUG-RESISTANCE extensions
