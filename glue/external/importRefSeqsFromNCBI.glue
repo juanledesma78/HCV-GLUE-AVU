@@ -2,7 +2,7 @@
 # saves them create a folder called source/ncbi-refseqs in the project (computer)
 # the script MUST be ran in root 
 
-project antiviral_unit_hcv_glue
+project hcv_glue_avu
 
 module ncbi-hcv-refseqs-importer
     sync --detailed 
