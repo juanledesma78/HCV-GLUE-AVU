@@ -21,10 +21,12 @@
 	    <distanceCutoff>0.26</distanceCutoff>
 		<finalCladeCutoff>80.0</finalCladeCutoff>
 	</cladeCategory>
-	<!--<useSingleReference>true</useSingleReference> -->
+	<useSingleReference>true</useSingleReference>
 </maxLikelihoodGenotyper>
 
 <!--16:10:50.905 MaxLikelihoodGenotyper WARNING: Module 'MaxLikelihoodGenotyper' of type maxLikelihoodGenotyper: consider setting <useSingleReference> to true, to avoid the bias towards clades with more references defined.
 add property useSingleReference true
-However I added phdrRefSeqeunceRecogniser.xml that identifies the sequences 
+setting this option true means that within a placement, for a given clade in a cladeCategory, only the closest reference sequence will contribute to that clade's weighting.
+the option should probably always be used, otherwise you have bias towards clades with more references. 
+https://www.researchgate.net/project/GLUE-a-data-centric-software-framework-for-management-and-analysis-of-virus-sequence-data
 -->
