@@ -37,6 +37,9 @@
   create module -f modules/whoIntermediateRegionsTextToCustomTableRows.xml
   create module -f modules/whoCountriesTextToCustomTableRows.xml  
   
+  # populate genbank xml info
+  create module --fileName modules/GenbankXmlPopulator.xml
+ 
   #to create the phylogeny, it must be ran independently
   ###create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/external/RaxmlPhylogenyGenerator.xml
@@ -50,6 +53,10 @@
   create module --fileName modules/CompoundAligner.xml 
   create module --fileName modules/MaxLikelihoodPlacer.xml
   create module --fileName modules/MaxLikelihoodGenotyper.xml
+
+  #EXPORTING ALIGNMENTS OR SEQUENCES, in case it is needed
+  create module --fileName modules/fastaExporter.xml 
+  create module --fileName modules/fastaAlignmentExporter.xml
   
 
 ##################################################################
@@ -72,16 +79,9 @@
 
   ###create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
 
-  
-     
-  
-
-  
-
   ###create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
   
-  ###create module --moduleType fastaExporter 
-  ###create module --moduleType fastaAlignmentExporter
+  
   ###create module --moduleType fastaProteinAlignmentExporter
   ###create module --moduleType nucleotideConsensusGenerator
   ###create module --moduleType aminoAcidConsensusGenerator  
@@ -90,7 +90,6 @@
 
   ###create module --fileName modules/whoRegionTreeRenderer.xml --loadResources
   
-  
-  
+ 
   ###create module -f modules/hcvSequenceRecogniser.xml  
 
