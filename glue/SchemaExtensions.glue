@@ -41,8 +41,8 @@ schema-project hcv_glue_avu
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
     
-    create field hcv_wg_pipeline VARCHAR 50
-    create field pipeline_version INTEGER
+    create field hcv_wg_pipeline VARCHAR 100
+    create field pipeline_version VARCHAR 50
     create field genomacer VARCHAR 50
   
     exit
