@@ -26,9 +26,10 @@ project hcv_glue_avu
   import source sources/ncbi-refseqs
 
   # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
-  module reference-genotypes-subtypes-populator populate -f tabular/Smith2019_IDs_Genotype_Subtype.csv
-
-  # NEED TO POPULATE MORE DATA FROM THE REFERENCES
+  # populate other data from genbank xml files
+  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype.csv
+  module GenbankXmlPopulator populate --silent
+  
   
   #add a comment to field "genotyping method" to identify the refrence sequence by Smith 2019 that are in the uncostrained alignment
   multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
