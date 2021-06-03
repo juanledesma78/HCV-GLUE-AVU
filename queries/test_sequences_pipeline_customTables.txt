@@ -1,0 +1,439 @@
+sequenceID	source.name	hcv_wg_pipeline	molis_id.molis	molis_id.sample.sample_date	molis_id.sample.initial_genotype	molis_id.nhs	molis_id.patient	molis_id.patient.date_of_birth	molis_id.patient.gender	molis_id.hospital_code
+H204820685-1_NGS91	NGS91	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210161351-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210161351	15-Aug-2021	2a	4658	custom-table-row/patient/4658	25-Dec-1979	M	AF
+H210180794-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210180794	22-Dec-2023	1a	4659	custom-table-row/patient/4659	02-May-1978	F	R&C
+H210180795-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210180795	30-Dec-2022	1a	4659	custom-table-row/patient/4659	02-May-1978	F	R&C
+H210220700-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210220700	15-Aug-2021	1a	4661	custom-table-row/patient/4661	25-Dec-1979	F	CPS
+H210220787-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210220787	01-Jan-2023	3a	4657	custom-table-row/patient/4657	22-Aug-1977	M	RoyalFree
+H210220788-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210220788	30-Dec-2022	3a	4663	custom-table-row/patient/4663	22-Aug-1977	M	MAJ
+H210240111-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210240111	15-Aug-2021	3a	4664	custom-table-row/patient/4664	25-Dec-1979	M	KYS
+H210240113-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210240113	22-Dec-2023	1a	4665	custom-table-row/patient/4665	02-May-1978	M	NORSO
+H210241030-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210241030	15-May-2022	3a	4657	custom-table-row/patient/4657	22-Aug-1977	M	RoyalFree
+H210280185-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210280185	15-Aug-2021	3a	4667	custom-table-row/patient/4667	25-Dec-1979	M	NORSO
+H210280208-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210280208	22-Dec-2023	3a	4668	custom-table-row/patient/4668	02-May-1978	F	HGUP
+H210281395-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210281395	30-Dec-2022	1a	4669	custom-table-row/patient/4669	22-Aug-1977	F	NORSO
+H210281396-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210281396	15-Aug-2021	3a	4670	custom-table-row/patient/4670	25-Dec-1979	F	CPS
+H210281397-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210281397	22-Dec-2023	1a	4671	custom-table-row/patient/4671	02-May-1978	F	R&C
+H210281398-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210281398	30-Dec-2022	1a	4672	custom-table-row/patient/4672	22-Aug-1977	M	NORSO
+H210281399-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210281399	15-Aug-2021	1a	4673	custom-table-row/patient/4673	25-Dec-1979	M	ACHE
+H210300532-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210300532	22-Dec-2023	3a	4674	custom-table-row/patient/4674	02-May-1978	M	SXNI
+H210300533-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210300533	30-Dec-2022	1a	4675	custom-table-row/patient/4675	22-Aug-1977	M	CPS
+H210300549-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210300549	30-Dec-2022	1a	4678	custom-table-row/patient/4678	22-Aug-1977	F	ACHE
+H210300550-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210300550	15-Aug-2021	3a	4679	custom-table-row/patient/4679	25-Dec-1979	F	ACHE
+H210300551-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210300551	22-Dec-2023	3a	4680	custom-table-row/patient/4680	02-May-1978	F	RoyalFree
+H210341088-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210341088	30-Dec-2022	3a	4681	custom-table-row/patient/4681	22-Aug-1977	M	AZI
+H210360996-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210360996	15-Aug-2021	3a	4682	custom-table-row/patient/4682	25-Dec-1979	M	SPI
+H210360997-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210360997	22-Dec-2023	1a	4683	custom-table-row/patient/4683	02-May-1978	M	DER
+H210360998-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210360998	30-Dec-2022	1a	4684	custom-table-row/patient/4684	22-Aug-1977	M	LAND
+H210360999-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210360999	15-Aug-2021	3a	4685	custom-table-row/patient/4685	25-Dec-1979	M	USR
+H210361033-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210361033	22-Dec-2023	3a	4686	custom-table-row/patient/4686	02-May-1978	F	NMR
+H210380210-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210380210	30-Dec-2022	3a	4687	custom-table-row/patient/4687	22-Aug-1977	F	R&C
+H210380784-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210380784	15-Aug-2021	1a	4688	custom-table-row/patient/4688	25-Dec-1979	F	RoyalFree
+H210380785-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210380785	22-Dec-2023	3a	4689	custom-table-row/patient/4689	02-May-1978	F	RoyalFree
+H210380825-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210380825	30-Dec-2022	3a	4690	custom-table-row/patient/4690	22-Aug-1977	M	NMR
+H210400331-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210400331	15-Aug-2021	1b	4691	custom-table-row/patient/4691	25-Dec-1979	M	HGM
+H210400388-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210400388	22-Dec-2023	1a	4692	custom-table-row/patient/4692	02-May-1978	M	ACHE
+H210400421-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210400421	30-Dec-2022	3a	4693	custom-table-row/patient/4693	22-Aug-1977	M	AZI
+H210400512-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210400512	15-Aug-2021	3a	4694	custom-table-row/patient/4694	25-Dec-1979	M	SPI
+H210420137-1_genomancer_NGS91	NGS91	PHE HCV whole genome sequencing	H210420137	22-Dec-2023	3a & 1a (dual infection)	4695	custom-table-row/patient/4695	02-May-1978	F	HGM
+H210420137-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210420137	22-Dec-2023	3a & 1a (dual infection)	4695	custom-table-row/patient/4695	02-May-1978	F	HGM
+H210420137-2_genomancer_NGS91	NGS91	PHE HCV whole genome sequencing	H210420137	22-Dec-2023	3a & 1a (dual infection)	4695	custom-table-row/patient/4695	02-May-1978	F	HGM
+H210420662-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210420662	30-Dec-2022	1a	4696	custom-table-row/patient/4696	22-Aug-1977	F	NORSO
+H210420664-1_NGS91	NGS91	PHE HCV whole genome sequencing	H210420664	15-Aug-2021	1a	4697	custom-table-row/patient/4697	25-Dec-1979	F	ACHE
+H205140999-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210440756-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210460580-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480169-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480859-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480865-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480866-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480867-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480868-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480869-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210480870-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210500285-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210500364-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210500432-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520483-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520554-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520555-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520556-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520557-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210520558-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210540062-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210540115-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210540116-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210540575-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210540581-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210560613-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210560614-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210560615-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210560616-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210560748-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580669-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580670-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580671-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580672-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580673-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580674-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580675-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210580676-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210600302-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210600303-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210600362-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210640639-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210660797-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210660798-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210660799-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680422-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680671-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680672-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680673-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680674-1_NGS92	NGS92	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181680611-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181840510-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181980646-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H182280647-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190460326-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190560313-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190560446-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190680138-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190680139-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190780665-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190880323-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190880324-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060366-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060367-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060369-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191160037-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191480033-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191480035-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760555-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760557-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760560-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760561-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191880052-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H192280401-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H192280402-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680187-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680246-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210700031-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720534-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720535-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720656-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760105-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760109-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760525-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760526-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760528-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780309-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780571-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780572-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781076-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781077-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781078-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781079-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781080-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781081-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781082-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210800368-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210800427-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820485-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820549-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820554-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820590-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840136-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840522-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840553-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840556-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210860052-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210861063-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+RS17004844-1_NGS93	NGS93	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181680611-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181840510-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H181980646-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H182280647-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190560313-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190560446-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190680138-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190680139-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190780665-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190880323-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H190880324-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060366-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060367-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191060369-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191160037-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191480033-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191480035-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760555-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760557-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760560-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191760561-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H191880052-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H192280401-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H192280402-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680187-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210680246-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210700031-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720534-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720535-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210720656-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760105-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760109-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760525-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760526-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210760528-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780309-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780571-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210780572-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781076-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781077-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781078-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781079-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781080-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781081-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781082-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210781282-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210800368-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210800427-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820484-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820485-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820549-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820554-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210820590-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840136-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840522-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210840553-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210860052-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210861063-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+RS17004844-1_NGS94	NGS94 (repeat Miseq NGS93)	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210700034-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880181-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880650-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880653-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880654-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880664-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880665-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880666-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900534-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900535-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900536-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900537-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900538-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210900539-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210920145-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210920146-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210920588-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210940531-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960137-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960524-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960527-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960908-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960909-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960910-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210960911-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980721-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980722-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980723-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980724-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980725-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980726-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980727-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210980728-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211000392-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211040783-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211040784-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211060465-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211060466-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211060474-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211060475-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211060708-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211080571-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211080572-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211080573-1_NGS95	NGS95	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H203780590-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H210880654-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211080109-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211100184-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211100185-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211120729-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211120730-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211120731-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211120732-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140559-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140562-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140563-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140564-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140566.1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140566.2_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140568-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140635-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211140804-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211160489-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211200490-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211200491-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211200492-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211220510-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211220511-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211220513-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211240163-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211240165-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211241127-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211241128-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211241521-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211260841-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211260843-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211280817-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211280818-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211280819-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211280820-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211360671-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211360791-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211360921-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211361096-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211361097-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211361171-1_NGS96	NGS96	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420369-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420370-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420371-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420372-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420373-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420374-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420375-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211420376-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211440767-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211440768-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211440769-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211440770-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211460729-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480307-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480619-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480620-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480621-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480623-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480624-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480625-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211480669-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211500319-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211500410-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211500411-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520034-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520035-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520036-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520037-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520038-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520039-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520041-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520042-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520043-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520052-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520425-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520426-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520427-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520428-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520429-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520430-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520431-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520432-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520433-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520434-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520435-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520437-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520438-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520439-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520441-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520812-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520813-1_NGS97	NGS97	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520436-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520814-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520815-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520816-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520817-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520860-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211520861-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211540709-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560070-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560508-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560511-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560512-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560513-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211580351-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211580607-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211580719-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211600485-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211600486-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211620703-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211620704-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211640521-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680167-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680168-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680169-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680170-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680171-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680172-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680173-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680174-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680175-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680177-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680178-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211680601-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700038-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700039-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700056-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700057-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700067-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700449-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211720147-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740235-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740540-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740541-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740542-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740543-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740545-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740546-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740642-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740643-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740644-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211740753-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211760658-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211760659-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211760660-1_NGS98	NGS98	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211540708-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211560515-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211700039-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211820258-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211820288-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211841102-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211841103-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211841104-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860221-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860222-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860904-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860905-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860906-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860907-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860908-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860909-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860910-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211860911-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211880094-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211880856-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211880857-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211900002-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211900006-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211900485-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211900486-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211921020-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211921022-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211921025-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211921029-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211921167-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211940943-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211940944-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211940945-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211940946-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211940961-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211960671-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211960673-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
+H211960674-1_NGS99	NGS99	PHE HCV whole genome sequencing	-	-	-	-	-	-	-	-
