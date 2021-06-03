@@ -22,8 +22,8 @@ _.each(samples, function(sample){
     var sx = sample["ORDPATSX"].trim();   
     
 
-    glue.command(["create", "custom-table-row", "patients", nhsid]); //create custom-table-row samples <rowId> this will be the key, as it is molis you shoudl not add molis again
-    glue.inMode("custom-table-row/patients/"+nhsid, function(){ // access the row to set the fields
+    glue.command(["create", "custom-table-row", "patient", nhsid]); //create custom-table-row samples <rowId> this will be the key, as it is molis you shoudl not add molis again
+    glue.inMode("custom-table-row/patient/"+nhsid, function(){ // access the row to set the fields
         //glue.command(["set", "field", "molis",molisName ]);  // hcvgen       molis        nhs          recept_dt    sample_dt --> fields in the custom table
 		glue.command(["set", "field", "date_of_birth", dob]);
         glue.command(["set", "field", "gender", sx]);

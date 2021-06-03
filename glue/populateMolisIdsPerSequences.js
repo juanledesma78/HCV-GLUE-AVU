@@ -21,14 +21,15 @@ _.each(sequenceMolis, function(seqMol){
     var sequenceName = seqMol["sequenceID"].trim(); // this will be the value in the iteration
     var nhsnum = seqMol["NHS"].trim();
     var nhsid = nhsnum.toLowerCase() 
-    var hospCode = seqMol["CORORDNB"].trim();
-    glue.command(["create", "custom-table-row", "molis_ids", sequenceName]); //create custom-table-row samples <rowId> this will be the index key, as it is molis you shoudl not add molis again
-    glue.inMode("custom-table-row/molis_ids/"+sequenceName, function(){ // access the row to set the fields
+    var hospCode = seqMol["CORORDNB"];
+    glue.command(["create", "custom-table-row", "molis_id", sequenceName]); //create custom-table-row samples <rowId> this will be the index key, as it is molis you shoudl not add molis again
+    glue.inMode("custom-table-row/molis_id/"+sequenceName, function(){ // access the row to set the fields
 		glue.command(["set", "field", "molis", molisName]);
         glue.command(["set", "field", "nhs", nhsnum]);
-        glue.command(["set", "field", "hopsital_code", hospCode]);
+        glue.command(["set", "field", "hospital_code", hospCode]);
         glue.command(["set", "link-target", "sequence", "sequence/NGS91/"+sequenceName]); 
-        glue.command(["set", "link-target", "samples", "custom-table-row/samples/"+molisName]);//set link-target samples custom-table-row/samples/H210380785
+        glue.command(["set", "link-target", "sample", "custom-table-row/sample/"+molisName]);//set link-target samples custom-table-row/samples/H210380785
+        glue.command(["set", "link-target", "patient", "custom-table-row/patient/"+nhsid]);//set link-target samples custom-table-row/patient/H210380785
     }
     );
 }

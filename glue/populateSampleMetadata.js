@@ -29,14 +29,14 @@ _.each(samples, function(sample){
     
 
 
-    glue.command(["create", "custom-table-row", "samples", molisName]); //create custom-table-row samples <rowId> this will be the key, as it is molis you shoudl not add molis again
-    glue.inMode("custom-table-row/samples/"+molisName, function(){ // access the row to set the fields
+    glue.command(["create", "custom-table-row", "sample", molisName]); //create custom-table-row samples <rowId> this will be the key, as it is molis you shoudl not add molis again
+    glue.inMode("custom-table-row/sample/"+molisName, function(){ // access the row to set the fields
         //glue.command(["set", "field", "molis",molisName ]);  // hcvgen       molis        nhs          recept_dt    sample_dt --> fields in the custom table
-		glue.command(["set", "field", "sample_dt", sampleDateName]);
-        glue.command(["set", "field", "recept_dt", receptionDateName]);
-        glue.command(["set", "field", "hcvgen", initialGenotypeName]);
+		glue.command(["set", "field", "sample_date", sampleDateName]);
+        glue.command(["set", "field", "reception_date", receptionDateName]);
+        glue.command(["set", "field", "initial_genotype", initialGenotypeName]);
         glue.command(["set", "field", "nhs", nhsid]);
-        glue.command(["set", "link-target", "patients", "custom-table-row/patients/"+nhsid]);//set link-target samples custom-table-row/samples/H210380785
+        //glue.command(["set", "link-target", "patient", "custom-table-row/patient/"+nhsid]);//set link-target samples custom-table-row/sample/H210380785
     }
     );
     
