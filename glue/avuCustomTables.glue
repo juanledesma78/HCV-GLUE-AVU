@@ -16,37 +16,39 @@
     #create field ref_external VARCHAR
 
 
-create custom-table molis_ids
-table molis_ids
+create custom-table molis_id
+table molis_id
     create field molis VARCHAR # create field molis VARCHAR
     create field nhs VARCHAR
-    create field hopsital_code VARCHAR
+    create field hospital_code VARCHAR
     #create field sequenceid VARCHAR # sequenceid is added for each row, and row is the index
     exit
 
-create custom-table samples
-table samples
+create custom-table sample
+table sample
     create field molis VARCHAR # create field molis VARCHAR
-    create field sample_dt DATE # create field sample_date DATE
-    create field recept_dt DATE # create field reception_date DATE
-    create field hcvgen VARCHAR #  create field initial_genotyping VARCHAR
+    create field sample_date DATE # create field sample_date DATE
+    create field reception_date DATE # create field reception_date DATE
+    create field initial_genotype VARCHAR #  create field initial_genotyping VARCHAR
     create field nhs INTEGER
     exit
 
 
-create custom-table patients
-table patients
+create custom-table patient
+table patient
     create field date_of_birth DATE # create field date_of_birth DATE ORDPATBIRTHDT
     create field nhs INTEGER # create field nhs_number INTEGER #VARCHAR
     create field gender VARCHAR # create field gender VARCHAR # create script to format F and M before importing data ORDPATSX
     exit
 
-#create custom-table hospitals
-#table hospitals
-#    create field hospital_code VARCHAR # create a custom table for hospitals
-#    create field hospital_name VARCHAR
-#    exit
+create custom-table hospital # this cab be populate once
+table hospital
+    create field hospital_code VARCHAR # create a custom table for hospitals
+    create field hospital_name VARCHAR
+    exit
 
-create link sequence molis_ids --multiplicity ONE_TO_ONE # each sequence is linked to one index
-create link molis_ids samples --multiplicity MANY_TO_ONE # several molis_ids(several sequences) ca be generated from one sample (repeats, reanalysis...)
-create link samples patients --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
+create link sequence molis_id --multiplicity ONE_TO_ONE # each sequence is linked to one index
+create link molis_id sample --multiplicity MANY_TO_ONE # several molis_ids(several sequences) ca be generated from one sample (repeats, reanalysis...)
+create link molis_id patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
+#create link sample patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
+create link molis_id hospital --multiplicity MANY_TO_ONE # 
