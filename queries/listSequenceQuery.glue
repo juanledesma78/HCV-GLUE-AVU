@@ -1,0 +1,5 @@
+project hcv_glue_avu
+    console set cmd-output-file-format tab
+    console set next-cmd-output-file queries/test_sequences_pipeline_patientTable_sampleTable_hosptialTable.txt
+
+    list sequence --whereClause "source.name like 'NGS%'" sequenceID source.name hcv_wg_pipeline molis_id.molis molis_id.sample.sample_date molis_id.sample.initial_genotype molis_id.nhs molis_id.patient molis_id.patient.date_of_birth molis_id.patient.gender molis_id.hospital.hospital_code
