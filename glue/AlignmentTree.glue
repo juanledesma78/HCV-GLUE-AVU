@@ -1,12 +1,11 @@
-# create alignment for all the genotypes and the subtypes
-# the sequences, from the folder ncbi-refseqs, are included in the alignments 
+# create table alignment for all the genotypes and the subtypes
 
 create alignment AL_MASTER --refSeqName REF_MASTER_NC_004102  
 
 alignment AL_MASTER
     set field displayName "Hepatitis C virus (HCV)"
     set field description "Object with the references for each geneotype from folder ncbi-refseqs. AL_MASTER>>ALX>>AL_Subtype"
-    # DO NOT include recombinats in MASTER, it is better to delete them from ncbi-refseqs?  alternative way for filtering them --whereClause "source.name = 'ncbi-refseqs' and genotype not like 'RF%'" 
+    # DO NOT include recombinants in MASTER, it is better to delete them from ncbi-refseqs?  alternative way for filtering them --whereClause "source.name = 'ncbi-refseqs' and genotype not like 'RF%'" 
     add member --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" # nor recombinant neither outgroup
 
     # the alignment object is the main table with ALL the reference sequences in ncbi-refseqs (234) but they are not aligned yet
@@ -30,24 +29,10 @@ alignment AL_MASTER
     demote member AL_8 --whereClause "sequence.genotype ='8'" 
     exit
 
-    # after using the lines below (extract child AL_1...), the AL_MASTER just contains the refseqs for the eight genotypes
-    # and these originate branches of subtypes and subbranches connected to the parent (new relational tables connected by indexes/refSequence.name) 
-    #list children/descendent 
-    #+===============+==========================+
-    #|     name      |     refSequence.name     |
-    #+===============+==========================+
-    #| AL_1 | REF_1_NC_004102 |
-    #| AL_2 | REF_2_D00944    |
-    #| AL_3 | REF_3_D17763    |
-    #| AL_4 | REF_4_Y11604    |
-    #| AL_5 | REF_5_AF064490  |
-    #| AL_6 | REF_6_Y12083    |
-    #| AL_7 | REF_7_EF108306  |
-    #| AL_8 | REF_8_MH590699  |
-    #+===============+==========================+
-    #Alignments found: 8
-
-
+    # after using the lines below (extract child AL_1...), the AL_MASTER just contains the refseqs for the eight genotypes, that will be the parents for the AL_subtypes (list children/descendent)
+    # table aligment will have the names of the alignments AL_1, AL_2_ AL_1a... AL_8 (index) and the reference for the phylo group
+    # table alignment_member will have sequenceId (index) and foreign key alignment name
+   
 
 alignment AL_1 # already included genotype 1 but to be sure added "sequence.genotype = '1' 
     set field displayName "HCV Genotype 1"
@@ -368,29 +353,7 @@ alignment AL_8
     exit
 
 # derive constrained segments throughout the tree from the uncostrained AL_MASTER 
-# the members of AL_MASTER are 
-# sequence.sequenceID | sequence.genotype | sequence.subtype |
-#+=====================+===================+==================+
-#| AF064490            | 5                 | a                |
-#| D00944              | 2                 | a                |
-#| D17763              | 3                 | a                |
-#| EF108306            | 7                 | a                |
-#| MH590699            | 8                 | a                |
-#| NC_004102           | 1                 | a                |
-#| Y11604              | 4                 | a                |
-#| Y12083              | 6                 | a                
 # Usage: derive segments <sourceAlmtName> [-r] [-l <linkingReference>] [-s] [-e] (-w <whereClause> | -a) [-m <mergeStrategy>]
-# 
-# Options:
-#   -r, --recursive                                               Include descendent alignments
-#   -l <linkingReference>, --linkingReference <linkingReference>  Reference linking source and target
-#   -s, --suppressSkippedWarning                                  Skip targets without warning
-#   -w <whereClause>, --whereClause <whereClause>                 Qualify source members
-#   -a, --allMembers                                              Select all source members
-#   -e, --existingMembersOnly                                     Derive only for existing
-#   -m <mergeStrategy>, --mergeStrategy <mergeStrategy>           Segment merge strategy
-
-
 # The alignmentTrees above (constrained) have been defined but the sequences are not aligned.
 # You derive the alignment/segments from the uncostrained alignment added at the beginning.
 
@@ -409,10 +372,6 @@ alignment AL_MASTER
 #| AL_MASTER      | ncbi-refseqs          | Y11604              | 0.0                | 96.6099937798051  |
 #| AL_MASTER      | ncbi-refseqs          | Y12083              | 0.0                | 96.3611859838275  |
 #+================+======================+=====================+====================+===================+
-
-
-
-
 
 # set the label displayName for each subtype alignment 
 
