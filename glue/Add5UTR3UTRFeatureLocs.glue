@@ -12,33 +12,33 @@ reference REF_1a_AF009606
   feature-location 3UTR add segment 9378 9646 
   exit      
         
-reference REF_1_AJ851228       
+reference REF_1_unassigned_AJ851228       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 314 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9351 9481 
   exit      
         
-reference REF_1_HQ537007       
+reference REF_1_unassigned_HQ537007       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 235 
   exit      
         
-reference REF_1_KC248195       
+reference REF_1_unassigned_KC248195       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9405 9439 
   exit      
         
-reference REF_1_KJ439776       
+reference REF_1_unassigned_KJ439776       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 342 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9397 9462 
   exit      
         
-reference REF_1_KJ439777       
+reference REF_1_unassigned_KJ439777       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
@@ -59,7 +59,7 @@ reference REF_1o_KJ439779
   feature-location 3UTR add segment 9379 9413 
   exit      
         
-reference REF_1_KJ439780       
+reference REF_1_unassigned_KJ439780       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
@@ -262,52 +262,52 @@ reference REF_2_D00944
   feature-location 3UTR add segment 9443 9589 
   exit      
         
-reference REF_2_JF735110       
+reference REF_2_unassigned_JF735110       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9443 9508 
   exit      
         
-reference REF_2_JF735116       
+reference REF_2_unassigned_JF735116       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9443 9514 
   exit      
         
-reference REF_2_JF735117       
+reference REF_2_unassigned_JF735117       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9437 9510 
   exit      
         
-reference REF_2_JF735118       
+reference REF_2_unassigned_JF735118       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9443 9615 
   exit      
         
-reference REF_2_JF735119       
+reference REF_2_unassigned_JF735119       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9453 9628 
   exit      
         
-reference REF_2_KC197236       
+reference REF_2_unassigned_KC197236       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 313 
   exit      
         
-reference REF_2_KC197237       
+reference REF_2_unassigned_KC197237       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 313 
   exit      
         
-reference REF_2_KC197239       
+reference REF_2_unassigned_KC197239       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 313 
   exit      
@@ -497,7 +497,7 @@ reference REF_3_D17763
   feature-location 3UTR add segment 9406 9456 
   exit      
         
-reference REF_3_JF735124       
+reference REF_3_unassigned_JF735124       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
@@ -621,70 +621,70 @@ reference REF_4_Y11604
   feature-location 3UTR add segment 9307 9355 
   exit      
         
-reference REF_4_FJ025854       
+reference REF_4_unassigned_FJ025854       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 190 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9224 9267 
   exit      
         
-reference REF_4_JF735127       
+reference REF_4_unassigned_JF735127       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9377 9441 
   exit      
         
-reference REF_4_JF735129       
+reference REF_4_unassigned_JF735129       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9362 9426 
   exit      
         
-reference REF_4_JF735130       
+reference REF_4_unassigned_JF735130       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9365 9430 
   exit      
         
-reference REF_4_JF735131       
+reference REF_4_unassigned_JF735131       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9363 9426 
   exit      
         
-reference REF_4_JF735132       
+reference REF_4_unassigned_JF735132       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9470 9535 
   exit      
         
-reference REF_4_JF735134       
+reference REF_4_unassigned_JF735134       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9377 9437 
   exit      
         
-reference REF_4_JF735135       
+reference REF_4_unassigned_JF735135       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9365 9431 
   exit      
         
-reference REF_4_JF735138       
+reference REF_4_unassigned_JF735138       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9380 9563 
   exit      
         
-reference REF_4_JX227964       
+reference REF_4_unassigned_JX227964       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 274 
   add feature-location 3UTR    
@@ -962,7 +962,7 @@ reference REF_5a_AF064490
   feature-location 3UTR add segment 9292 9408 
   exit      
         
-reference REF_5_KT595242       
+reference REF_5_unassigned_KT595242       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 246 
   exit      
@@ -981,112 +981,112 @@ reference REF_6b_D84262
   feature-location 3UTR add segment 9403 9628 
   exit      
         
-reference REF_6_DQ278891       
+reference REF_6_unassigned_DQ278891       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9389 9440 
   exit      
         
-reference REF_6_DQ278893       
+reference REF_6_unassigned_DQ278893       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 341 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9390 9430 
   exit      
         
-reference REF_6_JX183549       
+reference REF_6_unassigned_JX183549       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9387 9448 
   exit      
         
-reference REF_6_JX183550       
+reference REF_6_unassigned_JX183550       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9387 9459 
   exit      
         
-reference REF_6_JX183551       
+reference REF_6_unassigned_JX183551       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9390 9412 
   exit      
         
-reference REF_6_JX183553       
+reference REF_6_unassigned_JX183553       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9390 9446 
   exit      
         
-reference REF_6_JX183554       
+reference REF_6_unassigned_JX183554       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9390 9423 
   exit      
         
-reference REF_6_JX183558       
+reference REF_6_unassigned_JX183558       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9390 9454 
   exit      
         
-reference REF_6_KC844039       
+reference REF_6_unassigned_KC844039       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9414 9488 
   exit      
         
-reference REF_6_KC844040       
+reference REF_6_unassigned_KC844040       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9393 9447 
   exit      
         
-reference REF_6_KJ470620       
+reference REF_6_unassigned_KJ470620       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9413 9471 
   exit      
         
-reference REF_6_KJ470621       
+reference REF_6_unassigned_KJ470621       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9410 9475 
   exit      
         
-reference REF_6_KJ470622       
+reference REF_6_unassigned_KJ470622       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9409 9474 
   exit      
         
-reference REF_6_KJ470623       
+reference REF_6_unassigned_KJ470623       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9400 9435 
   exit      
         
-reference REF_6_KJ470624       
+reference REF_6_unassigned_KJ470624       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 340 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9410 9474 
   exit      
         
-reference REF_6_KJ470625       
+reference REF_6_unassigned_KJ470625       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
@@ -1482,42 +1482,42 @@ reference REF_6xg_MH492362
 #  feature-location 3UTR add segment ? ? 
 #  exit      
         
-reference REF_6_KJ567652       
+reference REF_6_unassigned_KJ567652       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9402 9434 
   exit      
         
-reference REF_6_KJ567650       
+reference REF_6_unassigned_KJ567650       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9405 9469 
   exit      
         
-reference REF_6_KJ567649       
+reference REF_6_unassigned_KJ567649       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 338 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9405 9471 
   exit      
         
-reference REF_6_KJ567648       
+reference REF_6_unassigned_KJ567648       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 339 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9394 9485 
   exit      
         
-reference REF_6_KJ567644       
+reference REF_6_unassigned_KJ567644       
   add feature-location 5UTR    
   feature-location 5UTR add segment 1 323 
   add feature-location 3UTR    
   feature-location 3UTR add segment 9375 9397 
   exit      
         
-#reference REF_6_MG878999       # 1..9057
+#reference REF_6_unassigned_MG878999       # 1..9057
 #  add feature-location 5UTR    
 #  feature-location 5UTR add segment ? ? 
 #  add feature-location 3UTR    
