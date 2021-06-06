@@ -13,35 +13,32 @@ project hcv_glue_avu
   # create modules: define the configuration in xml files
   run file glue/Modules.glue
 
-  # WHO regions / countries etc (M49 standard), custom tables
-  run file glue/who_countries/populateWhoCountries.glue
-
   # reference sequences need to be imported from genbank using the modules NcbiRefSeqsImporter_avu.xml before importing in the project
   # the module specifies the accession number to import, the format (genbank xml) and the directory to save them
   # this is executed independently to the master project. It needs to be run before thes project is built. 
-  
   
   # import the REFERENCE SEQUENCES from folder SOURCES
   # WARNING: recombinats and outgroup are imported but they are not going to be used in the project. Just in case in the future they are needed
   import source sources/ncbi-refseqs
 
-  # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
+  # populate custom tables WHO regions, countries... (M49 standard)
+  run file glue/who_countries/populateWhoCountries.glue
+  
   # populate other data from genbank xml files
-  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype.csv
   module GenbankXmlPopulator populate --silent
   
-  
+  # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
   #add a comment to field "genotyping method" to identify the refrence sequence by Smith 2019 that are in the uncostrained alignment
+  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype.csv
   multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
-
-
-  # import UNCONSTRAINED alignment Smith 2019 (aligned by HCValign using codon-align option and manual editing for some positions https://hcv.lanl.gov/content/sequence/VIRALIGN/viralign.html). 
-  # usage: module <name> import <name for the alignment in GLUE> --fileName <path to the alignment in computer>
-  # all the sequences in the alignment MUST be already in table sequence. The sequence are added and a table displayed the segments (blocks aligned) an the coverage
-  module smith2019-alignment-importer import AL_UNCONSTRAINED_Smith2019 --fileName alignments/Smith_2019_refseqs_filename_NC_004102_edited_v2.fas
 
   # define the features (CDS and non coding regions) and the MASTER reference sequence (NC_004102) for the project
   run file glue/Features.glue
+  
+  # import UNCONSTRAINED alignment Smith 2019 (aligned by HCValign using codon-align option and manual editing for some positions https://hcv.lanl.gov/content/sequence/VIRALIGN/viralign.html). 
+  # usage: module <name> import <name for the alignment in GLUE> --fileName <path to the alignment in computer>
+  # all the sequences in the alignment MUST be already in table sequence. The sequence are added and a table displayed the segments (blocks aligned) and the coverage
+  module smith2019-alignment-importer import AL_UNCONSTRAINED_Smith2019 --fileName alignments/Smith_2019_refseqs_filename_NC_004102_edited_v2.fas
   
   # create the other reference sequences of the project and inherit the features from the MASTER refseq
   run file glue/ReferenceSequences.glue
