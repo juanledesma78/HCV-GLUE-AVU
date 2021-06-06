@@ -24,8 +24,8 @@ schema-project hcv_glue_avu
     create field genotype VARCHAR
     create field subtype VARCHAR
     create field genotyping_method VARCHAR 200
-    create field gb_genotype VARCHAR
-    create field gb_subtype VARCHAR
+    create field gb_genotype VARCHAR #this may not be needed
+    create field gb_subtype VARCHAR #this may not be needed
     create field vipr_genotype VARCHAR 10
     create field vipr_subtype VARCHAR 10
     create field epa_genotype VARCHAR 10
@@ -41,6 +41,7 @@ schema-project hcv_glue_avu
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
     
+    # AVU bioinformatics pipeline
     create field hcv_wg_pipeline VARCHAR 100
     create field pipeline_version VARCHAR 50
     create field genomacer VARCHAR 50
@@ -49,7 +50,7 @@ schema-project hcv_glue_avu
 
   table alignment
     # provisional / unassigned etc.
-    create field status VARCHAR 20
+    create field status VARCHAR 20 # nothing has been added to this field so far
     create field phylogeny VARCHAR 10000
     exit
 
@@ -92,6 +93,4 @@ schema-project hcv_glue_avu
   run file glue/avuCustomTables.glue
   
   
-
-
   exit
