@@ -6,8 +6,8 @@
 # OR 
 # reference <name> inherit feature-location --recursive --spanGaps <alignmentname> --relRefName <referencename> <featureName>
 
-#run file glue/AddWholeGenomeFeatureLocs.glue
-#run file glue/Add5UTR3UTRFeatureLocs.glue
+run file glue/AddWholeGenomeFeatureLocs.glue
+run file glue/Add5UTR3UTRFeatureLocs.glue
 
 
 
