@@ -37,6 +37,11 @@ table sample
 create custom-table patient
 table patient
     create field date_of_birth DATE # create field date_of_birth DATE ORDPATBIRTHDT
+    create field age_diagnosis INTEGER
+    create field country_of_birth VARCHAR
+    create field nationality VARCHAR
+    create field ethnicity VARCHAR
+    create field city_of_residence VARCHAR
     create field nhs INTEGER # create field nhs_number INTEGER #VARCHAR
     create field gender VARCHAR # create field gender VARCHAR # create script to format F and M before importing data ORDPATSX
     exit
