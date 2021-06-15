@@ -2,7 +2,7 @@
 # for that a specific label is going to be added.
 # I will need to define new reference sequence even if I going to use the same accession number
 # REF_1abcf_
-# " is not the same to “ from libreoffice, in case the 
+ 
 
 reference REF_MASTER_NC_004102 set field displayName "Hepatitis C Virus Reference (NC_004102)"
 
