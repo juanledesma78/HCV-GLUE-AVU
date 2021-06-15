@@ -38,14 +38,14 @@ schema-project hcv_glue_avu
     create field latest_collection_year INTEGER
     create field ncbi_incoming BOOLEAN
 
-    # confirmed / provisional / recombinant / unassigned
+    # confirmed  recombinant / unassigned
     create field reference_status VARCHAR 20
     
-    # AVU bioinformatics pipeline
+    # AVU fields
     create field hcv_wg_pipeline VARCHAR 100
     create field pipeline_version VARCHAR 50
-    create field genomacer VARCHAR 50
-  
+    create field alternative_pipeline VARCHAR #genomacer
+    #create field sample VARCHAR # include sample as field returns an error as it is already in table sample. The field molis must be in csv file to set the link with custom table
     exit
 
   table alignment
@@ -53,36 +53,6 @@ schema-project hcv_glue_avu
     create field status VARCHAR 20 # nothing has been added to this field so far
     create field phylogeny VARCHAR 10000
     exit
-
-  #table variation
-  #  create field is_epitope BOOLEAN
-  #  create field pubmed_id VARCHAR 50
-  #  create field publication_date_year INTEGER
-  #  create field epitope_iedb_id INTEGER
-  #  create field epitope_method VARCHAR 50
-  #  create field epitope_protein VARCHAR 50
-  #  create field epitope_start_codon VARCHAR 50
-  #  create field epitope_end_codon VARCHAR 50
-  #  create field epitope_stage VARCHAR 50
-  #  create field epitope_genotype VARCHAR 50
-  #  create field epitope_subtype VARCHAR 50
-  #  create field epitope_measurement VARCHAR 50
-  #  create field epitope_effector_tissue_type VARCHAR 50
-  #  create field epitope_effector_cell_type VARCHAR 50
-  #  create field epitope_effector_cell_culture_condition VARCHAR 50
-  #  create field epitope_full_hla VARCHAR 50
-  #  create field epitope_partial_hla VARCHAR 50
-  #  exit
-  
-  #table var_almt_note
-  #  create field ncbi_curated_frequency DOUBLE
-  #  create field ncbi_curated_total_present INTEGER
-  #  create field ncbi_curated_total_absent INTEGER
-  #  exit
-
-  #table member_floc_note
-  #	create field ref_nt_coverage_pct DOUBLE
-  #	exit
     
   # WHO regions / countries etc (M49 standard)
   run file glue/who_countries/whoCountriesSchemaExtension.glue
