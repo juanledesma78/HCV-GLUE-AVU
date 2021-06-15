@@ -7,8 +7,8 @@
   # populate the genotype/subtype data for the reference sequences from a file.
   create module --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml reference-genotypes-subtypes-populator
   
-  # populate data from molis (i.e HCVGEN_NGS91&NGS92.csv) to AVU fields in table sequence, this should be used to populate any data in table sequences
-  # create module --fileName modules/TextFilePopulator_Molis_TableSequence.xml molis-to-sequence-populator
+  # populate data from NGS sequences in table sequence: hcv_wg_pipeline, version... sample(link to table sample)
+  create module --fileName modules/NGSSequenceDataPopulator.xml
 
   # populate AVU custom tables,specify parameters for the file used to populate data 
   create module --fileName modules/tabularUtilityCsv.xml
