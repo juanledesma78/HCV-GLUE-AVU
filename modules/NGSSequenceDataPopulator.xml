@@ -1,0 +1,37 @@
+<textFilePopulator>
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>sequenceID</header>
+		<property>sequenceID</property>
+	</textFileColumn>
+    <textFileColumn>
+		<header>MOLIS</header>
+		<property>sample</property>
+	</textFileColumn>
+    <textFileColumn>
+		<header>Pipeline</header>
+		<property>hcv_wg_pipeline</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+    <textFileColumn>
+		<header>Version</header>
+		<property>pipeline_version</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+    <textFileColumn>
+		<header>Genomancer</header>
+		<property>alternative_pipeline</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+       
+</textFilePopulator>
+<!--
+	<textFileColumn>
+		<header>SPLITPOPS 1</header>
+		<property>subtype</property>
+	</textFileColumn>
+</textFilePopulator> 
+
+// 
+-->
