@@ -28,9 +28,10 @@ project hcv_glue_avu
   module GenbankXmlPopulator populate --silent
   
   # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
-  #add a comment to field "genotyping method" to identify the refrence sequence by Smith 2019 that are in the uncostrained alignment
-  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype.csv
-  multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
+  #add a comment to field "genotyping method" to identify the reference sequences by Smith 2019 that are in the uncostrained alignment (confirmed and unassigned subtypes)
+  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype_Ref.csv
+  multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('confirmed','unassigned')" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
+  
 
   # define the features (CDS and non coding regions) and the MASTER reference sequence (NC_004102) for the project
   run file glue/Features.glue
