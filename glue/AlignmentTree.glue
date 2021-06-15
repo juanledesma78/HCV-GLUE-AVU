@@ -6,11 +6,12 @@ alignment AL_MASTER
     set field displayName "Hepatitis C virus (HCV)"
     set field description "Object with the references for each geneotype from folder ncbi-refseqs. AL_MASTER>>ALX>>AL_Subtype"
     # DO NOT include recombinants in MASTER, it is better to delete them from ncbi-refseqs?  alternative way for filtering them --whereClause "source.name = 'ncbi-refseqs' and genotype not like 'RF%'" 
-    add member --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" # nor recombinant neither outgroup
-
+    # list sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('recombinant','confirmed')" sequenceID reference_status
+    #add member --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" # nor recombinant neither outgroup
+    add member --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('confirmed','unassigned')" # nor recombinant neither outgroup
+    
     # the alignment object is the main table with ALL the reference sequences in ncbi-refseqs (234) but they are not aligned yet
     # now from the AL_MASTER subtrees/alignments are going to be created but still linked to the master (relational tables/alignments)
-    
     extract child AL_1 --refName REF_1_NC_004102 # create a child alignment (another table), using REF_1_NC_004102 from AL_MASTER as reference sequence
     demote member AL_1 --whereClause "sequence.genotype ='1'" # move sequences with genotype 1 to AL_1
     extract child AL_2 --refName REF_2_D00944 
