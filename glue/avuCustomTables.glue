@@ -4,38 +4,22 @@
 # a xml module needs to be create to populate the data javascript?
 
 
-# Antiviral Unit fields custom tables patient, sample, hospital
-    #create field molis VARCHAR
-    #create field initial_genotyping VARCHAR
-    #create field sample_date DATE
-    #create field reception_date DATE
-    #create field hospital_code VARCHAR # create a custom table for hospitals
-    #create field date_of_birth DATE
-    #create field nhs_number INTEGER #VARCHAR
-    #create field gender VARCHAR # create script to format F and M before importing data
-    #create field ref_external VARCHAR
-
-
-create custom-table molis_id
-table molis_id
-    create field molis VARCHAR # create field molis VARCHAR
-    create field nhs VARCHAR
-    create field hospital_code VARCHAR
-    #create field sequenceid VARCHAR # sequenceid is added for each row, and row is the index
-    exit
+# Antiviral Unit fields for custom tables patient, sample, hospital
+# potential fields: molis id, HCV genotyping, sample date and reception, hospital code, patient id, dob, nhs, gender, external reference
 
 create custom-table sample
 table sample
-    create field molis VARCHAR # create field molis VARCHAR
+    #molis is the id of this table and links sequence, 
     create field sample_date DATE # create field sample_date DATE
     create field reception_date DATE # create field reception_date DATE
     create field initial_genotype VARCHAR #  create field initial_genotyping VARCHAR
-    create field nhs INTEGER
+    # csv file must contain a field patient_id and hospital_code to link the tables
     exit
 
 
-create custom-table patient
+create custom-table patient 
 table patient
+	#patient_id is the id for this table connected to table sample (but no field is defined in table sample)
     create field date_of_birth DATE # create field date_of_birth DATE ORDPATBIRTHDT
     create field age_diagnosis INTEGER
     create field country_of_birth VARCHAR
@@ -48,12 +32,10 @@ table patient
 
 create custom-table hospital # this cab be populate once
 table hospital
-    create field hospital_code VARCHAR # create a custom table for hospitals
+	#hospital_code is the id for this table connected to table sample
+    #create field hospital_code VARCHAR # create a custom table for hospitals
     create field hospital_name VARCHAR
     exit
-
-create link sequence molis_id --multiplicity ONE_TO_ONE # each sequence is linked to one index
-create link molis_id sample --multiplicity MANY_TO_ONE # several molis_ids(several sequences) ca be generated from one sample (repeats, reanalysis...)
-create link molis_id patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
-#create link sample patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
-create link molis_id hospital --multiplicity MANY_TO_ONE # 
+create link sequence sample --multiplicity MANY_TO_ONE 
+create link sample patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
+create link sample hospital --multiplicity MANY_TO_ONE 
