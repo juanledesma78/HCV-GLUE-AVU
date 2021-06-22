@@ -44,8 +44,7 @@ schema-project hcv_glue_avu
     # AVU fields
     create field hcv_wg_pipeline VARCHAR 100
     create field pipeline_version VARCHAR 50
-    create field alternative_pipeline VARCHAR #genomacer
-    #create field sample VARCHAR # include sample as field returns an error as it is already in table sample. The field molis must be in csv file to set the link with custom table
+    #The field molis must be in csv file to set the link with custom table
     exit
 
   table alignment
