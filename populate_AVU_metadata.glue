@@ -5,4 +5,4 @@ project hcv_glue_avu
     run script glue/populateSampleTable.js
 
     # populate metadata of the NGS sequences to table sequence 
-    module NGSSequenceDataPopulator populate --whereClause "source.name='NGS91'" --fileName tabular/SequenceDataToPopulate_NGS91.csv
+    module NGSSequenceDataPopulator populate --whereClause "source.name='NGS91'" --fileName tabular/sequence_table/SequenceDataToPopulate_NGS91.csv
