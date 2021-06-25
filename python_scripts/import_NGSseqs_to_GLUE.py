@@ -7,7 +7,7 @@ NGS = re.search(r'NGS[0-9]*.*', path_to_NGS_run)
 NGS_fastas = NGS.group() # NGS91/FASTAs/
 ngsRun = re.search(r'^NGS[0-9]*.*[^/FASTAs]', NGS_fastas ) # keep the original name
 runName = ngsRun.group() 
-runName = runName.replace(' ','_')
+runName = runName.replace(' ','_') # to allow the glue commands, error if spaces
 NGSid = re.search(r'^NGS[0-9]*', runName ) # use only RUN name 
 runID = NGSid.group()
 
@@ -16,7 +16,7 @@ if path_to_sources[-1]!= "/":
 if path_to_NGS_run[-1]!='/':
     path_to_NGS_run= path_to_NGS_run +"/"
 
-path_to_tabular = path_to_sources.replace("sources", "tabular/sequence_table")
+path_to_tabular = path_to_sources.replace("sources", "tabular/table_sequence")
 
 #sources_folder = os.mkdir(path_to_sources + str(runName))
 os.mkdir(path_to_sources + str(runName))
@@ -59,7 +59,7 @@ for sequence in NGS_directory:
 # create info on pipeline and molis to update on sequence table
 run = {"sequenceID" : sequenceID, "MOLIS" : molis_id, "Pipeline": Pipeline, "Version": Version}
 ngs_run = pd.DataFrame(data=run)
-ngs_run.to_csv(path_to_tabular +"SequenceDataToPopulate_"+ runID +".csv", index=False)
+ngs_run.to_csv(path_to_tabular +"metadata_table_SEQUENCE_"+ runID +".csv", index=False)
 
 #CALLING GLUE TO IMPORT NEW FASTA SEQUENCES
 Glue_commands = """\ 
