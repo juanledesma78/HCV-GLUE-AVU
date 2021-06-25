@@ -26,8 +26,8 @@ table patient
     create field nationality VARCHAR
     create field ethnicity VARCHAR
     create field city_of_residence VARCHAR
-    create field nhs INTEGER # create field nhs_number INTEGER #VARCHAR
-    create field gender VARCHAR # create field gender VARCHAR # create script to format F and M before importing data ORDPATSX
+    create field nhs INTEGER # it was integer but pandas changes to float when NaN 
+    create field gender VARCHAR 
     exit
 
 create custom-table hospital # this cab be populate once
