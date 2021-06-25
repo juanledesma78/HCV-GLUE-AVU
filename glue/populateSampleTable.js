@@ -9,7 +9,7 @@ var samples;
 
 // access module tabularUtilityCsv and load data from file
 glue.inMode("module/tabularUtilityCsv", function(){
-    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/made-up_MolisData_test_SAMPLES_NGS91.csv"]));
+    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS91.csv"]));
 }
 );
 // glue.logInfo()
@@ -27,7 +27,7 @@ _.each(samples, function(sample){
     var sampleDate = nullTrim(sample["SAMPLE_DT"]); // this will be the value in the iteration
     var receptionDate = nullTrim(sample["RECEPT_DT"]);
     var initialGenotype = nullTrim(sample["HCVGEN"]);
-    var patientId = nullTrim(sample["patient_id"]);// set links not fields
+    var patientId = nullTrim(sample["pid"]);// set links not fields
     
     glue.command(["create", "custom-table-row", "sample", molisId]); //create custom-table-row samples <rowId> this will be the key, as it is molis you shoudl not add molis again
     glue.inMode("custom-table-row/sample/"+molisId, function(){ // access the row to set the fields

@@ -7,7 +7,7 @@ function nullTrim(string) {
 
 var patients;
 glue.inMode("module/tabularUtilityCsv", function(){
-    patients = glue.tableToObjects(glue.command(["load-tabular","tabular/made-up_MolisData_test_PATIENTS_NGS91.csv"]));
+    patients = glue.tableToObjects(glue.command(["load-tabular","tabular/table_patient/metadata_table_PATIENT_NGS91.csv"]));
 }
 );
 _.each(patients, function(patient){
