@@ -62,7 +62,7 @@ ngs_run = pd.DataFrame(data=run)
 ngs_run.to_csv(path_to_tabular +"metadata_table_SEQUENCE_"+ runID +".csv", index=False)
 
 #CALLING GLUE TO IMPORT NEW FASTA SEQUENCES
-Glue_commands = """\ 
+Glue_commands = """ 
 project hcv_glue_avu
 import source sources/RUNID
 Q

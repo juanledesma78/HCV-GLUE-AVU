@@ -80,7 +80,7 @@ with open("/home/juan/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.j
     script.close()
 
 
-Glue_commands = """\ 
+Glue_commands = """ 
 project hcv_glue_avu
 run script glue/populatePatientTable.js
 run script glue/populateSampleTable.js
