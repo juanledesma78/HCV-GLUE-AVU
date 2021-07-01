@@ -1,6 +1,5 @@
 import sys, os, re, subprocess
 import pandas as pd
-#from openpyxl import load_workbook
 #once I know the fixed paths to the data, update this. 
 molis_file = sys.argv[1] #c:/Users/juan.ledesma/Desktop/HCV_GLUE_AVU/tabular/made-up_MolisData_test.csv 
 sources_run = sys.argv[2] #"c:/Users/juan.ledesma/Desktop/HCV_GLUE_AVU/sources/NGS91
@@ -62,20 +61,20 @@ sequenceId_molis_info[["pid","NHS", "ORDPATBIRTHDT","ORDPATSX"]].drop_duplicates
 # update the name run in javascripts
 
 new_NGS_run_PATIENT = ""
-with open("/home/juan/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'r') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'r') as script:
         text = script.read()
         new_NGS_run_PATIENT = re.sub(r'metadata_table_PATIENT_[a-zA-Z0-9]*.csv','metadata_table_PATIENT_'+ NGSid + '.csv', text)
         script.close()
-with open("/home/juan/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'w') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'w') as script:
     script.write(new_NGS_run_PATIENT)
     script.close()
 
 new_NGS_run_SAMPLE = ""
-with open("/home/juan/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'r') as script: # modify the path with the final one
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'r') as script: # modify the path with the final one
         text = script.read()
         new_NGS_run_SAMPLE = re.sub(r'metadata_table_SAMPLE_[a-zA-Z0-9]*.csv','metadata_table_SAMPLE_'+ NGSid + '.csv', text)
         script.close()
-with open("/home/juan/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'w') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'w') as script:
     script.write(new_NGS_run_SAMPLE)
     script.close()
 
@@ -84,11 +83,12 @@ Glue_commands = """
 project hcv_glue_avu
 run script glue/populatePatientTable.js
 run script glue/populateSampleTable.js
-module NGSSequenceDataPopulator populate --whereClause "source.name='RUNID'" --fileName tabular/table_sequence/metadata_table_SEQUENCE_RUNID.csv
+module NGSSequenceDataPopulator populate --whereClause "source.name='NGSsource'" --fileName tabular/table_sequence/metadata_table_SEQUENCE_RUNID.csv
 Q
 exit\
 """
 #project hcv_glue_avu\nimport source sources/NGS93\nQ\nexit\n'
+Glue_commands = Glue_commands.replace("NGSsource", SourcesNGSid) #NGSid)
 Glue_commands = Glue_commands.replace("RUNID", NGSid) 
 p1 = subprocess.run("gluetools.sh" , text=True, input=Glue_commands)
 
