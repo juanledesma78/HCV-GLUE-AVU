@@ -9,7 +9,7 @@ var samples;
 
 // access module tabularUtilityCsv and load data from file
 glue.inMode("module/tabularUtilityCsv", function(){
-    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS93.csv"]));
+    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS94.csv"]));
 }
 );
 // this is equivalent to 
