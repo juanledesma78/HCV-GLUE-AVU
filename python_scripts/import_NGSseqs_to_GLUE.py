@@ -32,6 +32,7 @@ for sequence in NGS_directory:
     with open(fasta_file,'r') as fasta:
         fasta_name=re.sub(r'^[0-9]*_',"",sequence) # remove first digits from the header
         fasta_name=fasta_name.replace(".fas", "_" + runID ) # replace .fas with NGS run
+        fasta_name=fasta_name.replace(".", "-") # H211140566.1_NGS96it contained . rather than - (manual modification?)
         file_name = fasta_name + ".fas"
         renamed_fasta_file = open(path_to_sources + runName +"/"+ file_name,'wt') # fasta_name + ".fas"
         renamed_sequence =""
@@ -61,8 +62,8 @@ run = {"sequenceID" : sequenceID, "MOLIS" : molis_id, "Pipeline": Pipeline, "Ver
 ngs_run = pd.DataFrame(data=run)
 ngs_run.to_csv(path_to_tabular +"metadata_table_SEQUENCE_"+ runID +".csv", index=False)
 
-#CALLING GLUE TO IMPORT NEW FASTA SEQUENCES
-Glue_commands = """ 
+#CALLING GLUE TO IMPORT NEW FASTA SEQUENCES python 3.8
+Glue_commands = """
 project hcv_glue_avu
 import source sources/RUNID
 Q
