@@ -39,3 +39,26 @@ table hospital
 create link sequence sample --multiplicity MANY_TO_ONE 
 create link sample patient --multiplicity MANY_TO_ONE # several samples (follow-up) come from the same patient
 create link sample hospital --multiplicity MANY_TO_ONE 
+
+
+###################3
+create custom-table treatment
+table treatment
+	#create field patient_id INTEGER
+	#Error: Invalid project schema change: Cannot add a custom link with destination table 'treatment' and destination link name 'patient', because a custom field on this table named 'patient_id' already exists
+	#create field drug_id VARCHAR # it must be in the csv file but it may be not needed in the table accroding to how GLUE works
+	create field dose VARCHAR # VARCHAR FOR TESTING
+	create field treatment_date DATE
+    exit
+
+
+create custom-table drug
+table drug
+	#create field drug_id VARCHAR # this is the primary key so it will be included in the rowid when populate the data, no field should be required in the table
+    #Error: Invalid project schema change: Cannot add a custom link with source table 'treatment' and source link name 'drug', because a custom field on this table named 'drug_id' already exists
+	create field manufacturer VARCHAR
+    exit
+
+create link treatment drug --multiplicity MANY_TO_ONE 
+create link patient treatment --multiplicity ONE_TO_MANY 
+

@@ -1,0 +1,27 @@
+schema-project hcv_glue_avu
+
+delete custom-table treatment
+delete custom-table drug
+
+#epi data
+#treatment table, joint table, MANYtoMANY relationship
+# this should be connected to patient and drug by patient_id and drug_id
+create custom-table treatment
+table treatment
+	create field patient_id INTEGER
+	#create field drug_id VARCHAR # it must be in the csv file but it may be not needed in the table accroding to how GLUE works
+	create field dose VARCHAR # VARCHAR FOR TESTING
+	create field treatment_date DATE
+    exit
+
+
+create custom-table drug
+table drug
+	#create field drug_id VARCHAR # this is the primary key so it will be included in the rowid when populate the data, no field should be required in the table
+    #Error: Invalid project schema change: Cannot add a custom link with source table 'treatment' and source link name 'drug', because a custom field on this table named 'drug_id' already exists
+	create field manufacturer VARCHAR
+    exit
+
+create link treatment drug --multiplicity MANY_TO_ONE 
+create link patient treatment --multiplicity ONE_TO_MANY 
+
