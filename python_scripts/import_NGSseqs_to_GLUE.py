@@ -2,7 +2,8 @@ import os, re, sys
 import pandas as pd 
 import subprocess
 path_to_NGS_run  = sys.argv[1] #ngs run, "z:/Antiviral Unit/Sequencing - HCV WGS/"+ NGSrun +"/FASTAs/"
-path_to_sources = sys.argv[2]
+#path_to_sources = sys.argv[2]
+path_to_sources = "sources/"
 NGS = re.search(r'NGS[0-9]*.*', path_to_NGS_run) 
 NGS_fastas = NGS.group() # NGS91/FASTAs/
 ngsRun = re.search(r'^NGS[0-9]*.*[^/FASTAs]', NGS_fastas ) # keep the original name
@@ -11,12 +12,13 @@ runName = runName.replace(' ','_') # to allow the glue commands, error if spaces
 NGSid = re.search(r'^NGS[0-9]*', runName ) # use only RUN name 
 runID = NGSid.group()
 
-if path_to_sources[-1]!= "/":
-    path_to_sources=path_to_sources+"/"
+#if path_to_sources[-1]!= "/":
+#    path_to_sources=path_to_sources+"/"
 if path_to_NGS_run[-1]!='/':
     path_to_NGS_run= path_to_NGS_run +"/"
 
-path_to_tabular = path_to_sources.replace("sources", "tabular/table_sequence")
+#path_to_tabular = path_to_sources.replace("sources", "tabular/table_sequence")
+path_to_tabular = "tabular/table_sequence/"
 
 #sources_folder = os.mkdir(path_to_sources + str(runName))
 os.mkdir(path_to_sources + str(runName))
@@ -32,25 +34,25 @@ for sequence in NGS_directory:
     with open(fasta_file,'r') as fasta:
         fasta_name=re.sub(r'^[0-9]*_',"",sequence) # remove first digits from the header
         fasta_name=fasta_name.replace(".fas", "_" + runID ) # replace .fas with NGS run
-        fasta_name=fasta_name.replace(".", "-") # H211140566.1_NGS96it contained . rather than - (manual modification?)
-        file_name = fasta_name + ".fas"
-        renamed_fasta_file = open(path_to_sources + runName +"/"+ file_name,'wt') # fasta_name + ".fas"
+        final_name=fasta_name.replace(".", "-") # H211900006.2_NGS99 and H211140566.1_NGS96it contained . rather than - (manual modification?)
+        file_name = final_name + ".fas"
+        renamed_fasta_file = open(path_to_sources + runName +"/"+ file_name,'wt') # final_name + ".fas"
         renamed_sequence =""
         for line in fasta:
             
             if ">" in line: 
                 pass
             else:
-                renamed_sequence += ">"+ fasta_name +"\n" +line
+                renamed_sequence += ">"+ final_name +"\n" +line
                 renamed_fasta_file.write(renamed_sequence)
                 renamed_fasta_file.close()
     
-        if "PC" not in fasta_name: #fasta_name H210360998-1_NGS91....
-            sequenceID.append(fasta_name)
-            molis = re.search(r'(^(H|RS)[0-9]*)',  fasta_name)
+        if "PC" not in final_name: #final_name H210360998-1_NGS91....
+            sequenceID.append(final_name)
+            molis = re.search(r'(^(H|RS)[0-9]*)',  final_name)
             molisID = molis.group()
             molis_id.append(molisID)
-            if "genomancer" in fasta_name:
+            if "genomancer" in final_name:
                 Pipeline.append("Genomacer")
                 Version.append("v.1")
             else:
