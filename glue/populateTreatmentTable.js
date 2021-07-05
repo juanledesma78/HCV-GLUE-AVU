@@ -28,7 +28,7 @@ _.each(treatments, function(treatment){
         glue.command(["set", "field", "dose", dose]);
         glue.command(["set", "field", "treatment_date", treatmentDt]);
         glue.command(["set", "link-target", "drug", "custom-table-row/drug/"+drugId]);
-        glue.command(["set", "link-target", "patient", "custom-table-row/patient/"+patientId]);
+        //glue.command(["add", "link-target", "patient", "custom-table-row/patient/"+patientId]);
         });
     });
 
