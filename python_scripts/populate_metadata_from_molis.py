@@ -61,20 +61,20 @@ sequenceId_molis_info[["pid","NHS", "ORDPATBIRTHDT","ORDPATSX"]].drop_duplicates
 # update the name run in javascripts
 
 new_NGS_run_PATIENT = ""
-with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'r') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/glue/populatePatientTable.js",'r') as script:
         text = script.read()
         new_NGS_run_PATIENT = re.sub(r'metadata_table_PATIENT_[a-zA-Z0-9]*.csv','metadata_table_PATIENT_'+ NGSid + '.csv', text)
         script.close()
-with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populatePatientTable.js",'w') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/glue/populatePatientTable.js",'w') as script:
     script.write(new_NGS_run_PATIENT)
     script.close()
 
 new_NGS_run_SAMPLE = ""
-with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'r') as script: # modify the path with the final one
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/glue/populateSampleTable.js",'r') as script: # THIS IS NOT THE FINAL PATH AS IT DEPENDS ON WHERE GLUE IS GOING TO BE INSTALLED
         text = script.read()
         new_NGS_run_SAMPLE = re.sub(r'metadata_table_SAMPLE_[a-zA-Z0-9]*.csv','metadata_table_SAMPLE_'+ NGSid + '.csv', text)
         script.close()
-with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/HCV-GLUE-AVU/glue/populateSampleTable.js",'w') as script:
+with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/glue/populateSampleTable.js",'w') as script:
     script.write(new_NGS_run_SAMPLE)
     script.close()
 
