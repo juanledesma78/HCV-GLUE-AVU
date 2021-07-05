@@ -8,7 +8,7 @@ delete custom-table drug
 # this should be connected to patient and drug by patient_id and drug_id
 create custom-table treatment
 table treatment
-	create field patient_id INTEGER
+	#create field patient_id INTEGER
 	#create field drug_id VARCHAR # it must be in the csv file but it may be not needed in the table accroding to how GLUE works
 	create field dose VARCHAR # VARCHAR FOR TESTING
 	create field treatment_date DATE
