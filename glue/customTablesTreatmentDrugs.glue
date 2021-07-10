@@ -23,5 +23,5 @@ table drug
     exit
 
 create link treatment drug --multiplicity MANY_TO_ONE 
-create link patient treatment --multiplicity ONE_TO_MANY 
-
+#create link patient treatment --multiplicity ONE_TO_MANY 
+create link treatment patient --multiplicity MANY_TO_ONE
