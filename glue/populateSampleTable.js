@@ -9,7 +9,7 @@ var samples;
 
 // access module tabularUtilityCsv and load data from file
 glue.inMode("module/tabularUtilityCsv", function(){
-    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS94.csv"]));
+    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS91.csv"]));
 }
 );
 // this is equivalent to 
@@ -30,6 +30,8 @@ _.each(samples, function(sample){
         var receptionDate = nullTrim(sample["RECEPT_DT"]);
         var initialGenotype = nullTrim(sample["HCVGEN"]);
         var patientId = nullTrim(sample["pid"]);// set links,  not fields
+        var hospitalId = nullTrim(sample["CORORDNB"]); // add hospital to csv NEW
+
         glue.command(["create", "custom-table-row", "sample", molisId]); //create custom-table-row sample <rowId> 
         glue.inMode("custom-table-row/sample/"+molisId, function(){ // access the row to set the fields
 		    glue.command(["set", "field", "sample_date", sampleDate]);
@@ -37,7 +39,7 @@ _.each(samples, function(sample){
             glue.command(["set", "field", "initial_genotype", initialGenotype]);
             //glue.command(["set", "field", "patient", patientid]); // NOT SURE ABOUT THIS 
             glue.command(["set", "link-target", "patient", "custom-table-row/patient/"+patientId]);
-            //glue.command(["set", "link-target", "hospital", "custom-table-row/hospital/"+XXXX]);
+            glue.command(["set", "link-target", "hospital", "custom-table-row/hospital/"+hospitalId]); // add hospital NEW
             });
         }
                                 });
