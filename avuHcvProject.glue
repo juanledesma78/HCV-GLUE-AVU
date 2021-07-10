@@ -23,6 +23,7 @@ project hcv_glue_avu
 
   # populate custom tables WHO regions, countries... (M49 standard)
   run file glue/who_countries/populateWhoCountries.glue
+  run script glue/populateHospitalTable.js
   
   # populate other data from genbank xml files
   module GenbankXmlPopulator populate --silent
