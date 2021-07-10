@@ -13,7 +13,7 @@ table sample
     create field sample_date DATE # create field sample_date DATE
     create field reception_date DATE # create field reception_date DATE
     create field initial_genotype VARCHAR #  create field initial_genotyping VARCHAR
-    # csv file must contain a field patient_id and hospital_code to link the tables
+    # csv file must contain a field patient_id and hospital_code to link the tables (CORORDNB)
     exit
 
 
@@ -33,7 +33,7 @@ table patient
 create custom-table hospital # this cab be populate once
 table hospital
 	#hospital_code is the id for this table connected to table sample
-    #create field hospital_code VARCHAR # create a custom table for hospitals
+    #create field hospital_code VARCHAR # create a custom table for hospitals (CORORDNB)
     create field hospital_name VARCHAR
     exit
 create link sequence sample --multiplicity MANY_TO_ONE 
