@@ -53,7 +53,7 @@ for seqid in ngs_run["sequenceID"]:
 sample_list= path_to_tabular + "/table_sample/" + "metadata_table_SAMPLE_" + NGSid + ".csv"
 patient_list= path_to_tabular + "/table_patient/" +  "metadata_table_PATIENT_" + NGSid + ".csv"
 
-sequenceId_molis_info[["MOLIS","LID","LPERIOD","ORDNB","HCVGEN","SAMPLE_DT","RECEPT_DT","pid","NHS", "REFEXT"]].drop_duplicates("MOLIS").to_csv(sample_list, index=False)
+sequenceId_molis_info[["MOLIS","LID","LPERIOD","ORDNB","HCVGEN","SAMPLE_DT","RECEPT_DT","pid","NHS", "CORORDNB","REFEXT"]].drop_duplicates("MOLIS").to_csv(sample_list, index=False)
 sequenceId_molis_info[["pid","NHS", "ORDPATBIRTHDT","ORDPATSX"]].drop_duplicates("pid").to_csv(patient_list, index=False)
 
 
@@ -91,5 +91,4 @@ exit\
 Glue_commands = Glue_commands.replace("NGSsource", SourcesNGSid) #NGSid)
 Glue_commands = Glue_commands.replace("RUNID", NGSid) 
 p1 = subprocess.run("gluetools.sh" , text=True, input=Glue_commands)
-
 
