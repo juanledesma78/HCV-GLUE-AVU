@@ -22,5 +22,10 @@
 		
 </textFilePopulator>
 <!--
-	
+	</textFileColumn>
+    	<textFileColumn>
+		<header>ORDPATIDNB</header>
+		<property>patientid</property>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
 -->

@@ -1,11 +1,10 @@
-  # usage: create <nameModule> --fileName <path to the directory where xml file is> <name for the module (optional)>
-  
-  # DOWNLOAD REFSEQS FROM GENBANK
-  create module --fileName modules/external/NcbiRefSeqsImporter_Smith2019.xml ncbi-hcv-refseqs-importer
-  #create module --fileName modules/external/NcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer #No needed for AVU
+  # DOWNLOAD REFSEQS FROM GENBANK (EXTERNAL)
+  create module --fileName modules/NcbiRefSeqsImporter_HCVSmith2019.xml 
+  #..... modules/NcbiRefSeqsImporter_Smith2019.xml ncbi-hcv-refseqs-importer <<< this gives a new name if needed
   
   # populate the genotype/subtype data for the reference sequences from a file.
-  create module --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml reference-genotypes-subtypes-populator
+  create module --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml 
+  #........... --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml reference-genotypes-subtypes-populator
   
   # populate data from NGS sequences in table sequence: hcv_wg_pipeline, version... sample(link to table sample)
   create module --fileName modules/NGSSequenceDataPopulator.xml
@@ -13,20 +12,10 @@
   # populate AVU custom tables,specify parameters for the file used to populate data 
   create module --fileName modules/tabularUtilityCsv.xml
   
-
   # import Smith2019 alignment 
-  create module --fileName modules/blastFastaAlignmentImporter_avu.xml smith2019-alignment-importer
-
-  # the line above substitude all of this
-  # module to import the Smith 2015 alignment 
-  ###create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
-  # modules to import the edited alignment
-  ###create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
-  ###create module --fileName modules/blastFastaAlignmentImporter.xml blastFastaAlignmentImporter
-
-  ###create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
-  # as above but uses blastFastaImporter
-  ###create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
+  create module --fileName modules/smith2019FastaAlignmentImporter.xml
+  #create module --fileName modules/blastFastaAlignmentImporter_avu.xml smith2019-alignment-importer
+  
 
   #Feature creation 
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
@@ -42,54 +31,64 @@
  
   #to create the phylogeny, it must be ran independently
   ###create module --fileName modules/hcvModelTester.xml
-  create module --fileName modules/external/RaxmlPhylogenyGenerator.xml
-  create module --fileName modules/external/PhylogenyColumnsSelector.xml 
-  create module --fileName modules/external/FigTreeAnnotationExporter.xml 
-  create module --fileName modules/external/PhyloUtility.xml
-  create module --fileName modules/external/PhyloExporter.xml 
-  create module --fileName modules/external/PhyloImporter.xml 
+  create module --fileName modules/RaxmlPhylogenyGenerator.xml
+  create module --fileName modules/PhylogenyColumnsSelector.xml 
+  create module --fileName modules/FigTreeAnnotationExporter.xml 
+  create module --fileName modules/PhyloUtility.xml
+  create module --fileName modules/PhyloExporter.xml 
+  create module --fileName modules/PhyloImporter.xml 
 
   # GENOTYPING
   create module --fileName modules/CompoundAligner.xml 
+  
+  # genotyping using the precursor polyprotein
   create module --fileName modules/MaxLikelihoodPlacer.xml
   create module --fileName modules/MaxLikelihoodGenotyper.xml
 
-  #EXPORTING ALIGNMENTS OR SEQUENCES, in case it is needed
+  # genotyping using single genes
+  create module --fileName modules/MaxLikelihoodPlacerCore.xml
+  create module --fileName modules/MaxLikelihoodPlacerE1.xml
+  create module --fileName modules/MaxLikelihoodPlacerE2.xml
+  create module --fileName modules/MaxLikelihoodPlacerP7.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS2.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS3.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS4A.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS4B.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS5A.xml
+  create module --fileName modules/MaxLikelihoodPlacerNS5B.xml
+  create module --fileName modules/MaxLikelihoodGenotyperCore.xml
+  create module --fileName modules/MaxLikelihoodGenotyperE1.xml
+  create module --fileName modules/MaxLikelihoodGenotyperE2.xml
+  create module --fileName modules/MaxLikelihoodGenotyperP7.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS2.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS3.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS4A.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS4B.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS5A.xml
+  create module --fileName modules/MaxLikelihoodGenotyperNS5B.xml
+
+  #EXPORTING ALIGNMENTS OR SEQUENCES
   create module --fileName modules/fastaExporter.xml 
   create module --fileName modules/fastaAlignmentExporter.xml
   
 
-##################################################################
-  
+  ##################################################################
   ###create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
-
   ###create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   ###create module --fileName modules/samReporter.xml samReporter
-
   ###create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   ###create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
-  
-
   ###create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
   ###create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
   ###create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources
-
   ###create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
   ###create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
-
   ###create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
-
   ###create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
-  
-  
   ###create module --moduleType fastaProteinAlignmentExporter
   ###create module --moduleType nucleotideConsensusGenerator
   ###create module --moduleType aminoAcidConsensusGenerator  
-  
   ###create module --fileName modules/hcvFeaturePresenceRecorder.xml hcvFeaturePresenceRecorder
-
   ###create module --fileName modules/whoRegionTreeRenderer.xml --loadResources
-  
- 
   ###create module -f modules/hcvSequenceRecogniser.xml  
 

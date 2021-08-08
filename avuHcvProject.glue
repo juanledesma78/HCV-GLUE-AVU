@@ -2,63 +2,58 @@ delete project hcv_glue_avu
 
 create project hcv_glue_avu "Hepatitis C virus GLUE project at AVU" --minVersion 1.1.107 
 
-# extensions in tables sequence, alignment, variation, var_almt_note, member_floc_note
-# custom tables: who_country, who regions... avu tables
+# SCHEMA EXTENSION on tables sequence, alignment and create AVU custom tables and others (who_country, who regions...)
 run file glue/SchemaExtensions.glue
  
 project hcv_glue_avu 
 
   run file glue/ProjectSettings.glue
   
-  # create modules: define the configuration in xml files
+  # CREATE MODULES: define the configuration in xml files
   run file glue/Modules.glue
 
+  # IMPORT REFERENCE SEQUENCES FROM SOURCES
   # reference sequences need to be imported from genbank using the modules NcbiRefSeqsImporter_avu.xml before importing in the project
   # the module specifies the accession number to import, the format (genbank xml) and the directory to save them
-  # this is executed independently to the master project. It needs to be run before thes project is built. 
-  
-  # import the REFERENCE SEQUENCES from folder SOURCES
-  # WARNING: recombinats and outgroup are imported but they are not going to be used in the project. Just in case in the future they are needed
+  # this was executed independently to the master project before the project was built. 
   import source sources/ncbi-refseqs
 
+  # DATA POPULATION
   # populate custom tables WHO regions, countries... (M49 standard)
   run file glue/who_countries/populateWhoCountries.glue
-  run script glue/populateHospitalTable.js
+  run script glue/populateHospitalTable.js 
+  run script glue/populateDrugTable.js 
   
   # populate other data from genbank xml files
   module GenbankXmlPopulator populate --silent
   
   # populate/update the genotype/subtypes recommeded by Smith 2019 in fields genotype, subtype and reference_status (this will be useful for filtering)
-  #add a comment to field "genotyping method" to identify the reference sequences by Smith 2019 that are in the uncostrained alignment (confirmed and unassigned subtypes)
-  module reference-genotypes-subtypes-populator populate --fileName tabular/Smith2019_IDs_Genotype_Subtype_Ref.csv
+  # comment to field "genotyping method" to identify the reference sequences by Smith 2019 that are in the uncostrained alignment (confirmed and unassigned subtypes)
+  module ReferenceGenotypeSubtypePopulator_avu populate --fileName tabular/Smith2019_IDs_Genotype_Subtype_Ref.csv
   multi-set field sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('confirmed','unassigned')" genotyping_method "Refseqs recommended by Smith2019, provided with alignment"
   
-
-  # define the features (CDS and non coding regions) and the MASTER reference sequence (NC_004102) for the project
+  # DEFINITION OF FEATURES AND REFERENCE SEQUENCES
+  # features (CDS and non coding regions) and the MASTER reference sequence (NC_004102) for the project
   run file glue/Features.glue
   
-  # import UNCONSTRAINED alignment Smith 2019 (aligned by HCValign using codon-align option and manual editing for some positions https://hcv.lanl.gov/content/sequence/VIRALIGN/viralign.html). 
-  # usage: module <name> import <name for the alignment in GLUE> --fileName <path to the alignment in computer>
-  # all the sequences in the alignment MUST be already in table sequence. The sequence are added and a table displayed the segments (blocks aligned) and the coverage
-  module smith2019-alignment-importer import AL_UNCONSTRAINED_Smith2019 --fileName alignments/Smith_2019_refseqs_filename_NC_004102_edited_v2.fas
+  # import UNCONSTRAINED alignment Smith 2019 
+  # all the sequences in the alignment MUST be already in table sequence
+  module smith2019FastaAlignmentImporter import AL_UNCONSTRAINED_Smith2019 --fileName alignments/Smith_2019_refseqs_filename_NC_004102_edited_v2.fas
   
   # create the other reference sequences of the project and inherit the features from the MASTER refseq
   run file glue/ReferenceSequences.glue
   run file glue/InheritFeatureLocationsFromNC_004102.glue
   
-  # create the relational tables (alignment trees) defining the relationships between sequences  (genotypes, subtypes) based on Smith2019. 
-  # Once this is done, derive from the nt segments from unconstrained alignment to give more context to these relationships.  
+  # DEFINE GENETIC CLASSIFICATION TO STORE IN RELATIONAL TABLES (alignment trees) defining the relationships between sequences (genotypes, subtypes) based on Smith2019. 
+  # derive from the nt segments from unconstrained alignment to give more context to these relationships.  
   run file glue/AlignmentTree.glue
   
-
-  # import phylogeny, using either raxml or fasttree(external) calculate the distances between nodes and add to the table alignments, field phylogeny
+  # import phylogeny, using either raxml (slow, internal) or fasttree (external) generate newick tree (genetic distances between nodes...) and add to the table alignments, field phylogeny
+  # raxml: the bootstrap values are 100. fasttree: bootstrap values as 1.00 so they will need to modify for genotyping
   run file glue/importPhylogeny.glue
   
   validate
    
   exit  
   
-  # Add PHE-HCV-DRUG-RESISTANCE extensions
 
-  #run file phdrExtension_avu.glue
-  

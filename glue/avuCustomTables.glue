@@ -21,13 +21,14 @@ create custom-table patient
 table patient
 	#patient_id is the id for this table connected to table sample (but no field is defined in table sample)
     create field date_of_birth DATE # create field date_of_birth DATE ORDPATBIRTHDT
-    create field age_diagnosis INTEGER
+    create field diagnosis_date DATE
     create field country_of_birth VARCHAR
     create field nationality VARCHAR
-    create field ethnicity VARCHAR
+    create field ethnicity VARCHAR 100
     create field city_of_residence VARCHAR
     create field nhs INTEGER # it was integer but pandas changes to float when NaN 
     create field gender VARCHAR 
+    create field hiv_infection VARCHAR 
     exit
 
 create custom-table hospital # this cab be populate once
@@ -47,7 +48,7 @@ table treatment
 	#create field patient_id INTEGER
 	#Error: Invalid project schema change: Cannot add a custom link with destination table 'treatment' and destination link name 'patient', because a custom field on this table named 'patient_id' already exists
 	#create field drug_id VARCHAR # it must be in the csv file but it may be not needed in the table accroding to how GLUE works
-	create field dose VARCHAR # VARCHAR FOR TESTING
+	create field regime VARCHAR # VARCHAR FOR TESTING
 	create field treatment_date DATE
     exit
 
@@ -57,6 +58,7 @@ table drug
 	#create field drug_id VARCHAR # this is the primary key so it will be included in the rowid when populate the data, no field should be required in the table
     #Error: Invalid project schema change: Cannot add a custom link with source table 'treatment' and source link name 'drug', because a custom field on this table named 'drug_id' already exists
 	create field manufacturer VARCHAR
+	create field therapy_class VARCHAR
     exit
 
 create link treatment drug --multiplicity MANY_TO_ONE 

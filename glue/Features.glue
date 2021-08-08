@@ -156,17 +156,6 @@ feature 3UTR
 
 ### ADD FEATURES TO A SEQUENCE, TO USE AS REFERENCE NUMBERING
 
-# usage: craete reference NAME path-to-file-in-sources-folder filename
-# access the reference sequence
-# add feature-location <each gene> 
-# access feature-location
-# add segment <refstart> <refend>
-
-#create reference REF_FEATURES_H77 210416_refs H77 
-#H77 is NC_004102 but if the latter is used it gives an error becuase is found in every alignment as reference and in SUbtype 1 and Genotype 1
-#reference  REF_FEATURES_H77
-#create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102 # Smith does not cosider NC_004102 as reference so it will be used for features
-
 # NC_004102 is just used for feature porpuse
 create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
 reference REF_MASTER_NC_004102

@@ -5,8 +5,6 @@ create alignment AL_MASTER --refSeqName REF_MASTER_NC_004102
 alignment AL_MASTER
     set field displayName "Hepatitis C virus (HCV)"
     set field description "Object with the references for each geneotype from folder ncbi-refseqs. AL_MASTER>>ALX>>AL_Subtype"
-    # DO NOT include recombinants in MASTER, it is better to delete them from ncbi-refseqs?  alternative way for filtering them --whereClause "source.name = 'ncbi-refseqs' and genotype not like 'RF%'" 
-    # list sequence --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('recombinant','confirmed')" sequenceID reference_status
     #add member --whereClause "source.name = 'ncbi-refseqs' and reference_status ='confirmed'" # nor recombinant neither outgroup
     add member --whereClause "source.name = 'ncbi-refseqs' and reference_status in ('confirmed','unassigned')" # nor recombinant neither outgroup
     
@@ -354,7 +352,6 @@ alignment AL_8
     exit
 
 # derive constrained segments throughout the tree from the uncostrained AL_MASTER 
-# Usage: derive segments <sourceAlmtName> [-r] [-l <linkingReference>] [-s] [-e] (-w <whereClause> | -a) [-m <mergeStrategy>]
 # The alignmentTrees above (constrained) have been defined but the sequences are not aligned.
 # You derive the alignment/segments from the uncostrained alignment added at the beginning.
 

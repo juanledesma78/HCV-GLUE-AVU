@@ -9,12 +9,12 @@ var samples;
 
 // access module tabularUtilityCsv and load data from file
 glue.inMode("module/tabularUtilityCsv", function(){
-    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS91.csv"]));
-}
+    samples = glue.tableToObjects(glue.command(["load-tabular","tabular/table_sample/metadata_table_SAMPLE_NGS99.csv"]));
+    }
 );
 // this is equivalent to 
 // modules/tabularUtilityCsv
-// load-tabular tabular/made-up_MolisData_test_SAMPLES_NGS91.csv
+// load-tabular tabular/*.csv
 // exit
 
 //RETRIEVE AN ARRAY WITH THE SAMPLES ALREADY IN GLUE 
@@ -29,7 +29,8 @@ _.each(samples, function(sample){
         var sampleDate = nullTrim(sample["SAMPLE_DT"]); 
         var receptionDate = nullTrim(sample["RECEPT_DT"]);
         var initialGenotype = nullTrim(sample["HCVGEN"]);
-        var patientId = nullTrim(sample["pid"]);// set links,  not fields
+        //var patientId = nullTrim(sample["pid"]);// set links,  not fields
+        var patientId = nullTrim(sample["ORDPATIDNB"]);// set links,  not fields
         var hospitalId = nullTrim(sample["CORORDNB"]); // add hospital to csv NEW
 
         glue.command(["create", "custom-table-row", "sample", molisId]); //create custom-table-row sample <rowId> 
