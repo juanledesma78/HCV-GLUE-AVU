@@ -1,0 +1,34 @@
+
+
+<maxLikelihoodPlacer>
+
+	<raxmlEpaRunner>
+		<substitutionModel>GTRGAMMAI</substitutionModel>
+	</raxmlEpaRunner>
+
+
+	<!-- where the RAxML epa phylogeny will come from -->
+	<phyloAlignmentName>AL_MASTER</phyloAlignmentName>
+	<phyloFieldName>phylogeny</phyloFieldName>
+
+	<!-- where the alignment will come from -->
+	<alignmentAlignmentName>AL_UNCONSTRAINED_Smith2019</alignmentAlignmentName>
+	<alignmentRelatedRefName>REF_MASTER_NC_004102</alignmentRelatedRefName>
+	<alignmentFeatureName>E1</alignmentFeatureName>
+	
+</maxLikelihoodPlacer> 
+
+<!--
+
+Error: Mulitple settings found for property alignmentFeatureName
+
+<alignmentFeatureName>E1</alignmentFeatureName>
+	<alignmentFeatureName>E2</alignmentFeatureName>
+	<alignmentFeatureName>p7</alignmentFeatureName>
+	<alignmentFeatureName>NS2</alignmentFeatureName>
+	<alignmentFeatureName>NS3</alignmentFeatureName>
+	<alignmentFeatureName>NS4A</alignmentFeatureName>
+	<alignmentFeatureName>NS4B</alignmentFeatureName>
+	<alignmentFeatureName>NS5A</alignmentFeatureName>
+	<alignmentFeatureName>NS5B</alignmentFeatureName>
+-->

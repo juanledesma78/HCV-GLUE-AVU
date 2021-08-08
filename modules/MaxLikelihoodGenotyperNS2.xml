@@ -1,0 +1,32 @@
+<!-- 
+    
+ -->
+<maxLikelihoodGenotyper>
+	<maxLikelihoodPlacerModuleName>MaxLikelihoodPlacerNS2</maxLikelihoodPlacerModuleName>
+	<cladeCategory>
+		<name>genotype</name>	
+		<displayName>Genotype</displayName>	
+		<!--<whereClause>displayName like 'Genotype%'</whereClause>-->
+		<whereClause>parent.name = 'AL_MASTER'</whereClause>
+		<distanceScalingExponent>-3.0</distanceScalingExponent>
+		<distanceCutoff>0.4</distanceCutoff>
+		<finalCladeCutoff>80.0</finalCladeCutoff>
+	</cladeCategory>
+	<cladeCategory>
+		<name>subtype</name>	
+		<displayName>Subtype</displayName>	
+		<!--<whereClause>displayName like 'Subtype%'</whereClause>-->
+		<whereClause>parent.parent.name = 'AL_MASTER'</whereClause>
+		<distanceScalingExponent>-4.5</distanceScalingExponent>
+	    <distanceCutoff>0.26</distanceCutoff>
+		<finalCladeCutoff>80.0</finalCladeCutoff>
+	</cladeCategory>
+	<useSingleReference>true</useSingleReference>
+</maxLikelihoodGenotyper>
+
+<!--16:10:50.905 MaxLikelihoodGenotyper WARNING: Module 'MaxLikelihoodGenotyper' of type maxLikelihoodGenotyper: consider setting <useSingleReference> to true, to avoid the bias towards clades with more references defined.
+add property useSingleReference true
+setting this option true means that within a placement, for a given clade in a cladeCategory, only the closest reference sequence will contribute to that clade's weighting.
+the option should probably always be used, otherwise you have bias towards clades with more references. 
+https://www.researchgate.net/project/GLUE-a-data-centric-software-framework-for-management-and-analysis-of-virus-sequence-data
+-->

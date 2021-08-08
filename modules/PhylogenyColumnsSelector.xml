@@ -1,0 +1,52 @@
+<!-- 
+    Filter applied to an alignment which selects columns based on feature locations or specific coordinates
+
+-->
+
+<alignmentColumnsSelector>
+	<relRefName>REF_MASTER_NC_004102</relRefName>
+	<aminoAcidRegionSelector>
+		<featureName>precursor_polyprotein</featureName>
+	</aminoAcidRegionSelector>
+</alignmentColumnsSelector> 
+
+
+<!--
+<alignmentColumnsSelector>
+	<relRefName>REF_MASTER_NC_004102</relRefName>
+	<aminoAcidRegionSelector>
+		<featureName>precursor_polyprotein</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>Core</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>E1</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>E2</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>p7</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS2</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS3</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS4A</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS4B</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS5A</featureName>
+	</aminoAcidRegionSelector>
+	<aminoAcidRegionSelector>
+		<featureName>NS5B</featureName>
+	</aminoAcidRegionSelector>
+</alignmentColumnsSelector> 
+
+-->
