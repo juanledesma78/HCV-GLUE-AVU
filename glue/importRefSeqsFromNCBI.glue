@@ -1,0 +1,12 @@
+# This script downloads the reference sequences and 
+# saves them in a folder called source/ncbi-refseqs in the project 
+# the script MUST be ran in root mode
+
+project hcv_glue_avu
+
+module NcbiRefSeqsImporter_HCVSmith2019
+    sync --detailed 
+    exit
+
+# usage: export source [-b <batchSize>] [-p <parentDir/Destination>] <sourceName> [-w <whereClause>] [-t <idTemplate>]
+export source -p sources ncbi-refseqs
