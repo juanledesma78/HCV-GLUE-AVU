@@ -1,0 +1,17 @@
+id,pid,drug_id,regime,treatment_date
+1,24,simeprevir,1 tablet per day,05-Apr-2019
+2,24,sofosbuvir,1 tablet per day,05-Apr-2019
+3,24,dasabuvir,2 tablets per day,08-Aug-2020
+4,10,ledipasvir,,30-Jun-2011
+5,10,ombitasvir,,05-Jan-1988
+6,10,paritaprevir,,30-Jun-2011
+7,9,ritonavir,,05-Apr-2019
+8,9,dasabuvir,,05-Apr-2019
+9,12,ritonavir,,08-Aug-2020
+66,15,simeprevir,,05-Jun-2019
+67,15,simeprevir,1 tablet per day,30-Jun-2011
+68,15,ombitasvir,1 tablet per day,07-Jan-2011
+69,8,simeprevir,,05-Jun-2019
+70,7,ritonavir,1 tablet per day,05-Jun-2019
+71,1,dasabuvir,2 tablets per day,08-Aug-2020
+72,3,sofosbuvir,2 tablets per day,07-Jan-2011

@@ -1,0 +1,15 @@
+id,patient.id,regime,treatment_date,drug.id,drug.manufacturer,drug.therapy_class
+11,95,2 tablets per day,05-Jan-1988,ledipasvir,Gilead,NS5A inhibitor
+12,110,-,30-Jun-2011,ritonavir,AbbVie,NS5A inhibitor
+13,110,-,05-Apr-2019,paritaprevir,AbbVie,NS3A/4A protease inhibitor
+14,125,-,05-Apr-2019,ledipasvir,Gilead,NS5A inhibitor
+15,137,-,08-Aug-2020,paritaprevir,AbbVie,NS3A/4A protease inhibitor
+18,125,1 tablet per day,30-Jun-2011,simeprevir,Janssen,NS3A/4A protease inhibitor
+20,91,-,05-May-2019,simeprevir,Janssen,NS3A/4A protease inhibitor
+21,91,-,05-May-2019,ledipasvir,Gilead,NS5A inhibitor
+22,91,-,08-Sep-2020,paritaprevir,AbbVie,NS3A/4A protease inhibitor
+23,107,-,07-Jan-2011,peginterferon alfa,-,-
+24,107,-,05-Feb-1988,elbasvir,Merck,NS5A inhibitor
+25,121,-,07-Jan-2011,daclastavir,BMS,NS5A inhibitor
+26,126,-,05-May-2019,asunaprevir,BMS,NS3A/4A protease inhibitor
+30,126,2 tablets per day,05-Feb-1988,simeprevir,Janssen,NS3A/4A protease inhibitor

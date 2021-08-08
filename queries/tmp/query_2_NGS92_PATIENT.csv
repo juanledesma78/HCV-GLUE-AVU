@@ -1,0 +1,51 @@
+sequenceID,sample.patient.id,sample.patient.city_of_residence,sample.patient.country_of_birth,sample.patient.date_of_birth,sample.patient.diagnosis_date,sample.patient.ethnicity,sample.patient.nationality,sample.patient.gender,sample.patient.hiv_infection
+H205140999-1_NGS92,40,-,England,04-Aug-1982,04-Jul-2003,White,British,Female,No
+H210440756-1_NGS92,41,-,Wales,06-Nov-2041,12-May-1991,Not Stated,British,Female,Yes
+H210460580-1_NGS92,42,-,Italy,21-Mar-1987,04-Nov-1990,White,Italian,Female,Yes
+H210480169-1_NGS92,43,Derry,Northern Ireland,15-Jun-1989,17-Jan-1995,White,British,Male,Yes
+H210480859-1_NGS92,44,-,France,12-Sep-2065,12-Aug-1988,White,Italian,Male,Yes
+H210480865-1_NGS92,45,-,Russia,22-Apr-2061,26-Sep-2004,White,Russian,Male,Yes
+H210480866-1_NGS92,46,London,Scotland,31-Jan-2040,07-Dec-2005,White,British,Male,Yes
+H210480867-1_NGS92,47,-,Scotland,09-Feb-1983,25-Nov-1996,Other/Mixed,British,Female,No
+H210480868-1_NGS92,48,-,England,06-Jun-2043,20-Mar-1994,Other/Mixed,British,Female,No
+H210480869-1_NGS92,49,-,Russia,17-Sep-2058,01-May-1994,White,Russian,Female,Yes
+H210480870-1_NGS92,50,-,England,26-Feb-2070,13-Oct-1995,White,British,Male,No
+H210500285-1_NGS92,51,-,England,26-Aug-1985,08-May-1999,White,British,Male,No
+H210500364-1_NGS92,10,Edinburgh,Scotland,14-Dec-2067,15-Mar-1998,White,British,Male,No
+H210500432-1_NGS92,53,-,England,06-May-1974,06-Dec-1993,Asian,British,Male,No
+H210520483-1_NGS92,54,-,England,20-Jul-1976,28-Jan-1994,Black African,British,Male,Yes
+H210520554-1_NGS92,55,London,Scotland,22-Jul-2049,22-Mar-1997,Black Caribbean,British,Female,Yes
+H210520555-1_NGS92,56,London,Gibraltar,28-May-1977,10-Oct-1997,White,British,Female,Yes
+H210520556-1_NGS92,57,-,Germany,22-Feb-2050,03-Mar-2003,Asian,German,Female,Yes
+H210520557-1_NGS92,58,Cambridge,Ghana,26-Jul-2046,20-Jan-2005,White,British,Female,Yes
+H210520558-1_NGS92,59,-,England,17-Oct-1974,04-Feb-1998,White,British,Male,Yes
+H210540062-1_NGS92,60,Oxford,Brazil,19-Jan-1981,31-Jul-1991,White,Brazilian,Male,No
+H210540115-1_NGS92,61,London,Portugal,17-Jul-2059,03-Aug-1991,White,Portuguese,Male,No
+H210540116-1_NGS92,62,-,England,01-May-2067,05-Jan-1998,Other/Mixed,British,Male,Yes
+H210540575-1_NGS92,63,-,China,29-Feb-2048,29-Oct-1988,White,Chinese,Male,No
+H210540581-1_NGS92,64,-,USA,24-Feb-1986,09-Sep-1994,Black African,British,Female,No
+H210560613-1_NGS92,65,-,Russia,06-May-1971,24-Apr-1988,White,Russian,Female,No
+H210560614-1_NGS92,66,-,Korea,11-Dec-1982,28-May-1989,Asian,Korean,Female,Yes
+H210560615-1_NGS92,67,-,Ireland,14-Mar-2057,13-Dec-2000,White,Irish,Male,Yes
+H210560616-1_NGS92,68,London,Ireland,13-Aug-2070,26-Dec-1995,White,Irish,Male,Yes
+H210560748-1_NGS92,69,-,Spain,20-Oct-2051,01-Feb-1988,White,Spanish,Male,Yes
+H210580669-1_NGS92,70,-,France,18-Apr-1975,19-Oct-2003,White,French,Male,Yes
+H210580670-1_NGS92,71,-,Kenya,21-Feb-2041,19-May-2003,Asian,Kenyan,Female,Yes
+H210580671-1_NGS92,72,-,France,25-Oct-1973,21-May-1988,Black African,Italian,Female,No
+H210580672-1_NGS92,73,-,Russia,15-Sep-1980,24-Apr-1993,White,Russian,Female,No
+H210580673-1_NGS92,74,London,Scotland,29-Sep-1975,12-Dec-1995,White,British,Female,Yes
+H210580674-1_NGS92,75,-,Scotland,01-Jul-2041,17-Nov-2004,White,British,Male,No
+H210580675-1_NGS92,76,-,England,05-Oct-1979,31-Oct-1991,White,British,Male,No
+H210580676-1_NGS92,77,London,Russia,08-Oct-2060,04-Feb-1990,White,Russian,Male,No
+H210600302-1_NGS92,78,London,England,08-Mar-2067,05-Dec-2004,White,British,Male,Yes
+H210600303-1_NGS92,79,Manchester,England,18-Sep-2062,30-Dec-2005,White,British,Male,Yes
+H210600362-1_NGS92,80,London,England,08-Dec-2049,27-Apr-1990,White,British,Female,Yes
+H210640639-1_NGS92,81,Salisbury,England,10-Aug-1987,24-May-2005,White,British,Female,Yes
+H210660797-1_NGS92,82,-,Scotland,16-Aug-2047,11-Jun-1998,White,British,Female,Yes
+H210660798-1_NGS92,83,-,Gibraltar,05-May-1974,24-Mar-1990,Other/Mixed,British,Male,Yes
+H210660799-1_NGS92,84,-,Cuba,25-Jan-2069,24-Dec-2003,White,Cuban,Male,No
+H210680422-1_NGS92,85,London,Ghana,16-Oct-1986,08-Jun-1989,Asian,British,Male,No
+H210680671-1_NGS92,86,-,England,20-Nov-1977,25-Dec-2002,White,British,Male,Yes
+H210680672-1_NGS92,87,London,Brazil,07-Aug-2065,02-Oct-2003,White,Brazilian,Male,No
+H210680673-1_NGS92,88,-,Portugal,09-May-1989,22-Jul-1996,White,Portuguese,Female,No
+H210680674-1_NGS92,89,London,England,03-Apr-1975,08-Sep-1988,White,British,Female,No

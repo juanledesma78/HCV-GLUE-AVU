@@ -1,0 +1,8 @@
+id,patient.id,regime,treatment_date,drug.id,drug.manufacturer,drug.therapy_class
+46,255,1 tablet per day,05-Jun-2019,ritonavir,AbbVie,NS5A inhibitor
+47,262,2 tablets per day,08-Oct-2020,simeprevir,Janssen,NS3A/4A protease inhibitor
+48,265,2 tablets per day,07-Feb-2011,simeprevir,Janssen,NS3A/4A protease inhibitor
+49,268,1 tablet per day,05-Mar-1988,simeprevir,Janssen,NS3A/4A protease inhibitor
+50,277,1 tablet per day,07-Feb-2011,ledipasvir,Gilead,NS5A inhibitor
+51,281,-,05-Jun-2019,paritaprevir,AbbVie,NS3A/4A protease inhibitor
+65,271,2 tablets per day,07-Jan-2011,sofosbuvir,Gilead,NS5B nucleotide polymerase inhibitor

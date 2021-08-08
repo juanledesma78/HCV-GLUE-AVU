@@ -1,0 +1,51 @@
+pid,nationality,country_of_birth,ethnicity,diagnosis_date,hiv_infection,city,NHS
+10,British,Scotland,White,15-Mar-1998,No,Edinburgh ,4662.0
+40,British,England,White,04-Jul-2003,No,,4696.0
+41,British,Wales,Not Stated,12-May-1991,Yes,,4697.0
+42,Italian,Italy,White,04-Nov-1990,Yes,,4698.0
+43,British,Northern Ireland,White,17-Jan-1995,Yes,Derry ,4699.0
+44,Italian,France,White,12-Aug-1988,Yes,,4700.0
+45,Russian,Russia,White,26-Sep-2004,Yes,,4701.0
+46,British,Scotland,White,07-Dec-2005,Yes,London,4702.0
+47,British,Scotland,Other/Mixed,25-Nov-1996,No,,4703.0
+48,British,England,Other/Mixed,20-Mar-1994,No,,4704.0
+49,Russian,Russia,White,01-May-1994,Yes,,4705.0
+50,British,England,White,13-Oct-1995,No,,4706.0
+51,British,England,White,08-May-1999,No,,4707.0
+53,British,England,Asian,06-Dec-1993,No,,4709.0
+54,British,England,Black African,28-Jan-1994,Yes,,4710.0
+55,British,Scotland,Black Caribbean,22-Mar-1997,Yes,London,4711.0
+56,British,Gibraltar,White,10-Oct-1997,Yes,London,4712.0
+57,German,Germany,Asian,03-Mar-2003,Yes,,4713.0
+58,British,Ghana,White,20-Jan-2005,Yes,Cambridge ,4714.0
+59,British,England,White,04-Feb-1998,Yes,,4715.0
+60,Brazilian,Brazil,White,31-Jul-1991,No,Oxford,4716.0
+61,Portuguese,Portugal,White,03-Aug-1991,No,London,4717.0
+62,British,England,Other/Mixed,05-Jan-1998,Yes,,4718.0
+63,Chinese,China,White,29-Oct-1988,No,,4719.0
+64,British,USA,Black African,09-Sep-1994,No,,4720.0
+65,Russian,Russia,White,24-Apr-1988,No,,4721.0
+66,Korean,Korea,Asian,28-May-1989,Yes,,4722.0
+67,Irish,Ireland,White,13-Dec-2000,Yes,,4723.0
+68,Irish,Ireland,White,26-Dec-1995,Yes,London,4724.0
+69,Spanish,Spain,White,01-Feb-1988,Yes,,4725.0
+70,French,France,White,19-Oct-2003,Yes,,4726.0
+71,Kenyan,Kenya,Asian,19-May-2003,Yes,,4727.0
+72,Italian,France,Black African,21-May-1988,No,,4728.0
+73,Russian,Russia,White,24-Apr-1993,No,,4729.0
+74,British,Scotland,White,12-Dec-1995,Yes,London,4730.0
+75,British,Scotland,White,17-Nov-2004,No,,4731.0
+76,British,England,White,31-Oct-1991,No,,4732.0
+77,Russian,Russia,White,04-Feb-1990,No,London,4733.0
+78,British,England,White,05-Dec-2004,Yes,London,4734.0
+79,British,England,White,30-Dec-2005,Yes,Manchester,4735.0
+80,British,England,White,27-Apr-1990,Yes,London,4736.0
+81,British,England,White,24-May-2005,Yes,Salisbury ,4737.0
+82,British,Scotland,White,11-Jun-1998,Yes,,4738.0
+83,British,Gibraltar,Other/Mixed,24-Mar-1990,Yes,,4739.0
+84,Cuban,Cuba,White,24-Dec-2003,No,,4740.0
+85,British,Ghana,Asian,08-Jun-1989,No,London,4741.0
+86,British,England,White,25-Dec-2002,Yes,,4742.0
+87,Brazilian,Brazil,White,02-Oct-2003,No,London,4743.0
+88,Portuguese,Portugal,White,22-Jul-1996,No,,4744.0
+89,British,England,White,08-Sep-1988,No,London,4745.0

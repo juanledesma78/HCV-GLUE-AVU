@@ -1,0 +1,60 @@
+sequenceID,source.name,genotype,subtype,hcv_wg_pipeline,pipeline_version,sample.id,sample.sample_date,sample.reception_date,sample.initial_genotype,sample.hospital.hospital_name,sample.patient.id
+H181680611-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H181680611,24-Jul-2019,30-Jul-2019,-,Nuffield Health Taunton Hospital,90
+H181840510-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H181840510,23-Mar-2020,29-Mar-2020,-,Nuffield Health Taunton Hospital,91
+H181980646-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H181980646,15-Jan-2020,21-Jan-2020,-,Nuffield Health Taunton Hospital,92
+H182280647-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H182280647,03-May-2019,09-May-2019,-,Queen's Hospital,93
+H190560313-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: NULL 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H190560313,16-Jul-2020,22-Jul-2020,-,University Hospital’s Bristol,95
+H190560446-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H190560446,06-Dec-2020,12-Dec-2020,-,Royal Hospital Chelsea,96
+H190680138-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H190680138,28-Feb-2020,05-Mar-2020,-,Scunthorpe General Hospital,97
+H190680139-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H190680139,19-Aug-2019,25-Aug-2019,-,Great Ormond Street Hospital for Children,98
+H190780665-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a 1,-,PHE HCV bioinformatics pipeline,version 1.0,H190780665,17-Jan-2021,23-Jan-2021,-,Great Ormond Street Hospital for Children,99
+H190880323-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a 1,-,PHE HCV bioinformatics pipeline,version 1.0,H190880323,15-Aug-2020,21-Aug-2020,-,Scunthorpe General Hospital,100
+H190880324-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H190880324,20-Aug-2019,26-Aug-2019,-,Huddersfield Royal Infirmary,101
+H191060366-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191060366,06-May-2020,12-May-2020,-,The Royal London Hospital,102
+H191060367-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191060367,21-Oct-2020,27-Oct-2020,-,The Royal London Hospital,103
+H191060369-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191060369,01-Nov-2020,07-Nov-2020,-,The Royal London Hospital,104
+H191160037-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H191160037,05-Apr-2020,11-Apr-2020,-,The Royal London Hospital,105
+H191480033-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191480033,16-Dec-2019,22-Dec-2019,-,The Royal London Hospital,106
+H191480035-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191480035,09-Jan-2021,15-Jan-2021,-,The Royal London Hospital,107
+H191760555-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191760555,21-Sep-2019,27-Sep-2019,1a,Queen's Hospital,108
+H191760557-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191760557,15-Jul-2020,21-Jul-2020,3a,Great Ormond Street Hospital for Children,109
+H191760560-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191760560,14-Jul-2020,20-Jul-2020,-,Morriston Hospital,110
+H191760561-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1c NULL 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H191760561,21-Feb-2021,27-Feb-2021,-,Morriston Hospital,111
+H191880052-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H191880052,18-Mar-2021,24-Mar-2021,-,Morriston Hospital,112
+H192280401-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H192280401,06-Jun-2020,12-Jun-2020,-,Scunthorpe General Hospital,113
+H192280402-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H192280402,12-Dec-2019,18-Dec-2019,-,Imperial College Healthcare NHS Trust,114
+H210680187-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210680187,29-Mar-2020,04-Apr-2020,3a,Wrexham Maelor Hospital,115
+H210680246-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: NULL 3a 3,-,PHE HCV bioinformatics pipeline,version 1.0,H210680246,03-Dec-2019,09-Dec-2019,3a,Leeds Teaching Hospitals NHS Trust,116
+H210700031-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1 1b,-,PHE HCV bioinformatics pipeline,version 1.0,H210700031,26-Nov-2019,02-Dec-2019,-,The Royal London Hospital,117
+H210720534-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210720534,21-Oct-2019,27-Oct-2019,Not available,Sheffield Teaching Hospital,118
+H210720535-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210720535,13-Dec-2020,19-Dec-2020,Not available,Royal Alexandra Hospital,119
+H210720656-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210720656,18-Feb-2020,24-Feb-2020,-,Nuffield Health Taunton Hospital,120
+H210760105-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210760105,16-Dec-2019,22-Dec-2019,-,Wexham Park Hospital,121
+H210760109-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: NULL 1a 1,-,PHE HCV bioinformatics pipeline,version 1.0,H210760109,16-Oct-2020,22-Oct-2020,-,Nuffield Health Taunton Hospital,122
+H210760525-1_NGS94,NGS94_(repeat_Miseq_NGS93),2,b,PHE HCV bioinformatics pipeline,version 1.0,H210760525,16-Jul-2019,22-Jul-2019,-,Morriston Hospital,123
+H210760526-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210760526,01-Oct-2020,07-Oct-2020,-,The Royal London Hospital,124
+H210760528-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210760528,13-Feb-2021,19-Feb-2021,-,The Royal London Hospital,125
+H210780309-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210780309,11-Sep-2020,17-Sep-2020,-,The Royal London Hospital,126
+H210780571-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210780571,25-Aug-2019,31-Aug-2019,-,The Royal London Hospital,127
+H210780572-1_NGS94,NGS94_(repeat_Miseq_NGS93),2,b,PHE HCV bioinformatics pipeline,version 1.0,H210780572,09-Aug-2020,15-Aug-2020,-,The Royal London Hospital,128
+H210781076-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210781076,28-Aug-2019,03-Sep-2019,-,The Royal London Hospital,129
+H210781077-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: NULL 1b,-,PHE HCV bioinformatics pipeline,version 1.0,H210781077,18-Aug-2019,24-Aug-2019,-,Manchester Royal Infirmary,130
+H210781078-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: NULL 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H210781078,22-Dec-2020,28-Dec-2020,-,Birmingham City Hospital,131
+H210781079-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210781079,30-Jun-2019,06-Jul-2019,-,Scunthorpe General Hospital,132
+H210781080-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H210781080,19-May-2019,25-May-2019,-,Sheffield Teaching Hospital,133
+H210781081-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210781081,12-Mar-2020,18-Mar-2020,-,Nuffield Health Taunton Hospital,134
+H210781082-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210781082,11-Nov-2020,17-Nov-2020,-,Royal Sussex County Hospital,135
+H210781282-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 2k NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H210781282,06-Sep-2020,12-Sep-2020,-,Great Ormond Street Hospital for Children,149
+H210800368-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 3a 3,-,PHE HCV bioinformatics pipeline,version 1.0,H210800368,27-May-2020,02-Jun-2020,-,St George's Hospital,136
+H210800427-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210800427,15-Apr-2020,21-Apr-2020,-,St George's Hospital,137
+H210820484-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 3a NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H210820484,09-Mar-2021,15-Mar-2021,-,Great Ormond Street Hospital for Children,150
+H210820485-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210820485,17-Dec-2020,23-Dec-2020,-,Imperial College Healthcare NHS Trust,138
+H210820549-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210820549,05-Feb-2020,11-Feb-2020,1a,University College London Hospital,13
+H210820554-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes:,-,PHE HCV bioinformatics pipeline,version 1.0,H210820554,23-Mar-2021,29-Mar-2021,4d,Leeds Teaching Hospitals NHS Trust,140
+H210820590-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210820590,15-Jul-2020,21-Jul-2020,-,Nuffield Health Taunton Hospital,141
+H210840136-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,H210840136,14-Feb-2021,20-Feb-2021,-,Nuffield Health Taunton Hospital,142
+H210840522-1_NGS94,NGS94_(repeat_Miseq_NGS93),Check genotyping results by genes: 1a NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H210840522,03-Apr-2020,09-Apr-2020,-,Nuffield Health Taunton Hospital,143
+H210840553-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210840553,26-Feb-2021,04-Mar-2021,-,Queen's Hospital,144
+H210860052-1_NGS94,NGS94_(repeat_Miseq_NGS93),5,a,PHE HCV bioinformatics pipeline,version 1.0,H210860052,15-Jan-2021,21-Jan-2021,-,University Hospital’s Bristol,146
+H210861063-1_NGS94,NGS94_(repeat_Miseq_NGS93),3,a,PHE HCV bioinformatics pipeline,version 1.0,H210861063,29-Jan-2020,04-Feb-2020,-,Royal Hospital Chelsea,147
+RS17004844-1_NGS94,NGS94_(repeat_Miseq_NGS93),1,a,PHE HCV bioinformatics pipeline,version 1.0,RS17004844,22-Mar-2020,28-Mar-2020,-,Scunthorpe General Hospital,148

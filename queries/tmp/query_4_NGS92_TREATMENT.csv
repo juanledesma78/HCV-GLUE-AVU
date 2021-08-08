@@ -1,0 +1,5 @@
+id,patient.id,regime,treatment_date,drug.id,drug.manufacturer,drug.therapy_class
+10,77,1 tablet per day,30-Jun-2011,simeprevir,Janssen,NS3A/4A protease inhibitor
+4,10,-,30-Jun-2011,ledipasvir,Gilead,NS5A inhibitor
+5,10,-,05-Jan-1988,ombitasvir,AbbVie,NS5B nucleotide polymerase inhibitor
+6,10,-,30-Jun-2011,paritaprevir,AbbVie,NS3A/4A protease inhibitor

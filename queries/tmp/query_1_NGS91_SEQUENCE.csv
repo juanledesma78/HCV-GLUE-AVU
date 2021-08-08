@@ -1,0 +1,42 @@
+sequenceID,source.name,genotype,subtype,hcv_wg_pipeline,pipeline_version,sample.id,sample.sample_date,sample.reception_date,sample.initial_genotype,sample.hospital.hospital_name,sample.patient.id
+H204820685-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H204820685,23-Sep-2020,29-Sep-2020,-,The Royal London Hospital,1
+H210161351-1_NGS91,NGS91,2,a,PHE HCV bioinformatics pipeline,version 1.0,H210161351,17-Feb-2021,23-Feb-2021,2a,Nuffield Health Taunton Hospital,2
+H210180794-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210180794,06-Jul-2020,12-Jul-2020,1a,John Radcliffe Hospital,3
+H210180795-1_NGS91,NGS91,Check genotyping results by genes: NULL 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H210180795,25-Nov-2019,01-Dec-2019,1a,John Radcliffe Hospital,3
+H210220700-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210220700,17-Mar-2020,23-Mar-2020,1a,Leeds Teaching Hospitals NHS Trust,5
+H210220787-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210220787,27-Mar-2021,02-Apr-2021,3a,University of Dundee Hospital,10
+H210220788-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210220788,20-Oct-2020,26-Oct-2020,3a,Luton & Dunstable University Hospital,7
+H210240111-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210240111,08-Feb-2021,14-Feb-2021,3a,Watford General Hospital,8
+H210240113-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210240113,03-Dec-2020,09-Dec-2020,1a,West Suffolk NHS Foundation Trust,9
+H210241030-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210241030,28-Apr-2019,04-May-2019,3a,Leeds Teaching Hospitals NHS Trust,10
+H210280185-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210280185,14-Jul-2019,20-Jul-2019,3a,Leeds Teaching Hospitals NHS Trust,11
+H210280208-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210280208,28-Mar-2021,03-Apr-2021,3a,Leeds Teaching Hospitals NHS Trust,12
+H210281395-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210281395,21-May-2020,27-May-2020,1a,University College London Hospital,13
+H210281396-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210281396,07-Oct-2019,13-Oct-2019,3a,Scunthorpe General Hospital,14
+H210281397-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210281397,27-Jan-2021,02-Feb-2021,1a,Nuffield Health Taunton Hospital,15
+H210281398-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210281398,11-Jan-2020,17-Jan-2020,1a,John Radcliffe Hospital,16
+H210281399-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210281399,18-Apr-2019,24-Apr-2019,1a,St George's Hospital,17
+H210300532-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210300532,22-Mar-2020,28-Mar-2020,3a,The Royal London Hospital,18
+H210300533-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210300533,06-Aug-2020,12-Aug-2020,1a,St George's Hospital,19
+H210300549-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210300549,28-May-2020,03-Jun-2020,1a,St George's Hospital,19
+H210300550-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210300550,17-May-2019,23-May-2019,3a,St George's Hospital,21
+H210300551-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210300551,27-Mar-2021,02-Apr-2021,3a,The Royal London Hospital,22
+H210341088-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210341088,21-Sep-2020,27-Sep-2020,3a,St George's Hospital,23
+H210360996-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210360996,31-Jan-2021,06-Feb-2021,3a,St George's Hospital,24
+H210360997-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210360997,26-Sep-2019,02-Oct-2019,1a,St George's Hospital,25
+H210360998-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210360998,08-Feb-2020,14-Feb-2020,1a,The Royal London Hospital,26
+H210360999-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210360999,03-Jul-2019,09-Jul-2019,3a,The Royal London Hospital,27
+H210361033-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210361033,24-May-2019,30-May-2019,3a,St George's Hospital,28
+H210380210-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210380210,20-Sep-2020,26-Sep-2020,3a,The Royal London Hospital,29
+H210380784-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210380784,29-Mar-2020,04-Apr-2020,1a,St George's Hospital,30
+H210380785-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210380785,13-Jan-2021,19-Jan-2021,3a,St George's Hospital,31
+H210380825-1_NGS91,NGS91,Check genotyping results by genes: NULL 3a,-,PHE HCV bioinformatics pipeline,version 1.0,H210380825,06-Feb-2021,12-Feb-2021,3a,Scunthorpe General Hospital,32
+H210400331-1_NGS91,NGS91,Check genotyping results by genes: 1 1b,-,PHE HCV bioinformatics pipeline,version 1.0,H210400331,22-Jul-2019,28-Jul-2019,1b,Leeds Teaching Hospitals NHS Trust,33
+H210400388-1_NGS91,NGS91,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H210400388,17-Nov-2019,23-Nov-2019,1a,Great Ormond Street Hospital for Children,34
+H210400421-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210400421,04-Jun-2020,10-Jun-2020,3a,Nuffield Health Taunton Hospital,35
+H210400512-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210400512,14-Jul-2020,20-Jul-2020,3a,Nuffield Health Taunton Hospital,36
+H210420137-1_genomancer_NGS91,NGS91,3,a,Genomacer,v.1,H210420137,09-Sep-2020,15-Sep-2020,3a & 1a (dual infection),Royal Free Hospital,37
+H210420137-1_NGS91,NGS91,3,a,PHE HCV bioinformatics pipeline,version 1.0,H210420137,09-Sep-2020,15-Sep-2020,3a & 1a (dual infection),Royal Free Hospital,37
+H210420137-2_genomancer_NGS91,NGS91,Check genotyping results by genes: 1 1a,-,Genomacer,v.1,H210420137,09-Sep-2020,15-Sep-2020,3a & 1a (dual infection),Royal Free Hospital,37
+H210420662-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210420662,05-Jun-2019,11-Jun-2019,1a,Nuffield Health Taunton Hospital,38
+H210420664-1_NGS91,NGS91,1,a,PHE HCV bioinformatics pipeline,version 1.0,H210420664,25-Nov-2020,01-Dec-2020,1a,Nuffield Health Taunton Hospital,39

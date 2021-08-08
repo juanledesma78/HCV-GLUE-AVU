@@ -1,0 +1,41 @@
+sequenceID,source.name,genotype,subtype,hcv_wg_pipeline,pipeline_version,sample.id,sample.sample_date,sample.reception_date,sample.initial_genotype,sample.hospital.hospital_name,sample.patient.id
+H211540708-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211540708,28-Oct-2020,03-Nov-2020,-,The Royal London Hospital,340
+H211560515-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211560515,02-Dec-2019,08-Dec-2019,-,The Royal London Hospital,341
+H211700039-1_NGS99,NGS99,1,b,PHE HCV bioinformatics pipeline,version 1.0,H211700039,04-Apr-2021,10-Apr-2021,-,St George's Hospital,320
+H211740644-1_NGS99,NGS99,6,f,PHE HCV bioinformatics pipeline,version 1.0,H211740644,02-Feb-2020,08-Feb-2020,-,Huddersfield Royal Infirmary,335
+H211820258-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211820258,30-Mar-2020,05-Apr-2020,-,Queen's Hospital,342
+H211820288-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211820288,18-Aug-2019,24-Aug-2019,-,Great Ormond Street Hospital for Children,343
+H211841102-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211841102,24-Apr-2019,30-Apr-2019,-,Morriston Hospital,344
+H211841103-1_NGS99,NGS99,Check genotyping results by genes: NULL 1a 1,-,PHE HCV bioinformatics pipeline,version 1.0,H211841103,28-May-2019,03-Jun-2019,-,Sheffield Teaching Hospital,345
+H211841104-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211841104,28-Nov-2020,04-Dec-2020,-,Great Ormond Street Hospital for Children,346
+H211860221-1_NGS99,NGS99,Check genotyping results by genes: NULL 3a,-,PHE HCV bioinformatics pipeline,version 1.0,H211860221,02-Feb-2021,08-Feb-2021,-,Morriston Hospital,347
+H211860222-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211860222,17-Nov-2019,23-Nov-2019,-,Royal Alexandra Hospital,348
+H211860904-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211860904,26-Feb-2021,04-Mar-2021,-,Nuffield Health Taunton Hospital,349
+H211860905-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211860905,26-Jun-2019,02-Jul-2019,-,Wexham Park Hospital,350
+H211860906-1_NGS99,NGS99,4,null,PHE HCV bioinformatics pipeline,version 1.0,H211860906,16-Oct-2020,22-Oct-2020,-,Nuffield Health Taunton Hospital,351
+H211860907-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211860907,12-Feb-2021,18-Feb-2021,-,Morriston Hospital,352
+H211860908-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211860908,15-Jul-2020,21-Jul-2020,-,The Royal London Hospital,353
+H211860909-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211860909,29-May-2019,04-Jun-2019,-,The Royal London Hospital,354
+H211860910-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211860910,07-Sep-2020,13-Sep-2020,-,The Royal London Hospital,355
+H211860911-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211860911,07-Aug-2020,13-Aug-2020,-,The Royal London Hospital,356
+H211880094-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211880094,19-Sep-2019,25-Sep-2019,-,The Royal London Hospital,357
+H211880856-1_NGS99,NGS99,1,b,PHE HCV bioinformatics pipeline,version 1.0,H211880856,20-Jun-2020,26-Jun-2020,-,The Royal London Hospital,358
+H211880857-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211880857,27-Apr-2020,03-May-2020,-,Manchester Royal Infirmary,359
+H211900002-1_NGS99,NGS99,Check genotyping results by genes: 1o 1,-,PHE HCV bioinformatics pipeline,version 1.0,H211900002,01-Jan-2021,07-Jan-2021,-,Birmingham City Hospital,360
+H211900006-1_NGS99,NGS99,Check genotyping results by genes: 1a 3a 3,-,PHE HCV bioinformatics pipeline,version 1.0,H211900006,13-Jun-2020,19-Jun-2020,-,Scunthorpe General Hospital,361
+H211900006-2_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211900006,13-Jun-2020,19-Jun-2020,-,Scunthorpe General Hospital,361
+H211900485-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211900485,13-Jan-2021,19-Jan-2021,-,Sheffield Teaching Hospital,362
+H211900486-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211900486,19-Apr-2020,25-Apr-2020,-,Nuffield Health Taunton Hospital,363
+H211921020-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211921020,07-Aug-2020,13-Aug-2020,-,Royal Sussex County Hospital,364
+H211921022-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211921022,07-Jun-2019,13-Jun-2019,-,St George's Hospital,365
+H211921025-1_NGS99,NGS99,1,b,PHE HCV bioinformatics pipeline,version 1.0,H211921025,03-Jan-2021,09-Jan-2021,-,St George's Hospital,366
+H211921029-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211921029,22-Mar-2021,28-Mar-2021,-,Imperial College Healthcare NHS Trust,367
+H211921167-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211921167,16-May-2020,22-May-2020,-,Leeds Teaching Hospitals NHS Trust,368
+H211940943-1_NGS99,NGS99,2,b,PHE HCV bioinformatics pipeline,version 1.0,H211940943,02-Mar-2021,08-Mar-2021,-,Nuffield Health Taunton Hospital,369
+H211940944-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211940944,26-Jun-2019,02-Jul-2019,-,Nuffield Health Taunton Hospital,370
+H211940945-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211940945,17-Mar-2020,23-Mar-2020,-,Nuffield Health Taunton Hospital,371
+H211940946-1_NGS99,NGS99,1,b,PHE HCV bioinformatics pipeline,version 1.0,H211940946,16-Jul-2020,22-Jul-2020,-,Queen's Hospital,372
+H211940961-1_NGS99,NGS99,Check genotyping results by genes: NULL 3a,-,PHE HCV bioinformatics pipeline,version 1.0,H211940961,25-Feb-2020,02-Mar-2020,-,Manchester Royal Infirmary,373
+H211960671-1_NGS99,NGS99,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211960671,02-Sep-2019,08-Sep-2019,1a,University Hospital’s Bristol,374
+H211960673-1_NGS99,NGS99,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211960673,16-Jul-2020,22-Jul-2020,1a,Royal Hospital Chelsea,375
+H211960674-1_NGS99,NGS99,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H211960674,06-Sep-2019,12-Sep-2019,1a,Scunthorpe General Hospital,376

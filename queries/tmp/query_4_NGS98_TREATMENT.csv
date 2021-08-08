@@ -1,0 +1,6 @@
+id,patient.id,regime,treatment_date,drug.id,drug.manufacturer,drug.therapy_class
+16,333,2 tablets per day,30-Jun-2011,ledipasvir,Gilead,NS5A inhibitor
+17,333,-,05-Jan-1988,ritonavir,AbbVie,NS5A inhibitor
+52,320,-,05-Jun-2019,peginterferon alfa,-,-
+53,327,-,08-Oct-2020,elbasvir,Merck,NS5A inhibitor
+54,334,-,07-Feb-2011,daclastavir,BMS,NS5A inhibitor

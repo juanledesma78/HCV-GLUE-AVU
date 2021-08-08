@@ -1,0 +1,5 @@
+id,pid,drug_id,regime,treatment_date
+4,10,ledipasvir,,30-Jun-2011
+5,10,ombitasvir,,05-Jan-1988
+6,10,paritaprevir,,30-Jun-2011
+10,77,simeprevir,1 tablet per day,30-Jun-2011

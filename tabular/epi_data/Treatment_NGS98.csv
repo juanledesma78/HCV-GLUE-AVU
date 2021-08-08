@@ -1,0 +1,6 @@
+id,pid,drug_id,regime,treatment_date
+16,333,ledipasvir,2 tablets per day,30-Jun-2011
+17,333,ritonavir,,05-Jan-1988
+52,320,peginterferon alfa,,05-Jun-2019
+53,327,elbasvir,,08-Oct-2020
+54,334,daclastavir,,07-Feb-2011

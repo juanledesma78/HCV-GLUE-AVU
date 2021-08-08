@@ -1,0 +1,55 @@
+sequenceID,source.name,genotype,subtype,hcv_wg_pipeline,pipeline_version,sample.id,sample.sample_date,sample.reception_date,sample.initial_genotype,sample.hospital.hospital_name,sample.patient.id
+H211520436-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211520436,01-Jan-2020,07-Jan-2020,-,Scunthorpe General Hospital,286
+H211520814-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211520814,06-Sep-2019,12-Sep-2019,-,Great Ormond Street Hospital for Children,287
+H211520815-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211520815,13-Dec-2019,19-Dec-2019,-,Great Ormond Street Hospital for Children,288
+H211520816-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211520816,17-Feb-2021,23-Feb-2021,-,Scunthorpe General Hospital,289
+H211520817-1_NGS98,NGS98,Check genotyping results by genes: 1 1b,-,PHE HCV bioinformatics pipeline,version 1.0,H211520817,07-Jul-2019,13-Jul-2019,-,Huddersfield Royal Infirmary,290
+H211520860-1_NGS98,NGS98,3,b,PHE HCV bioinformatics pipeline,version 1.0,H211520860,19-Jan-2020,25-Jan-2020,-,The Royal London Hospital,291
+H211520861-1_NGS98,NGS98,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H211520861,07-May-2020,13-May-2020,-,The Royal London Hospital,292
+H211540709-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211540709,27-May-2020,02-Jun-2020,-,The Royal London Hospital,293
+H211560070-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211560070,14-Jan-2020,20-Jan-2020,-,The Royal London Hospital,294
+H211560508-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211560508,14-Jan-2020,20-Jan-2020,-,The Royal London Hospital,295
+H211560511-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211560511,30-Nov-2020,06-Dec-2020,-,The Royal London Hospital,296
+H211560512-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211560512,05-Oct-2019,11-Oct-2019,3a,Queen's Hospital,297
+H211560513-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211560513,03-Jun-2019,09-Jun-2019,-,Great Ormond Street Hospital for Children,298
+H211580351-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211580351,14-Mar-2020,20-Mar-2020,-,Morriston Hospital,299
+H211580607-1_NGS98,NGS98,Check genotyping results by genes: 3a 3 NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H211580607,06-Jan-2020,12-Jan-2020,-,Sheffield Teaching Hospital,300
+H211580719-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211580719,28-Apr-2020,04-May-2020,-,Great Ormond Street Hospital for Children,301
+H211600485-1_NGS98,NGS98,1,c,PHE HCV bioinformatics pipeline,version 1.0,H211600485,21-Sep-2020,27-Sep-2020,-,Morriston Hospital,302
+H211600486-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211600486,22-Dec-2019,28-Dec-2019,-,Royal Alexandra Hospital,303
+H211620703-1_NGS98,NGS98,4,k,PHE HCV bioinformatics pipeline,version 1.0,H211620703,03-Aug-2019,09-Aug-2019,-,Nuffield Health Taunton Hospital,304
+H211620704-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211620704,30-Jan-2020,05-Feb-2020,-,Wexham Park Hospital,305
+H211640521-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211640521,05-Apr-2020,11-Apr-2020,-,Nuffield Health Taunton Hospital,306
+H211680167-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211680167,21-Apr-2020,27-Apr-2020,-,Morriston Hospital,307
+H211680168-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680168,21-Oct-2020,27-Oct-2020,-,The Royal London Hospital,308
+H211680169-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680169,02-Aug-2020,08-Aug-2020,2b,The Royal London Hospital,309
+H211680170-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680170,23-Nov-2020,29-Nov-2020,-,The Royal London Hospital,310
+H211680171-1_NGS98,NGS98,2,b,PHE HCV bioinformatics pipeline,version 1.0,H211680171,24-May-2019,30-May-2019,-,The Royal London Hospital,311
+H211680172-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680172,25-Jul-2020,31-Jul-2020,-,The Royal London Hospital,312
+H211680173-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680173,25-Nov-2019,01-Dec-2019,-,The Royal London Hospital,313
+H211680174-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680174,23-Jan-2020,29-Jan-2020,-,Manchester Royal Infirmary,314
+H211680175-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680175,04-Apr-2020,10-Apr-2020,-,Birmingham City Hospital,315
+H211680177-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211680177,11-May-2019,17-May-2019,-,Scunthorpe General Hospital,316
+H211680178-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211680178,20-Jan-2020,26-Jan-2020,-,Sheffield Teaching Hospital,317
+H211680601-1_NGS98,NGS98,Check genotyping results by genes: 3h NULL,-,PHE HCV bioinformatics pipeline,version 1.0,H211680601,14-May-2019,20-May-2019,-,Nuffield Health Taunton Hospital,318
+H211700038-1_NGS98,NGS98,1,b,PHE HCV bioinformatics pipeline,version 1.0,H211700038,29-Nov-2019,05-Dec-2019,-,Royal Sussex County Hospital,319
+H211700039-1_NGS98,NGS98,Check genotyping results by genes:,-,PHE HCV bioinformatics pipeline,version 1.0,H211700039,04-Apr-2021,10-Apr-2021,-,St George's Hospital,320
+H211700056-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211700056,19-Dec-2019,25-Dec-2019,-,St George's Hospital,321
+H211700057-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211700057,18-Apr-2019,24-Apr-2019,-,Imperial College Healthcare NHS Trust,322
+H211700067-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211700067,06-Feb-2020,12-Feb-2020,-,Leeds Teaching Hospitals NHS Trust,323
+H211700449-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211700449,12-Mar-2020,18-Mar-2020,-,Nuffield Health Taunton Hospital,324
+H211720147-1_NGS98,NGS98,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H211720147,26-Apr-2019,02-May-2019,-,Nuffield Health Taunton Hospital,325
+H211740235-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211740235,27-Feb-2020,04-Mar-2020,-,Nuffield Health Taunton Hospital,326
+H211740540-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211740540,01-Feb-2021,07-Feb-2021,-,Queen's Hospital,327
+H211740541-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211740541,21-Nov-2020,27-Nov-2020,-,Manchester Royal Infirmary,328
+H211740542-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211740542,11-Aug-2020,17-Aug-2020,-,University Hospital’s Bristol,329
+H211740543-1_NGS98,NGS98,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H211740543,22-Oct-2019,28-Oct-2019,-,Royal Hospital Chelsea,330
+H211740545-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211740545,30-Jul-2020,05-Aug-2020,-,Scunthorpe General Hospital,331
+H211740546-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211740546,12-Aug-2019,18-Aug-2019,-,Great Ormond Street Hospital for Children,332
+H211740642-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211740642,06-Sep-2019,12-Sep-2019,-,Great Ormond Street Hospital for Children,333
+H211740643-1_NGS98,NGS98,1,a,PHE HCV bioinformatics pipeline,version 1.0,H211740643,24-Nov-2019,30-Nov-2019,-,Scunthorpe General Hospital,334
+H211740644-1_NGS98,NGS98,6,f,PHE HCV bioinformatics pipeline,version 1.0,H211740644,02-Feb-2020,08-Feb-2020,-,Huddersfield Royal Infirmary,335
+H211740753-1_NGS98,NGS98,6,n,PHE HCV bioinformatics pipeline,version 1.0,H211740753,13-Feb-2020,19-Feb-2020,-,The Royal London Hospital,336
+H211760658-1_NGS98,NGS98,4,r,PHE HCV bioinformatics pipeline,version 1.0,H211760658,28-Jun-2020,04-Jul-2020,-,The Royal London Hospital,337
+H211760659-1_NGS98,NGS98,3,a,PHE HCV bioinformatics pipeline,version 1.0,H211760659,22-Jan-2020,28-Jan-2020,-,The Royal London Hospital,338
+H211760660-1_NGS98,NGS98,Check genotyping results by genes: 1 1a,-,PHE HCV bioinformatics pipeline,version 1.0,H211760660,28-Jun-2019,04-Jul-2019,-,The Royal London Hospital,339
