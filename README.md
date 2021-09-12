@@ -30,7 +30,7 @@ For details on how to use GLUE and get familiar with it visit the official [GLUE
 
     From the terminal and within the main directory *hcv_glue_avu*, run the following command
     
-    `python3 import_NGSseqs_to_GLUE.py <path-to-fasta-sequences-in-zDrive/>`
+    `python3 import_NGSseqs_to_GLUE.py -i <path-to-fasta-sequences-in-zDrive/>`
     
     The fasta sequences are stored in a subdirectory called *FASTAs* for each NGS experiment (i.e. zDrive/NGS91/FASTAs). It is recommended to use ***TAB key*** to complete the argument that takes the path to that folder.
 
@@ -38,7 +38,7 @@ For details on how to use GLUE and get familiar with it visit the official [GLUE
 
     From the terminal and within the main directory *hcv_glue_avu*, run the following command
     
-    `python3 populate_metadata_from_molis.py <path-to-edited-fasta-sequences-in-sources/>`
+    `python3 populate_metadata_from_molis.py -s <path-to-edited-fasta-sequences-in-sources/>`
     
     Specify the argument for the path to the NGS experiment in *sources/*.
 
