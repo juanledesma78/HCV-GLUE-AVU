@@ -1,5 +1,6 @@
 import sqlite3
-import sys, os, re, subprocess
+import re 
+import subprocess
 import pandas as pd
 NGS=(input("Enter a NGS id (i.e. NGS1): \n")).upper()
 conn = sqlite3.connect("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/tabular/epi_database.db")
@@ -20,8 +21,12 @@ table_patient = pd.read_csv(path_to_tabular + "table_patient/metadata_table_PATI
 additional_info_patient = pd.merge(left=extra_patient_data, right= table_patient, left_on= 'pid', right_on='ORDPATIDNB')
 treatment = pd.merge(left=treatment_data, right= table_patient, left_on= 'pid', right_on='ORDPATIDNB')
 
-additional_info_patient[["pid","nationality","country_of_birth","ethnicity","diagnosis_date","hiv_infection","city","NHS"]].to_csv(path_to_tabular+ "epi_data/Epidata_table_PATIENT_" + NGS + ".csv", index= False ) 
-treatment[["id","pid","drug_id","regime","treatment_date"]].to_csv(path_to_tabular + "epi_data/Treatment_" + NGS + ".csv", index= False ) 
+additional_info_patient[[
+    "pid","nationality","country_of_birth","ethnicity","diagnosis_date","hiv_infection","city","NHS"
+    ]].to_csv(path_to_tabular+ "epi_data/Epidata_table_PATIENT_" + NGS + ".csv", index= False ) 
+    
+treatment[["id","pid","drug_id","regime","treatment_date"]].to_csv(
+    path_to_tabular + "epi_data/Treatment_" + NGS + ".csv", index= False) 
 
 
 """populate data in GLUE """
@@ -46,7 +51,7 @@ with open("/home/phe.gov.uk/juan.ledesma/gluetools/projects/hcv_glue_avu/glue/po
     script.close()
 
 
-Glue_commands = """ 
+glue_commands = """ 
 project hcv_glue_avu
 run script glue/populateEpiDataPatient.js
 run script glue/populateTreatmentTable.js
@@ -55,7 +60,7 @@ quit
 \
 """
 
-p1 = subprocess.run("gluetools.sh" , text=True, input=Glue_commands)
+p1 = subprocess.run("gluetools.sh" , text=True, input=glue_commands)
 if p1.returncode == 0:
     print("\nEpidemiological data successfully imported in GLUE\n")
 else:

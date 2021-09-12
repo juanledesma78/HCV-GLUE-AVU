@@ -5,7 +5,7 @@ with open("Smith2019_phylogeny_rerootedMidpoint_fasttree_annotated.nwk", "r") as
     
     floating_bootstraps = re.findall(r'(\)(1|0)\.[0-9]*:*)', tree)
     #print(floating_bootstraps)
-    """[(')0.997:', '0'), (')0.984:', '0'), (')1.000:', '1'), (')1.000:', '1'), (')0.834:', '0'), (')1.000:', '1'), (')0.929:', '0'), (')1.000:', '1'), (')1.000:', '1'), (')0.866:', '0')]"""
+    #[(')0.997:', '0'), (')0.984:', '0'), (')1.000:', '1'), (')1.000:', '1'), (')0.834:', '0'), (')1.000:', '1'), (')0.929:', '0'), (')1.000:', '1'), (')1.000:', '1'), (')0.866:', '0')]"""
     
     bootstrap_dictionary ={}
     for bootstrap in floating_bootstraps:
@@ -14,8 +14,6 @@ with open("Smith2019_phylogeny_rerootedMidpoint_fasttree_annotated.nwk", "r") as
         intBst = ")"+str(fn)+":"
         bootstrap_dictionary[floatBst] = intBst
         
-    #print(bootstrap_dictionary)
-
     for k, v in bootstrap_dictionary.items():
         if k in tree:
             tree = tree.replace(k,v)
