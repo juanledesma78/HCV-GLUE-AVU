@@ -1,6 +1,6 @@
 delete project hcv_glue_avu
 
-create project hcv_glue_avu "Hepatitis C virus GLUE project at AVU" --minVersion 1.1.107 
+create project hcv_glue_avu "Hepatitis C virus GLUE project at AVU. AVU Custom tables managed by SQLalchemy" --minVersion 1.1.107 
 
 # SCHEMA EXTENSION on tables sequence, alignment and create AVU custom tables and others (who_country, who regions...)
 run file glue/SchemaExtensions.glue
@@ -21,8 +21,6 @@ project hcv_glue_avu
   # DATA POPULATION
   # populate custom tables WHO regions, countries... (M49 standard)
   run file glue/who_countries/populateWhoCountries.glue
-  run script glue/populateHospitalTable.js 
-  run script glue/populateDrugTable.js 
   
   # populate other data from genbank xml files
   module GenbankXmlPopulator populate --silent
