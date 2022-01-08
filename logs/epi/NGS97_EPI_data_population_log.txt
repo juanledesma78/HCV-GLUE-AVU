@@ -1,0 +1,97 @@
+ EPIDEMIOLOGICAL DATA POPULATION LOG - NGS97
+
+The following DRUGS were added to the table drug in the GLUE database:
+ 
+
+while the ones below already existed: 
+
+simeprevir
+sofosbuvir
+ledipasvir
+ombitasvir
+paritaprevir
+ritonavir
+dasabuvir
+velpatasvir
+voxilaprevir
+glecaprevir
+pibrentasvir
+ribavarin
+peginterferon alfa
+grazoprevir
+elbasvir
+daclastavir
+asunaprevir
+beclabuvir
+
+The following records were updated in the table patient in the GLUE database: 
+
+13 1992-07-12 England British White London 4669.0 No 
+118 1996-09-12 None None White London None Yes 
+118 1996-07-28 None Others White None None No 
+118 1992-08-28 None Others White None None Yes 
+235 1997-12-23 Russia Russian White None None Yes 
+236 1996-09-21 Korea Korean White None None No 
+237 1994-07-11 Ireland Irish White None None No 
+238 2002-06-22 Ireland Irish White None None Yes 
+239 2004-03-06 Spain Spanish White None None No 
+240 2003-07-13 France French Other/Mixed None None Yes 
+241 1996-11-12 Scotland British White London None None 
+242 1990-03-25 Gibraltar British White London None None 
+243 1992-08-30 Cuba Cuban White None None Yes 
+244 1989-06-19 Ghana British Not Stated Cambridge  None Yes 
+245 1996-07-17 England British White None None Yes 
+246 1991-10-29 Brazil Brazilian White Oxford None No 
+247 1994-10-14 Portugal Portuguese None London None None 
+248 1993-10-01 England British White None None Yes 
+249 1988-01-26 China Chinese White None None No 
+250 2004-06-10 USA British White None None Yes 
+251 2002-08-16 Russia Russian Not Stated None None Yes 
+252 1998-04-01 Korea Korean White None None Yes 
+253 1995-04-21 Ireland Irish Asian None None Yes 
+254 1990-09-30 Ireland Irish White London None Yes 
+255 1988-04-26 Spain Spanish Other/Mixed None None Yes 
+256 1989-01-27 France French White None None No 
+257 1995-11-02 Scotland British White None None No 
+258 1998-03-19 Gibraltar British White None None Yes 
+259 1988-07-23 Cuba Cuban Not Stated None None No 
+260 2004-03-06 Ghana British White London None Yes 
+261 1992-11-12 England British Black African None None Yes 
+262 1990-07-08 Brazil Brazilian Not Stated None None Yes 
+263 2004-06-03 Portugal Portuguese Asian London None Yes 
+264 1997-12-24 England British White London None Yes 
+265 1996-09-22 China Chinese White Manchester None Yes 
+266 1994-08-11 USA British Other/Mixed London None No 
+268 2002-06-23 Russia Russian Other/Mixed Salisbury  None No 
+269 2004-04-06 Korea Korean Not Stated None None Yes 
+270 2003-07-14 Ireland Irish Other/Mixed None None No 
+271 1996-12-12 Ireland Irish Not Stated None None Yes 
+272 2002-08-17 Spain Spanish Not Stated London None Yes 
+273 1992-08-31 France French Other/Mixed None None Yes 
+274 1989-06-20 Scotland British White London None Yes 
+275 1996-07-18 Gibraltar British White None None Yes 
+276 1991-10-30 Cuba Cuban Other/Mixed London None Yes 
+277 1994-10-15 Ghana British White None None No 
+278 1993-11-01 England British White London None No 
+279 1988-01-27 Brazil Brazilian White None None Yes 
+280 2004-07-10 Portugal Portuguese White None None No 
+281 2002-08-17 England British White None None Yes 
+283 1998-05-01 China Chinese White None None Yes 
+284 1995-04-22 USA British White London None Yes 
+285 1990-01-10 Russia Russian Black African London None Yes 
+
+The following TREATMENTS were added to the table treatment in the GLUE database: 
+
+255 ritonavir 1 tablet per day 2019-06-05
+262 simeprevir 2 tablets per day 2020-10-08
+265 simeprevir 2 tablets per day 2011-02-07
+268 simeprevir 1 tablet per day 1988-03-05
+277 ledipasvir 1 tablet per day 2011-02-07
+281 paritaprevir None 2019-06-05
+271 sofosbuvir 2 tablets per day 2011-01-07
+
+while the ones below already existed: 
+
+
+
+    

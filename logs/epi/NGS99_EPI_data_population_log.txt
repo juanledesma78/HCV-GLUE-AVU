@@ -1,0 +1,55 @@
+ EPIDEMIOLOGICAL DATA POPULATION LOG - NGS99
+
+The following DRUGS were added to the table drug in the GLUE database:
+ 
+
+while the ones below already existed: 
+
+simeprevir
+sofosbuvir
+ledipasvir
+ombitasvir
+paritaprevir
+ritonavir
+dasabuvir
+velpatasvir
+voxilaprevir
+glecaprevir
+pibrentasvir
+ribavarin
+peginterferon alfa
+grazoprevir
+elbasvir
+daclastavir
+asunaprevir
+beclabuvir
+
+The following records were updated in the table patient in the GLUE database: 
+
+320 2004-05-06 Ireland Irish White None None Yes 
+335 1988-04-28 Ireland Irish White None None Yes 
+340 2004-05-06 Gibraltar British Other/Mixed None None Yes 
+341 1992-12-13 Cuba Cuban Other/Mixed Oxford None No 
+342 1990-09-08 Ghana British White London None Yes 
+343 1988-07-25 England British White None None Yes 
+344 1998-03-21 Brazil Brazilian Asian None None Yes 
+345 1988-07-25 Portugal Portuguese Other/Mixed None None Yes 
+346 2004-05-06 England British White None None Yes 
+347 1992-12-13 China Chinese White None None Yes 
+348 1990-09-08 USA British Black Caribbean None None No 
+349 2004-08-03 Russia Russian White London None No 
+350 2004-10-06 Korea Korean Asian None None Yes 
+351 2004-05-06 Ireland Irish White None None No 
+
+The following TREATMENTS were added to the table treatment in the GLUE database: 
+
+
+while the ones below already existed: 
+
+342 simeprevir 1 tablet per day 2019-04-05
+320 peginterferon alfa None 2019-06-05
+344 asunaprevir None 1988-03-05
+345 beclabuvir None 2011-02-07
+
+
+    

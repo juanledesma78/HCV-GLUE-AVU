@@ -1,0 +1,91 @@
+ EPIDEMIOLOGICAL DATA POPULATION LOG - NGS92
+
+The following DRUGS were added to the table drug in the GLUE database:
+ 
+
+while the ones below already existed: 
+
+simeprevir
+sofosbuvir
+ledipasvir
+ombitasvir
+paritaprevir
+ritonavir
+dasabuvir
+velpatasvir
+voxilaprevir
+glecaprevir
+pibrentasvir
+ribavarin
+peginterferon alfa
+grazoprevir
+elbasvir
+daclastavir
+asunaprevir
+beclabuvir
+
+The following records were updated in the table patient in the GLUE database: 
+
+10 1998-03-15 Scotland British White Edinburgh  4662.0 No 
+40 2003-07-04 England British White None 4696.0 No 
+41 1991-05-12 Wales British Not Stated None 4697.0 Yes 
+42 1990-11-04 Italy Italian White None 4698.0 Yes 
+43 1995-01-17 Northern Ireland British White Derry  4699.0 Yes 
+44 1988-08-12 France Italian White None 4700.0 Yes 
+45 2004-09-26 Russia Russian White None 4701.0 Yes 
+46 2005-12-07 Scotland British White London 4702.0 Yes 
+47 1996-11-25 Scotland British Other/Mixed None 4703.0 No 
+48 1994-03-20 England British Other/Mixed None 4704.0 No 
+49 1994-05-01 Russia Russian White None 4705.0 Yes 
+50 1995-10-13 England British White None 4706.0 No 
+51 1999-05-08 England British White None 4707.0 No 
+53 1993-12-06 England British Asian None 4709.0 No 
+54 1994-01-28 England British Black African None 4710.0 Yes 
+55 1997-03-22 Scotland British Black Caribbean London 4711.0 Yes 
+56 1997-10-10 Gibraltar British White London 4712.0 Yes 
+57 2003-03-03 Germany German Asian None 4713.0 Yes 
+58 2005-01-20 Ghana British White Cambridge  4714.0 Yes 
+59 1998-02-04 England British White None 4715.0 Yes 
+60 1991-07-31 Brazil Brazilian White Oxford 4716.0 No 
+61 1991-08-03 Portugal Portuguese White London 4717.0 No 
+62 1998-01-05 England British Other/Mixed None 4718.0 Yes 
+63 1988-10-29 China Chinese White None 4719.0 No 
+64 1994-09-09 USA British Black African None 4720.0 No 
+65 1988-04-24 Russia Russian White None 4721.0 No 
+66 1989-05-28 Korea Korean Asian None 4722.0 Yes 
+67 2000-12-13 Ireland Irish White None 4723.0 Yes 
+68 1995-12-26 Ireland Irish White London 4724.0 Yes 
+69 1988-02-01 Spain Spanish White None 4725.0 Yes 
+70 2003-10-19 France French White None 4726.0 Yes 
+71 2003-05-19 Kenya Kenyan Asian None 4727.0 Yes 
+72 1988-05-21 France Italian Black African None 4728.0 No 
+73 1993-04-24 Russia Russian White None 4729.0 No 
+74 1995-12-12 Scotland British White London 4730.0 Yes 
+75 2004-11-17 Scotland British White None 4731.0 No 
+76 1991-10-31 England British White None 4732.0 No 
+77 1990-02-04 Russia Russian White London 4733.0 No 
+78 2004-12-05 England British White London 4734.0 Yes 
+79 2005-12-30 England British White Manchester 4735.0 Yes 
+80 1990-04-27 England British White London 4736.0 Yes 
+81 2005-05-24 England British White Salisbury  4737.0 Yes 
+82 1998-06-11 Scotland British White None 4738.0 Yes 
+83 1990-03-24 Gibraltar British Other/Mixed None 4739.0 Yes 
+84 2003-12-24 Cuba Cuban White None 4740.0 No 
+85 1989-06-08 Ghana British Asian London 4741.0 No 
+86 2002-12-25 England British White None 4742.0 Yes 
+87 2003-10-02 Brazil Brazilian White London 4743.0 No 
+88 1996-07-22 Portugal Portuguese White None 4744.0 No 
+89 1988-09-08 England British White London 4745.0 No 
+
+The following TREATMENTS were added to the table treatment in the GLUE database: 
+
+77 simeprevir 1 tablet per day 2011-06-30
+
+while the ones below already existed: 
+
+10 ledipasvir None 2011-06-30
+10 ombitasvir None 1988-01-05
+10 paritaprevir None 2011-06-30
+
+
+    

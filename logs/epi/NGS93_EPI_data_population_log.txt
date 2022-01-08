@@ -1,0 +1,112 @@
+ EPIDEMIOLOGICAL DATA POPULATION LOG - NGS93
+
+The following DRUGS were added to the table drug in the GLUE database:
+ 
+
+while the ones below already existed: 
+
+simeprevir
+sofosbuvir
+ledipasvir
+ombitasvir
+paritaprevir
+ritonavir
+dasabuvir
+velpatasvir
+voxilaprevir
+glecaprevir
+pibrentasvir
+ribavarin
+peginterferon alfa
+grazoprevir
+elbasvir
+daclastavir
+asunaprevir
+beclabuvir
+
+The following records were updated in the table patient in the GLUE database: 
+
+13 1992-07-12 England British White London 4669.0 No 
+90 1990-09-24 China Chinese White None 4746.0 Yes 
+91 1994-04-01 USA British White London 4747.0 Yes 
+92 1996-11-28 Russia Russian White None 4748.0 Yes 
+93 2005-12-04 Korea Korean White None 4749.0 Yes 
+94 1996-07-13 Ireland Irish White None 4750.0 Yes 
+95 2005-03-20 Ireland Irish White None 4751.0 Yes 
+96 2003-09-04 Spain Spanish White London 4752.0 No 
+97 2005-02-21 France French White London 4753.0 No 
+98 1993-01-13 Kenya Kenyan Black African London 4754.0 Yes 
+99 2002-08-13 England British White Cardiff None No 
+100 1998-01-01 Wales British White Brighton  None Yes 
+101 1995-04-18 Italy Italian White Belfast  None Yes 
+102 1997-10-10 Northern Ireland British White London None Yes 
+103 1988-04-23 France Italian White None None Yes 
+104 1989-01-24 Russia Russian Black African None None Yes 
+105 1995-08-02 Scotland British White Edinburgh  None Yes 
+106 1997-10-10 Scotland British White London None No 
+107 1988-07-20 England British White London None No 
+108 2004-05-31 Russia Russian White London None Yes 
+109 1992-08-12 England British White London None No 
+110 1990-04-08 England British White London None Yes 
+111 2004-03-03 England British White London None Yes 
+112 1997-12-21 England British White Glasgow None Yes 
+113 1996-09-19 Scotland British White Gibraltar None Yes 
+114 1994-05-11 Gibraltar British Not Stated Glasgow None Yes 
+115 2002-06-20 Scotland British Asian Sheffield None Yes 
+116 2004-01-06 Ghana British White None None No 
+117 2003-11-07 None Unknown White London None No 
+118 1996-09-12 None None White London None Yes 
+118 1996-07-28 None Others White None None No 
+118 1992-08-28 None Others White None None Yes 
+119 1989-06-17 England British White London None Yes 
+120 1996-07-15 Brazil Brazilian White London None Yes 
+121 1991-10-27 Portugal Portuguese White Manchester None Yes 
+122 1994-12-10 England British White London None Yes 
+123 1993-08-01 China Chinese Asian Salisbury  None Yes 
+124 1988-01-24 USA British Other/Mixed None None No 
+125 2004-04-10 Russia Russian Other/Mixed London None No 
+126 1988-04-05 Korea Korean White None None Yes 
+127 2001-08-18 Ireland Irish White None None No 
+128 1993-08-04 Ireland Irish White None None Yes 
+129 2005-11-17 Spain Spanish Other/Mixed Cambridge  None Yes 
+130 1996-08-29 France French White None None Yes 
+131 1989-12-24 Kenya Kenyan White Oxford None Yes 
+132 1995-06-24 South African  South African White None None Yes 
+133 2003-08-04 England British White None None Yes 
+134 1991-06-12 Wales British White None None No 
+135 1990-12-04 Italy Italian White Derry  None No 
+136 1995-01-18 Northern Ireland British White None None Yes 
+137 1988-09-12 France Italian White None None No 
+138 2004-09-27 Russia Russian White London None Yes 
+140 2005-07-13 Scotland British White None None Yes 
+141 1996-11-26 Scotland British White None None Yes 
+142 1994-03-21 England British White None None Yes 
+143 1994-06-01 Russia Russian Not Stated None None Yes 
+144 1995-10-14 England British White None None Yes 
+145 1999-06-08 England British Other/Mixed None None No 
+146 1993-06-13 England British Other/Mixed None None No 
+147 1994-01-29 England British White London None Yes 
+148 1997-03-23 Scotland British Asian London None No 
+
+The following TREATMENTS were added to the table treatment in the GLUE database: 
+
+95 ledipasvir 2 tablets per day 1988-01-05
+110 ritonavir None 2011-06-30
+110 paritaprevir None 2019-04-05
+125 ledipasvir None 2019-04-05
+125 simeprevir 1 tablet per day 2011-06-30
+137 paritaprevir None 2020-08-08
+91 simeprevir None 2019-05-05
+91 ledipasvir None 2019-05-05
+91 paritaprevir None 2020-09-08
+107 peginterferon alfa None 2011-01-07
+107 elbasvir None 1988-02-05
+121 daclastavir None 2011-01-07
+126 asunaprevir None 2019-05-05
+126 simeprevir 2 tablets per day 1988-02-05
+
+while the ones below already existed: 
+
+
+
+    
