@@ -1,0 +1,81 @@
+16:59:30.355 DatabaseConfiguration WARNING: The 'vendor' config element is deprecated as of GLUE 1.1.6 or later.
+16:59:30.359 DatabaseConfiguration WARNING: You can safely remove the <vendor> element MySQL as of GLUE 1.1.6 or later
+GLUE Version 1.1.108
+Copyright (C) 2015-2020 The University of Glasgow
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
+are welcome to redistribute it under certain conditions. For details see
+GNU Affero General Public License v3: http://www.gnu.org/licenses/
+
+Mode path: /
+GLUE> 
+Mode path: /
+GLUE>         project hcv_glue_avu
+OK
+Mode path: /project/hcv_glue_avu
+GLUE>         import source sources/NGS92
++====================================================================================================+============+====================+================+
+|                                              filePath                                              | sourceName |     sequenceID     | sequenceFormat |
++====================================================================================================+============+====================+================+
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H205140999-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210440756-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210460580-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480169-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480859-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480865-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480866-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480867-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480868-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480869-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210480870-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210500285-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210500364-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210500432-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520483-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520554-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520555-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520556-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520557-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210520558-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210540062-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210540115-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210540116-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210540575-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210540581-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210560613-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210560614-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210560615-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210560616-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210560748-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580669-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580670-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580671-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580672-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580673-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580674-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580675-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210580676-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210600302-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210600303-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210600362-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210640639-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210660797-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210660798-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210660799-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210680422-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210680671-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210680672-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210680673-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | H210680674-1_NGS92 | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | PC_1-1_NGS92       | FASTA          |
+| /home/phe.gov.uk/juan.ledesma/gluetools/projec...                                                  | NGS92      | PC_2-1_NGS92       | FASTA          |
++====================================================================================================+============+====================+================+
+
+Mode path: /project/hcv_glue_avu
+GLUE>         Q
+Error: No command could be formed from "Q" in mode path /project/hcv_glue_avu
+Mode path: /project/hcv_glue_avu
+GLUE>         exit
+OK
+Mode path: /
+GLUE>         quit
+OK
