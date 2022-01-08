@@ -27,21 +27,11 @@ schema-project hcv_glue_avu
     create field genotyping_method VARCHAR 200
     create field reference_status VARCHAR 20  # confirmed  recombinant / unassigned
     create field gb_lab_construct BOOLEAN
-    # fields to remove
-    #create field ncbi_incoming BOOLEAN
-    #create field vipr_genotype VARCHAR 10
-    #create field vipr_subtype VARCHAR 10
-    #create field epa_genotype VARCHAR 10
-    #create field epa_subtype VARCHAR 10
-    #create field epa_genotype_final_clade VARCHAR 200
-    #create field epa_subtype_final_clade VARCHAR 200
-    #create field lanl_problematic_sequence VARCHAR 50
-    #create field lanl_sampling_year INTEGER
     
     # AVU fields
     create field hcv_wg_pipeline VARCHAR 100
     create field pipeline_version VARCHAR 50
-    #The field molis must be in csv file to set the link with custom table, not in the table
+    create field sample_id VARCHAR 50 # new field to connect to custom tables created by SQLalchemy.
     create field genotyping_polyprotein VARCHAR
     # fields for genotyping using genes
     create field genotyping_core VARCHAR
@@ -57,8 +47,6 @@ schema-project hcv_glue_avu
     exit
 
   table alignment
-    # provisional / unassigned etc.
-    # create field status VARCHAR 20 # nothing has been added to this field so far
     create field phylogeny VARCHAR 10000
     exit
     
@@ -67,8 +55,8 @@ schema-project hcv_glue_avu
     
   create link sequence who_country -m MANY_TO_ONE
 
-  #AVU custom tables
-  run file glue/avuCustomTables.glue
+  #AVU custom tables (SQLalchemy)
+  # run file glue/avuCustomTables.glue
   
   
   exit
