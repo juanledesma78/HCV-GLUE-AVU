@@ -1,4 +1,4 @@
-drug_id,manufacturer,therapy_class
+id,manufacturer,therapy_class
 simeprevir,Janssen,NS3A/4A protease inhibitor 
 sofosbuvir,Gilead,NS5B nucleotide polymerase inhibitor
 ledipasvir,Gilead,NS5A inhibitor
