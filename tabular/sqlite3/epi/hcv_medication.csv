@@ -1,0 +1,19 @@
+drug_id,manufacturer,therapy_class
+simeprevir,Janssen,NS3A/4A protease inhibitor 
+sofosbuvir,Gilead,NS5B nucleotide polymerase inhibitor
+ledipasvir,Gilead,NS5A inhibitor
+ombitasvir,AbbVie,NS5B nucleotide polymerase inhibitor
+paritaprevir,AbbVie,NS3A/4A protease inhibitor 
+ritonavir,AbbVie,NS5A inhibitor
+dasabuvir,,
+velpatasvir,Gilead,NS5A inhibitor
+voxilaprevir,Gilead,NS3A/4A protease inhibitor 
+glecaprevir,AbbVie,NS3A/4A protease inhibitor 
+pibrentasvir,AbbVie,NS5A inhibitor
+ribavarin,,
+peginterferon alfa,,
+grazoprevir,Merck,NS3A/4A protease inhibitor 
+elbasvir,Merck,NS5A inhibitor
+daclastavir,BMS,NS5A inhibitor
+asunaprevir,BMS,NS3A/4A protease inhibitor 
+beclabuvir,BMS,NS5B non-nucleotide polymerase inhibitor

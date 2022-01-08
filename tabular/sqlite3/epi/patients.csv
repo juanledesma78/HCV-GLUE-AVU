@@ -1,0 +1,346 @@
+pid,diagnosis_date,NHS,nationality,country_of_birth,city,ethnicity,hiv_infection
+1,12/08/02,4657,British,England,London,White,No
+2,31/12/97,4658,British,Wales,Cardiff,White,Yes
+3,17/04/95,4659,Italian,Italy,Brighton ,Black African,Yes
+5,26/09/90,4661,British,Northern Ireland,Belfast ,Not Stated,Yes
+7,22/04/88,4663,Italian,France,London,White,Yes
+8,23/01/89,4664,Russian,Russia,,White,Yes
+9,07/02/95,4665,British,Scotland,,Black other,Yes
+10,15/03/98,4662,British,Scotland,Edinburgh ,White,No
+11,19/07/88,4667,British,England,London,White,No
+12,30/05/04,4668,Russian,Russia,London,White,Yes
+13,07/12/92,4669,British,England,London,White,No
+14,03/08/90,4670,British,England,London,White,No
+15,02/03/04,4671,British,England,London,White,No
+16,20/12/97,4672,British,England,London,Not Stated,Yes
+17,18/09/96,4673,British,Scotland,Glasgow,White,Yes
+18,04/11/94,4674,British,Gibraltar,Gibraltar,Other/Mixed,Yes
+19,19/06/02,4675,British,Scotland,Glasgow,Asian,Yes
+21,31/05/04,4677,British,Ghana,Sheffield,Asian,Yes
+22,10/07/03,4678,Unknown,,,White,Yes
+23,08/12/96,4679,,,London,White,No
+24,27/07/96,4680,Others,,London,White,No
+25,27/08/92,4681,Others,,,White,Yes
+26,16/06/89,4682,British,England,,White,No
+27,14/07/96,4683,Brazilian,Brazil,London,White,No
+28,26/10/91,4684,Portuguese,Portugal,London,White,No
+29,11/10/94,4685,British,England,Manchester,White,Yes
+30,07/01/93,4686,Chinese,China,London,White,Yes
+31,23/01/88,4687,British,USA,Salisbury ,White,Yes
+32,03/10/04,4688,Russian,Russia,,White,Yes
+33,03/05/88,4689,Korean,Korea,London,White,Yes
+34,17/08/01,4690,Irish,Ireland,,White,Yes
+35,07/04/93,4691,Irish,Ireland,,White,No
+36,16/11/05,4692,Spanish,Spain,,White,No
+37,28/08/96,4693,French,France,Cambridge ,White,Yes
+38,23/12/89,4694,Kenyan,Kenya,,White,No
+39,23/06/95,4695,South African,South African ,Oxford,Asian,No
+40,07/04/03,4696,British,England,,White,No
+41,05/12/91,4697,British,Wales,,Not Stated,Yes
+42,11/04/90,4698,Italian,Italy,,White,Yes
+43,17/01/95,4699,British,Northern Ireland,Derry ,White,Yes
+44,08/12/88,4700,Italian,France,,White,Yes
+45,26/09/04,4701,Russian,Russia,,White,Yes
+46,12/07/05,4702,British,Scotland,London,White,Yes
+47,25/11/96,4703,British,Scotland,,Other/Mixed,No
+48,20/03/94,4704,British,England,,Other/Mixed,No
+49,05/01/94,4705,Russian,Russia,,White,Yes
+50,13/10/95,4706,British,England,,White,No
+51,05/08/99,4707,British,England,,White,No
+53,12/06/93,4709,British,England,,Asian,No
+54,28/01/94,4710,British,England,,Black African,Yes
+55,22/03/97,4711,British,Scotland,London,Black Caribbean,Yes
+56,10/10/97,4712,British,Gibraltar,London,White,Yes
+57,03/03/03,4713,German,Germany,,Asian,Yes
+58,20/01/05,4714,British,Ghana,Cambridge ,White,Yes
+59,02/04/98,4715,British,England,,White,Yes
+60,31/07/91,4716,Brazilian,Brazil,Oxford,White,No
+61,08/03/91,4717,Portuguese,Portugal,London,White,No
+62,01/05/98,4718,British,England,,Other/Mixed,Yes
+63,29/10/88,4719,Chinese,China,,White,No
+64,09/09/94,4720,British,USA,,Black African,No
+65,24/04/88,4721,Russian,Russia,,White,No
+66,28/05/89,4722,Korean,Korea,,Asian,Yes
+67,13/12/00,4723,Irish,Ireland,,White,Yes
+68,26/12/95,4724,Irish,Ireland,London,White,Yes
+69,02/01/88,4725,Spanish,Spain,,White,Yes
+70,19/10/03,4726,French,France,,White,Yes
+71,19/05/03,4727,Kenyan,Kenya,,Asian,Yes
+72,21/05/88,4728,Italian,France,,Black African,No
+73,24/04/93,4729,Russian,Russia,,White,No
+74,12/12/95,4730,British,Scotland,London,White,Yes
+75,17/11/04,4731,British,Scotland,,White,No
+76,31/10/91,4732,British,England,,White,No
+77,02/04/90,4733,Russian,Russia,London,White,No
+78,12/05/04,4734,British,England,London,White,Yes
+79,30/12/05,4735,British,England,Manchester,White,Yes
+80,27/04/90,4736,British,England,London,White,Yes
+81,24/05/05,4737,British,England,Salisbury ,White,Yes
+82,06/11/98,4738,British,Scotland,,White,Yes
+83,24/03/90,4739,British,Gibraltar,,Other/Mixed,Yes
+84,24/12/03,4740,Cuban,Cuba,,White,No
+85,06/08/89,4741,British,Ghana,London,Asian,No
+86,25/12/02,4742,British,England,,White,Yes
+87,10/02/03,4743,Brazilian,Brazil,London,White,No
+88,22/07/96,4744,Portuguese,Portugal,,White,No
+89,09/08/88,4745,British,England,London,White,No
+90,24/09/90,4746,Chinese,China,,White,Yes
+91,04/01/94,4747,British,USA,London,White,Yes
+92,28/11/96,4748,Russian,Russia,,White,Yes
+93,12/04/05,4749,Korean,Korea,,White,Yes
+94,13/07/96,4750,Irish,Ireland,,White,Yes
+95,20/03/05,4751,Irish,Ireland,,White,Yes
+96,09/04/03,4752,Spanish,Spain,London,White,No
+97,21/02/05,4753,French,France,London,White,No
+98,13/01/93,4754,Kenyan,Kenya,London,Black African,Yes
+99,13/08/02,,British,England,Cardiff,White,No
+100,01/01/98,,British,Wales,Brighton ,White,Yes
+101,18/04/95,,Italian,Italy,Belfast ,White,Yes
+102,10/10/97,,British,Northern Ireland,London,White,Yes
+103,23/04/88,,Italian,France,,White,Yes
+104,24/01/89,,Russian,Russia,,Black African,Yes
+105,08/02/95,,British,Scotland,Edinburgh ,White,Yes
+106,10/10/97,,British,Scotland,London,White,No
+107,20/07/88,,British,England,London,White,No
+108,31/05/04,,Russian,Russia,London,White,Yes
+109,08/12/92,,British,England,London,White,No
+110,04/08/90,,British,England,London,White,Yes
+111,03/03/04,,British,England,London,White,Yes
+112,21/12/97,,British,England,Glasgow,White,Yes
+113,19/09/96,,British,Scotland,Gibraltar,White,Yes
+114,05/11/94,,British,Gibraltar,Glasgow,Not Stated,Yes
+115,20/06/02,,British,Scotland,Sheffield,Asian,Yes
+116,01/06/04,,British,Ghana,,White,No
+117,11/07/03,,Unknown,,London,White,No
+118,09/12/96,,,,London,White,Yes
+118,28/07/96,,Others,,,White,No
+118,28/08/92,,Others,,,White,Yes
+119,17/06/89,,British,England,London,White,Yes
+120,15/07/96,,Brazilian,Brazil,London,White,Yes
+121,27/10/91,,Portuguese,Portugal,Manchester,White,Yes
+122,12/10/94,,British,England,London,White,Yes
+123,08/01/93,,Chinese,China,Salisbury ,Asian,Yes
+124,24/01/88,,British,USA,,Other/Mixed,No
+125,04/10/04,,Russian,Russia,London,Other/Mixed,No
+126,04/05/88,,Korean,Korea,,White,Yes
+127,18/08/01,,Irish,Ireland,,White,No
+128,08/04/93,,Irish,Ireland,,White,Yes
+129,17/11/05,,Spanish,Spain,Cambridge ,Other/Mixed,Yes
+130,29/08/96,,French,France,,White,Yes
+131,24/12/89,,Kenyan,Kenya,Oxford,White,Yes
+132,24/06/95,,South African,South African ,,White,Yes
+133,08/04/03,,British,England,,White,Yes
+134,06/12/91,,British,Wales,,White,No
+135,12/04/90,,Italian,Italy,Derry ,White,No
+136,18/01/95,,British,Northern Ireland,,White,Yes
+137,09/12/88,,Italian,France,,White,No
+138,27/09/04,,Russian,Russia,London,White,Yes
+140,13/07/05,,British,Scotland,,White,Yes
+141,26/11/96,,British,Scotland,,White,Yes
+142,21/03/94,,British,England,,White,Yes
+143,06/01/94,,Russian,Russia,,Not Stated,Yes
+144,14/10/95,,British,England,,White,Yes
+145,06/08/99,,British,England,,Other/Mixed,No
+146,13/06/93,,British,England,,Other/Mixed,No
+147,29/01/94,,British,England,London,White,Yes
+148,23/03/97,,British,Scotland,London,Asian,No
+149,11/10/97,,British,Gibraltar,,White,Yes
+150,04/03/03,,German,Germany,Cambridge ,White,Yes
+151,21/01/05,,British,Ghana,,White,Yes
+152,03/04/98,,British,England,Oxford,White,Yes
+153,01/08/91,,Brazilian,Brazil,London,Not Stated,Yes
+154,09/03/91,,Portuguese,Portugal,,White,Yes
+155,02/05/98,,British,England,,Other/Mixed,No
+156,30/10/88,,Chinese,China,,White,No
+157,10/09/94,,British,USA,,White,Yes
+158,25/04/88,,Russian,Russia,,Asian,No
+159,29/05/89,,Korean,Korea,,Other/Mixed,Yes
+160,14/12/00,,Irish,Ireland,London,White,Yes
+161,27/12/95,,Irish,Ireland,,White,Yes
+162,03/01/88,,Spanish,Spain,,Not Stated,Yes
+163,20/10/03,,French,France,,Not Stated,
+164,20/05/03,,Kenyan,Kenya,,White,
+165,10/10/97,,Italian,France,,White,No
+166,25/04/93,,Russian,Russia,London,White,No
+168,13/12/95,,British,Scotland,,,
+169,18/11/04,,British,Scotland,,Asian,No
+170,01/11/91,,British,,London,White,Yes
+171,03/04/90,,Russian,Russia,London,Black African,Yes
+172,13/05/04,,British,England,Manchester,Other/Mixed,Yes
+173,25/03/90,,British,England,London,Asian,Yes
+174,28/04/90,,British,England,Salisbury ,Asian,Yes
+175,25/05/05,,British,England,,White,Yes
+176,07/11/98,,British,Scotland,,White,No
+177,25/03/90,,British,Gibraltar,,Asian,No
+178,25/12/03,,Cuban,Cuba,London,White,Yes
+179,07/08/89,,British,Ghana,,White,No
+180,26/12/02,,British,England,London,White,Yes
+181,11/02/03,,Brazilian,Brazil,,Other/Mixed,Yes
+182,23/07/96,,Portuguese,Portugal,London,White,Yes
+183,10/08/88,,British,England,,Black African,Yes
+184,25/09/90,,Chinese,China,London,White,Yes
+185,05/01/94,,British,USA,,Black Caribbean,Yes
+186,29/11/96,,Russian,Russia,,White,No
+187,13/04/05,,Korean,Korea,,White,No
+188,14/07/96,,Irish,Ireland,,White,Yes
+189,21/03/05,,Irish,Ireland,London,White,No
+190,10/04/03,,Spanish,Spain,London,Black Caribbean,Yes
+191,22/02/05,,French,France,London,White,Yes
+192,14/01/93,,Kenyan,Kenya,Cardiff,Black African,Yes
+193,14/08/02,,British,Scotland,Brighton ,,Yes
+194,02/01/98,,British,Gibraltar,Belfast ,Other/Mixed,Yes
+195,19/04/95,,Cuban,Cuba,London,Other/Mixed,Yes
+196,28/09/90,,British,Ghana,,Black African,No
+197,24/04/88,,British,England,,Asian,No
+198,25/01/89,,Brazilian,Brazil,Edinburgh ,Asian,Yes
+199,09/02/95,,Portuguese,Portugal,London,White,No
+200,17/03/98,,British,England,London,White,Yes
+201,21/07/88,,Chinese,China,London,Black African,Yes
+202,01/06/04,,British,USA,London,Asian,Yes
+203,09/12/92,,Russian,Russia,London,White,Yes
+204,05/08/90,,Korean,Korea,London,White,Yes
+205,04/03/04,,Irish,Ireland,Glasgow,White,Yes
+206,22/12/97,,Irish,Ireland,Gibraltar,White,No
+207,20/09/96,,Spanish,Spain,Glasgow,White,No
+208,06/11/94,,French,France,Sheffield,Asian,Yes
+209,21/06/02,,British,Scotland,,White,No
+210,02/06/04,,British,Gibraltar,London,Asian,Yes
+211,12/07/03,,Cuban,Cuba,London,Not Stated,Yes
+212,10/12/96,,British,Ghana,,White,Yes
+213,25/03/90,,British,England,,White,Yes
+214,29/08/92,,Brazilian,Brazil,London,Other/Mixed,Yes
+215,18/06/89,,Portuguese,Portugal,London,White,Yes
+216,16/07/96,,British,England,Manchester,Not Stated,No
+217,28/10/91,,Chinese,China,London,Not Stated,No
+218,13/10/94,,British,USA,Salisbury ,White,Yes
+219,09/01/93,,Russian,Russia,,White,No
+220,25/01/88,,Korean,Korea,London,Not Stated,Yes
+221,05/10/04,,Irish,Ireland,,Other/Mixed,Yes
+222,15/08/02,,Irish,Ireland,,White,Yes
+223,03/01/98,,Spanish,Spain,,,Yes
+224,20/04/95,,French,France,Cambridge ,Asian,Yes
+225,29/09/90,,British,Scotland,,White,Yes
+226,25/04/88,,British,Gibraltar,Oxford,Black African,No
+227,26/01/89,,Cuban,Cuba,,Asian,No
+228,10/02/95,,British,Ghana,,Asian,Yes
+229,18/03/98,,British,England,,Black African,No
+230,22/07/88,,Brazilian,Brazil,Derry ,Not Stated,Yes
+231,02/06/04,,Portuguese,Portugal,,White,Yes
+232,10/12/92,,British,England,,Asian,Yes
+233,06/08/90,,Chinese,China,London,Not Stated,Yes
+234,05/03/04,,British,USA,,White,Yes
+235,23/12/97,,Russian,Russia,,White,Yes
+236,21/09/96,,Korean,Korea,,White,No
+237,07/11/94,,Irish,Ireland,,White,No
+238,22/06/02,,Irish,Ireland,,White,Yes
+239,03/06/04,,Spanish,Spain,,White,No
+240,13/07/03,,French,France,,Other/Mixed,Yes
+241,11/12/96,,British,Scotland,London,White,
+242,25/03/90,,British,Gibraltar,London,White,
+243,30/08/92,,Cuban,Cuba,,White,Yes
+244,19/06/89,,British,Ghana,Cambridge ,Not Stated,Yes
+245,17/07/96,,British,England,,White,Yes
+246,29/10/91,,Brazilian,Brazil,Oxford,White,No
+247,14/10/94,,Portuguese,Portugal,London,,
+248,10/01/93,,British,England,,White,Yes
+249,26/01/88,,Chinese,China,,White,No
+250,06/10/04,,British,USA,,White,Yes
+251,16/08/02,,Russian,Russia,,Not Stated,Yes
+252,04/01/98,,Korean,Korea,,White,Yes
+253,21/04/95,,Irish,Ireland,,Asian,Yes
+254,30/09/90,,Irish,Ireland,London,White,Yes
+255,26/04/88,,Spanish,Spain,,Other/Mixed,Yes
+256,27/01/89,,French,France,,White,No
+257,11/02/95,,British,Scotland,,White,No
+258,19/03/98,,British,Gibraltar,,White,Yes
+259,23/07/88,,Cuban,Cuba,,Not Stated,No
+260,03/06/04,,British,Ghana,London,White,Yes
+261,11/12/92,,British,England,,Black African,Yes
+262,07/08/90,,Brazilian,Brazil,,Not Stated,Yes
+263,06/03/04,,Portuguese,Portugal,London,Asian,Yes
+264,24/12/97,,British,England,London,White,Yes
+265,22/09/96,,Chinese,China,Manchester,White,Yes
+266,08/11/94,,British,USA,London,Other/Mixed,No
+268,23/06/02,,Russian,Russia,Salisbury ,Other/Mixed,No
+269,04/06/04,,Korean,Korea,,Not Stated,Yes
+270,14/07/03,,Irish,Ireland,,Other/Mixed,No
+271,12/12/96,,Irish,Ireland,,Not Stated,Yes
+272,17/08/02,,Spanish,Spain,London,Not Stated,Yes
+273,31/08/92,,French,France,,Other/Mixed,Yes
+274,20/06/89,,British,Scotland,London,White,Yes
+275,18/07/96,,British,Gibraltar,,White,Yes
+276,30/10/91,,Cuban,Cuba,London,Other/Mixed,Yes
+277,15/10/94,,British,Ghana,,White,No
+278,11/01/93,,British,England,London,White,No
+279,27/01/88,,Brazilian,Brazil,,White,Yes
+280,07/10/04,,Portuguese,Portugal,,White,No
+281,17/08/02,,British,England,,White,Yes
+283,05/01/98,,Chinese,China,,White,Yes
+284,22/04/95,,British,USA,London,White,Yes
+285,01/10/90,,Russian,Russia,London,Black African,Yes
+286,27/04/88,,Korean,Korea,London,White,Yes
+287,28/01/89,,Irish,Ireland,Cardiff,White,Yes
+288,12/02/95,,Irish,Ireland,Brighton ,White,No
+289,20/03/98,,Spanish,Spain,Belfast ,White,No
+290,24/07/88,,French,France,London,White,Yes
+291,04/06/04,,British,Scotland,,White,No
+292,12/12/92,,British,Gibraltar,,Black African,Yes
+293,08/08/90,,Cuban,Cuba,Edinburgh ,White,Yes
+294,07/03/04,,British,Ghana,London,Black African,Yes
+295,25/12/97,,British,England,London,White,Yes
+296,23/09/96,,Brazilian,Brazil,London,White,Yes
+297,09/11/94,,Portuguese,Portugal,London,Black African,Yes
+298,24/06/02,,British,England,London,Black Caribbean,No
+299,05/06/04,,Chinese,China,London,White,No
+300,15/07/03,,British,USA,Glasgow,Black Caribbean,Yes
+301,13/12/96,,Russian,Russia,Gibraltar,White,No
+302,17/08/02,,Korean,Korea,Glasgow,Black African,Yes
+303,01/09/92,,Irish,Ireland,Sheffield,White,Yes
+304,21/06/89,,Irish,Ireland,,Other/Mixed,Yes
+305,19/07/96,,Spanish,Spain,London,Other/Mixed,Yes
+306,31/10/91,,French,France,London,White,Yes
+307,16/10/94,,British,Scotland,,White,Yes
+308,12/01/93,,British,Gibraltar,,White,No
+309,28/01/88,,Cuban,Cuba,London,White,No
+310,08/10/04,,British,Ghana,London,White,Yes
+311,18/08/02,,British,England,Manchester,White,No
+312,06/01/98,,Brazilian,Brazil,London,White,Yes
+313,23/04/95,,Portuguese,Portugal,Salisbury ,White,Yes
+314,02/10/90,,British,England,,White,Yes
+315,28/04/88,,Chinese,China,London,Black African,Yes
+316,29/01/89,,British,USA,,Black other,Yes
+317,13/02/95,,Russian,Russia,,Asian,Yes
+318,21/03/98,,Korean,Korea,,Not Stated,No
+319,25/07/88,,Irish,Ireland,Cambridge ,Asian,No
+320,05/06/04,,Irish,Ireland,,White,Yes
+321,13/12/92,,Spanish,Spain,Oxford,Asian,No
+322,09/08/90,,French,France,,Black African,Yes
+323,08/03/04,,British,Scotland,,White,Yes
+324,26/12/97,,British,Gibraltar,,White,Yes
+325,24/09/96,,Cuban,Cuba,Derry ,White,Yes
+326,10/11/94,,British,Ghana,,Black African,Yes
+327,25/06/02,,British,England,,White,Yes
+328,06/06/04,,Brazilian,Brazil,London,White,No
+329,07/06/04,,Portuguese,Portugal,,White,No
+330,25/07/88,,British,England,,White,Yes
+331,09/06/04,,Chinese,China,,White,No
+332,10/06/04,,British,USA,,White,Yes
+333,25/07/88,,Russian,Russia,,White,Yes
+334,02/10/90,,Korean,Korea,,White,Yes
+335,28/04/88,,Irish,Ireland,,White,Yes
+336,29/01/89,,Irish,Ireland,London,White,Yes
+337,13/02/95,,Spanish,Spain,London,White,Yes
+338,21/03/98,,French,France,,White,No
+339,25/07/88,,British,Scotland,Cambridge ,White,No
+340,05/06/04,,British,Gibraltar,,Other/Mixed,Yes
+341,13/12/92,,Cuban,Cuba,Oxford,Other/Mixed,No
+342,09/08/90,,British,Ghana,London,White,Yes
+343,25/07/88,,British,England,,White,Yes
+344,21/03/98,,Brazilian,Brazil,,Asian,Yes
+345,25/07/88,,Portuguese,Portugal,,Other/Mixed,Yes
+346,05/06/04,,British,England,,White,Yes
+347,13/12/92,,Chinese,China,,White,Yes
+348,09/08/90,,British,USA,,Black Caribbean,No
+349,08/03/04,,Russian,Russia,London,White,No
+350,10/06/04,,Korean,Korea,,Asian,Yes
+351,05/06/04,,Irish,Ireland,,White,No
