@@ -1,0 +1,171 @@
+ MOLIS DATA POPULATION LOG - NGS91
+
+The following HOSPITALS were added to the table hospital in the GLUE database:
+ 
+The Royal London Hospital
+Nuffield Health Taunton Hospital
+John Radcliffe Hospital
+Leeds Teaching Hospitals NHS Trust
+Luton & Dunstable University Hospital
+Watford General Hospital
+West Suffolk NHS Foundation Trust
+University of Dundee Hospital
+Scunthorpe General Hospital
+St George's Hospital
+Great Ormond Street Hospital for Children
+Royal Free Hospital 
+University Hospitals Coventry & Warwickshire
+Birmingham City Hospital
+Imperial College Healthcare NHS Trust
+Manchester Royal Infirmary
+Morriston Hospital 
+Sheffield Teaching Hospital
+Royal Alexandra Hospital
+Wexham Park Hospital
+Royal Sussex County Hospital
+Queen's Hospital
+University Hospital’s Bristol
+Royal Hospital Chelsea
+Huddersfield Royal Infirmary
+Wrexham Maelor Hospital
+University College London Hospital
+
+while the ones below already existed: 
+
+
+The following PATIENT records were added to the table patient in the GLUE database: 
+
+24
+10
+9
+7
+12
+18
+27
+13
+22
+5
+35
+34
+14
+30
+37
+32
+8
+15
+21
+39
+25
+2
+16
+36
+17
+11
+19
+26
+3
+38
+33
+28
+1
+29
+31
+23
+
+while the ones below already existed: 
+
+
+The following SAMPLES were added to the table sample in the GLUE database: 
+
+H210360996
+H210220787
+H210240113
+H210220788
+H210280208
+H210300532
+H210360999
+H210281395
+H210300551
+H210220700
+H210400421
+H210400388
+H210281396
+H210380784
+H210420137
+H210380825
+H210240111
+H210281397
+H210300550
+H210420664
+H210360997
+H210161351
+H210281398
+H210400512
+H210281399
+H210280185
+H210300549
+H210360998
+H210180795
+H210420662
+H210400331
+H210180794
+H210361033
+H204820685
+H210241030
+H210380210
+H210380785
+H210341088
+H210300533
+
+while the ones below already existed: 
+
+
+
+Details for the following SEQUENCES were added to the table sequence in the GLUE database: 
+ 
+H210360996-1_NGS91
+PC_2-1_NGS91
+H210220787-1_NGS91
+H210240113-1_NGS91
+H210220788-1_NGS91
+H210280208-1_NGS91
+H210300532-1_NGS91
+H210360999-1_NGS91
+H210281395-1_NGS91
+H210300551-1_NGS91
+H210220700-1_NGS91
+H210400421-1_NGS91
+H210400388-1_NGS91
+H210281396-1_NGS91
+H210380784-1_NGS91
+H210420137-2_genomancer_NGS91
+H210380825-1_NGS91
+H210420137-1_genomancer_NGS91
+H210240111-1_NGS91
+H210281397-1_NGS91
+H210300550-1_NGS91
+H210420664-1_NGS91
+H210360997-1_NGS91
+H210161351-1_NGS91
+H210420137-1_NGS91
+H210281398-1_NGS91
+H210400512-1_NGS91
+H210281399-1_NGS91
+H210280185-1_NGS91
+H210300549-1_NGS91
+H210360998-1_NGS91
+H210180795-1_NGS91
+H210420662-1_NGS91
+H210400331-1_NGS91
+H210180794-1_NGS91
+H210361033-1_NGS91
+H204820685-1_NGS91
+H210241030-1_NGS91
+PC_1-1_NGS91
+H210380210-1_NGS91
+H210380785-1_NGS91
+H210341088-1_NGS91
+H210300533-1_NGS91
+
+
+    

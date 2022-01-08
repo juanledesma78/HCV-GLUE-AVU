@@ -1,0 +1,187 @@
+ MOLIS DATA POPULATION LOG - NGS95
+
+The following HOSPITALS were added to the table hospital in the GLUE database:
+ 
+
+while the ones below already existed: 
+
+The Royal London Hospital
+Nuffield Health Taunton Hospital
+John Radcliffe Hospital
+Leeds Teaching Hospitals NHS Trust
+Luton & Dunstable University Hospital
+Watford General Hospital
+West Suffolk NHS Foundation Trust
+University of Dundee Hospital
+Scunthorpe General Hospital
+St George's Hospital
+Great Ormond Street Hospital for Children
+Royal Free Hospital 
+University Hospitals Coventry & Warwickshire
+Birmingham City Hospital
+Imperial College Healthcare NHS Trust
+Manchester Royal Infirmary
+Morriston Hospital 
+Sheffield Teaching Hospital
+Royal Alexandra Hospital
+Wexham Park Hospital
+Royal Sussex County Hospital
+Queen's Hospital
+University Hospital’s Bristol
+Royal Hospital Chelsea
+Huddersfield Royal Infirmary
+Wrexham Maelor Hospital
+University College London Hospital
+
+The following PATIENT records were added to the table patient in the GLUE database: 
+
+183
+185
+188
+180
+178
+152
+177
+181
+161
+163
+174
+158
+159
+169
+164
+162
+171
+172
+170
+191
+160
+186
+189
+156
+151
+175
+168
+176
+165
+192
+182
+154
+184
+166
+155
+157
+187
+153
+194
+190
+193
+179
+173
+
+while the ones below already existed: 
+
+118
+
+The following SAMPLES were added to the table sample in the GLUE database: 
+
+H210980728
+H211040783
+H211060466
+H210980725
+H210980723
+H210880181
+H210980722
+H210980726
+H210900536
+H210900538
+H210960910
+H210880666
+H210900534
+H210960137
+H210900539
+H210900537
+H210960527
+H210960908
+H210960524
+H211060708
+H210900535
+H211040784
+H211060474
+H210880664
+H210700034
+H210960911
+H210940531
+H210980721
+H210920145
+H211080571
+H210980727
+H210880653
+H211000392
+H210920146
+H210880654
+H210880665
+H211060465
+H210880650
+H211080573
+H210920588
+H211060475
+H211080572
+H210980724
+H210960909
+
+while the ones below already existed: 
+
+
+
+Details for the following SEQUENCES were added to the table sequence in the GLUE database: 
+ 
+H210980728-1_NGS95
+H211040783-1_NGS95
+H211060466-1_NGS95
+H210980725-1_NGS95
+H210980723-1_NGS95
+H210880181-1_NGS95
+H210980722-1_NGS95
+H210980726-1_NGS95
+H210900536-1_NGS95
+H210900538-1_NGS95
+H210960910-1_NGS95
+PC_2-1_NGS95
+H210880666-1_NGS95
+H210900534-1_NGS95
+H210960137-1_NGS95
+H210900539-1_NGS95
+H210900537-1_NGS95
+H210960527-1_NGS95
+H210960908-1_NGS95
+H210960524-1_NGS95
+H211060708-1_NGS95
+H210900535-1_NGS95
+PC_1-1_NGS95
+H211040784-1_NGS95
+H211060474-1_NGS95
+H210880664-1_NGS95
+H210700034-1_NGS95
+H210960911-1_NGS95
+H210940531-1_NGS95
+H210980721-1_NGS95
+H210920145-1_NGS95
+H211080571-1_NGS95
+H210980727-1_NGS95
+H210880653-1_NGS95
+H211000392-1_NGS95
+H210920146-1_NGS95
+H210880654-1_NGS95
+H210880665-1_NGS95
+H211060465-1_NGS95
+H210880650-1_NGS95
+H211080573-1_NGS95
+H210920588-1_NGS95
+H211060475-1_NGS95
+H211080572-1_NGS95
+H210980724-1_NGS95
+H210960909-1_NGS95
+
+
+    
