@@ -1,8 +1,0 @@
-id,pid,drug_id,regime,treatment_date
-46,255,ritonavir,1 tablet per day,05-Jun-2019
-47,262,simeprevir,2 tablets per day,08-Oct-2020
-48,265,simeprevir,2 tablets per day,07-Feb-2011
-49,268,simeprevir,1 tablet per day,05-Mar-1988
-50,277,ledipasvir,1 tablet per day,07-Feb-2011
-51,281,paritaprevir,,05-Jun-2019
-65,271,sofosbuvir,2 tablets per day,07-Jan-2011
