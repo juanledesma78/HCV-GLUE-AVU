@@ -1,5 +1,0 @@
-id,patient.id,regime,treatment_date,drug.id,drug.manufacturer,drug.therapy_class
-19,342,1 tablet per day,05-Apr-2019,simeprevir,Janssen,NS3A/4A protease inhibitor
-52,320,-,05-Jun-2019,peginterferon alfa,-,-
-55,344,-,05-Mar-1988,asunaprevir,BMS,NS3A/4A protease inhibitor
-56,345,-,07-Feb-2011,beclabuvir,BMS,NS5B non-nucleotide polymerase inhibitor
