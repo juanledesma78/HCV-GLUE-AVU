@@ -6,12 +6,6 @@
   create module --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml 
   #........... --fileName modules/ReferenceGenotypeSubtypePopulator_avu.xml reference-genotypes-subtypes-populator
   
-  # populate data from NGS sequences in table sequence: hcv_wg_pipeline, version... sample(link to table sample)
-  create module --fileName modules/NGSSequenceDataPopulator.xml
-
-  # populate AVU custom tables,specify parameters for the file used to populate data 
-  create module --fileName modules/tabularUtilityCsv.xml
-  
   # import Smith2019 alignment 
   create module --fileName modules/smith2019FastaAlignmentImporter.xml
   #create module --fileName modules/blastFastaAlignmentImporter_avu.xml smith2019-alignment-importer
@@ -73,6 +67,14 @@
   
 
   ##################################################################
+  # populate data from NGS sequences in table sequence: hcv_wg_pipeline, version... sample(link to table sample). 
+  # REMOVE AS DATA POPULATION IS DONE USING SQLALCHEMY
+  # create module --fileName modules/NGSSequenceDataPopulator.xml
+
+  # populate AVU custom tables,specify parameters for the file used to populate data
+  # REMOVE AS DATA POPULATION IS DONE USING SQLALCHEMY 
+  # create module --fileName modules/tabularUtilityCsv.xml
+
   ###create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
   ###create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   ###create module --fileName modules/samReporter.xml samReporter
