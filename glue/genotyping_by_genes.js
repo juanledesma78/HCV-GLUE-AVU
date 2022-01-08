@@ -1,12 +1,4 @@
-/** if genotype is done by segments , alignment by segments should be done to include the new sequences
- if recombination, there is no point of alignments accordign to whole genome
-
-
-list sequence -w "source.name like 'NGS99%'" sequenceID genotype subtype genotyping_polyprotein genotyping_core genotyping_e1 genotyping_e2 genotyping_p7 genotyping_ns2 genotyping_ns3  genotyping_ns4a genotyping_ns4b genotyping_ns5a genotyping_ns5b 
-
-query must be done using pandas for limitations 
-
-*/
+/** GENOTYPING USING MAXIMUM LIKELIHOOD CLADE ASSIGNMENT AND SINGLE GENES RATHER THAN WHOLE GENOMES*/
 
 
 //CORE  >>>>>>>>>>>>>
@@ -47,7 +39,7 @@ glue.logInfo("genotypingResults CORE",genotypingResultsCORE)
            var stMatchCORE = stRegex.exec(subtypeAlmtCORE);
            genotyping_core += stMatchCORE[1];}
    //add in a single column
-   glue.command(["set", "field", "genotyping_core", genotyping_core ]) //}
+   glue.command(["set", "field", "genotyping_core", genotyping_core ]) 
                                            
        });
                                           
@@ -66,19 +58,18 @@ glue.logInfo("genotypingResults E1",genotypingResultsE1)
 
   for(var i = 0; i < genotypingResultsE1.length; i++) {
     var resultE1 = genotypingResultsE1[i]; 
-    var queryNameBitsE1 = resultE1.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsE1[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsE1[1]; // "JF779679"
-	var genotypeAlmtE1 = resultE1.genotypeFinalClade; //"AL_1
-	var subtypeAlmtE1 = resultE1.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceE1 = resultE1.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsE1 = resultE1.queryName.split("/"); 
+    var sourceName = queryNameBitsE1[0]; 
+	var sequenceID = queryNameBitsE1[1]; 
+	var genotypeAlmtE1 = resultE1.genotypeFinalClade; 
+	var subtypeAlmtE1 = resultE1.subtypeFinalClade; 
+    var genotypeCladeBalanceE1 = resultE1.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageE1 = genotypeCladeBalanceE1[1] ;
-    var genotypeClosestMemberSequenceIDE1 = resultE1.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceE1 = resultE1.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDE1 = resultE1.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceE1 = resultE1.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageE1 = subtypeCladeBalanceE1[1] ;
-    var subtypeClosestMemberSequenceIDE1 = resultE1.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDE1 = resultE1.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_e1 =""
@@ -92,8 +83,7 @@ glue.logInfo("genotypingResults E1",genotypingResultsE1)
             var stRegex = /AL_[\d](.+)/;
             var stMatchE1 = stRegex.exec(subtypeAlmtE1);
             genotyping_e1 += stMatchE1[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_e1", genotyping_e1 ]) //}
+    glue.command(["set", "field", "genotyping_e1", genotyping_e1 ])
                                             
         });
                                         }
@@ -110,19 +100,19 @@ glue.logInfo("genotypingResults E2",genotypingResultsE2)
 
   for(var i = 0; i < genotypingResultsE2.length; i++) {
     var resultE2 = genotypingResultsE2[i]; 
-    var queryNameBitsE2 = resultE2.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsE2[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsE2[1]; // "JF779679"
-	var genotypeAlmtE2 = resultE2.genotypeFinalClade; //"AL_1
-	var subtypeAlmtE2 = resultE2.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceE2 = resultE2.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsE2 = resultE2.queryName.split("/"); 
+    var sourceName = queryNameBitsE2[0]; 
+	var sequenceID = queryNameBitsE2[1]; 
+	var genotypeAlmtE2 = resultE2.genotypeFinalClade; 
+	var subtypeAlmtE2 = resultE2.subtypeFinalClade; 
+    var genotypeCladeBalanceE2 = resultE2.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageE2 = genotypeCladeBalanceE2[1] ;
-    var genotypeClosestMemberSequenceIDE2 = resultE2.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceE2 = resultE2.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDE2 = resultE2.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceE2 = resultE2.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageE2 = subtypeCladeBalanceE2[1] ;
-    var subtypeClosestMemberSequenceIDE2 = resultE2.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDE2 = resultE2.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_e2 =""
@@ -136,8 +126,8 @@ glue.logInfo("genotypingResults E2",genotypingResultsE2)
             var stRegex = /AL_[\d](.+)/;
             var stMatchE2 = stRegex.exec(subtypeAlmtE2);
             genotyping_e2 += stMatchE2[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_e2", genotyping_e2 ]) //}
+   
+    glue.command(["set", "field", "genotyping_e2", genotyping_e2 ])
                                             
         });
                                         }
@@ -154,19 +144,19 @@ glue.logInfo("genotypingResults P7",genotypingResultsP7)
 
   for(var i = 0; i < genotypingResultsP7.length; i++) {
     var resultP7 = genotypingResultsP7[i]; 
-    var queryNameBitsP7 = resultP7.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsP7[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsP7[1]; // "JF779679"
-	var genotypeAlmtP7 = resultP7.genotypeFinalClade; //"AL_1
-	var subtypeAlmtP7 = resultP7.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceP7 = resultP7.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsP7 = resultP7.queryName.split("/"); 
+    var sourceName = queryNameBitsP7[0]; 
+	var sequenceID = queryNameBitsP7[1]; 
+	var genotypeAlmtP7 = resultP7.genotypeFinalClade; 
+	var subtypeAlmtP7 = resultP7.subtypeFinalClade; 
+    var genotypeCladeBalanceP7 = resultP7.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageP7 = genotypeCladeBalanceP7[1] ;
-    var genotypeClosestMemberSequenceIDP7 = resultP7.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceP7 = resultP7.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDP7 = resultP7.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceP7 = resultP7.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageP7 = subtypeCladeBalanceP7[1] ;
-    var subtypeClosestMemberSequenceIDP7 = resultP7.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDP7 = resultP7.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_p7 =""
@@ -180,8 +170,8 @@ glue.logInfo("genotypingResults P7",genotypingResultsP7)
             var stRegex = /AL_[\d](.+)/;
             var stMatchP7 = stRegex.exec(subtypeAlmtP7);
             genotyping_p7 += stMatchP7[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_p7", genotyping_p7 ]) //}
+   
+    glue.command(["set", "field", "genotyping_p7", genotyping_p7 ])
                                             
         });
                                         }
@@ -198,19 +188,19 @@ glue.logInfo("genotypingResults NS2",genotypingResultsNS2)
 
   for(var i = 0; i < genotypingResultsNS2.length; i++) {
     var resultNS2 = genotypingResultsNS2[i]; 
-    var queryNameBitsNS2 = resultNS2.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS2[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS2[1]; // "JF779679"
-	var genotypeAlmtNS2 = resultNS2.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS2 = resultNS2.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS2 = resultNS2.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS2 = resultNS2.queryName.split("/"); 
+    var sourceName = queryNameBitsNS2[0]; 
+	var sequenceID = queryNameBitsNS2[1]; 
+	var genotypeAlmtNS2 = resultNS2.genotypeFinalClade; 
+	var subtypeAlmtNS2 = resultNS2.subtypeFinalClade; 
+    var genotypeCladeBalanceNS2 = resultNS2.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS2 = genotypeCladeBalanceNS2[1] ;
-    var genotypeClosestMemberSequenceIDNS2 = resultNS2.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS2 = resultNS2.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS2 = resultNS2.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS2 = resultNS2.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS2 = subtypeCladeBalanceNS2[1] ;
-    var subtypeClosestMemberSequenceIDNS2 = resultNS2.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS2 = resultNS2.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns2 =""
@@ -224,8 +214,8 @@ glue.logInfo("genotypingResults NS2",genotypingResultsNS2)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS2 = stRegex.exec(subtypeAlmtNS2);
             genotyping_ns2 += stMatchNS2[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns2", genotyping_ns2 ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns2", genotyping_ns2 ])
                                             
         });
                                         }
@@ -242,19 +232,19 @@ glue.logInfo("genotypingResults NS3",genotypingResultsNS3)
 
   for(var i = 0; i < genotypingResultsNS3.length; i++) {
     var resultNS3 = genotypingResultsNS3[i]; 
-    var queryNameBitsNS3 = resultNS3.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS3[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS3[1]; // "JF779679"
-	var genotypeAlmtNS3 = resultNS3.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS3 = resultNS3.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS3 = resultNS3.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS3 = resultNS3.queryName.split("/"); 
+    var sourceName = queryNameBitsNS3[0]; 
+	var sequenceID = queryNameBitsNS3[1]; 
+	var genotypeAlmtNS3 = resultNS3.genotypeFinalClade; 
+	var subtypeAlmtNS3 = resultNS3.subtypeFinalClade; 
+    var genotypeCladeBalanceNS3 = resultNS3.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS3 = genotypeCladeBalanceNS3[1] ;
-    var genotypeClosestMemberSequenceIDNS3 = resultNS3.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS3 = resultNS3.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS3 = resultNS3.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS3 = resultNS3.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS3 = subtypeCladeBalanceNS3[1] ;
-    var subtypeClosestMemberSequenceIDNS3 = resultNS3.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS3 = resultNS3.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns3 =""
@@ -268,8 +258,8 @@ glue.logInfo("genotypingResults NS3",genotypingResultsNS3)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS3 = stRegex.exec(subtypeAlmtNS3);
             genotyping_ns3 += stMatchNS3[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns3", genotyping_ns3 ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns3", genotyping_ns3 ])
                                             
         });
                                         }
@@ -284,19 +274,19 @@ glue.logInfo("genotypingResults NS4A",genotypingResultsNS4A)
 
   for(var i = 0; i < genotypingResultsNS4A.length; i++) {
     var resultNS4A = genotypingResultsNS4A[i]; 
-    var queryNameBitsNS4A = resultNS4A.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS4A[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS4A[1]; // "JF779679"
-	var genotypeAlmtNS4A = resultNS4A.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS4A = resultNS4A.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS4A = resultNS4A.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS4A = resultNS4A.queryName.split("/"); 
+    var sourceName = queryNameBitsNS4A[0]; 
+	var sequenceID = queryNameBitsNS4A[1]; 
+	var genotypeAlmtNS4A = resultNS4A.genotypeFinalClade; 
+	var subtypeAlmtNS4A = resultNS4A.subtypeFinalClade; 
+    var genotypeCladeBalanceNS4A = resultNS4A.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS4A = genotypeCladeBalanceNS4A[1] ;
-    var genotypeClosestMemberSequenceIDNS4A = resultNS4A.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS4A = resultNS4A.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS4A = resultNS4A.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS4A = resultNS4A.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS4A = subtypeCladeBalanceNS4A[1] ;
-    var subtypeClosestMemberSequenceIDNS4A = resultNS4A.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS4A = resultNS4A.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns4a =""
@@ -310,8 +300,8 @@ glue.logInfo("genotypingResults NS4A",genotypingResultsNS4A)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS4A = stRegex.exec(subtypeAlmtNS4A);
             genotyping_ns4a += stMatchNS4A[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns4a", genotyping_ns4a ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns4a", genotyping_ns4a ])
                                             
         });
                                         }
@@ -328,19 +318,19 @@ glue.logInfo("genotypingResults NS4B",genotypingResultsNS4B)
 
   for(var i = 0; i < genotypingResultsNS4B.length; i++) {
     var resultNS4B = genotypingResultsNS4B[i]; 
-    var queryNameBitsNS4B = resultNS4B.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS4B[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS4B[1]; // "JF779679"
-	var genotypeAlmtNS4B = resultNS4B.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS4B = resultNS4B.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS4B = resultNS4B.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS4B = resultNS4B.queryName.split("/"); 
+    var sourceName = queryNameBitsNS4B[0]; 
+	var sequenceID = queryNameBitsNS4B[1]; 
+	var genotypeAlmtNS4B = resultNS4B.genotypeFinalClade; 
+	var subtypeAlmtNS4B = resultNS4B.subtypeFinalClade; 
+    var genotypeCladeBalanceNS4B = resultNS4B.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS4B = genotypeCladeBalanceNS4B[1] ;
-    var genotypeClosestMemberSequenceIDNS4B = resultNS4B.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS4B = resultNS4B.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS4B = resultNS4B.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS4B = resultNS4B.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS4B = subtypeCladeBalanceNS4B[1] ;
-    var subtypeClosestMemberSequenceIDNS4B = resultNS4B.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS4B = resultNS4B.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns4b =""
@@ -354,8 +344,8 @@ glue.logInfo("genotypingResults NS4B",genotypingResultsNS4B)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS4B = stRegex.exec(subtypeAlmtNS4B);
             genotyping_ns4b += stMatchNS4B[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns4b", genotyping_ns4b ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns4b", genotyping_ns4b ])
                                             
         });
                                         }
@@ -371,19 +361,19 @@ glue.logInfo("genotypingResults NS5A",genotypingResultsNS5A)
 
   for(var i = 0; i < genotypingResultsNS5A.length; i++) {
     var resultNS5A = genotypingResultsNS5A[i]; 
-    var queryNameBitsNS5A = resultNS5A.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS5A[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS5A[1]; // "JF779679"
-	var genotypeAlmtNS5A = resultNS5A.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS5A = resultNS5A.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS5A = resultNS5A.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS5A = resultNS5A.queryName.split("/"); 
+    var sourceName = queryNameBitsNS5A[0]; 
+	var sequenceID = queryNameBitsNS5A[1]; 
+	var genotypeAlmtNS5A = resultNS5A.genotypeFinalClade; 
+	var subtypeAlmtNS5A = resultNS5A.subtypeFinalClade; 
+    var genotypeCladeBalanceNS5A = resultNS5A.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS5A = genotypeCladeBalanceNS5A[1] ;
-    var genotypeClosestMemberSequenceIDNS5A = resultNS5A.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS5A = resultNS5A.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS5A = resultNS5A.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS5A = resultNS5A.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS5A = subtypeCladeBalanceNS5A[1] ;
-    var subtypeClosestMemberSequenceIDNS5A = resultNS5A.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS5A = resultNS5A.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns5a =""
@@ -397,8 +387,8 @@ glue.logInfo("genotypingResults NS5A",genotypingResultsNS5A)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS5A = stRegex.exec(subtypeAlmtNS5A);
             genotyping_ns5a += stMatchNS5A[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns5a", genotyping_ns5a ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns5a", genotyping_ns5a ])
                                             
         });
                                         }
@@ -415,19 +405,19 @@ glue.logInfo("genotypingResults NS5B",genotypingResultsNS5B)
 
   for(var i = 0; i < genotypingResultsNS5B.length; i++) {
     var resultNS5B = genotypingResultsNS5B[i]; 
-    var queryNameBitsNS5B = resultNS5B.queryName.split("/"); // "ncbi-refseqs", "JF779679"
-    var sourceName = queryNameBitsNS5B[0]; // "ncbi-refseqs"
-	var sequenceID = queryNameBitsNS5B[1]; // "JF779679"
-	var genotypeAlmtNS5B = resultNS5B.genotypeFinalClade; //"AL_1
-	var subtypeAlmtNS5B = resultNS5B.subtypeFinalClade; //AL_1a
-    var genotypeCladeBalanceNS5B = resultNS5B.genotypeCladeBalance.split(":"); //"AL_2:100.00%"
+    var queryNameBitsNS5B = resultNS5B.queryName.split("/"); 
+    var sourceName = queryNameBitsNS5B[0]; 
+	var sequenceID = queryNameBitsNS5B[1]; 
+	var genotypeAlmtNS5B = resultNS5B.genotypeFinalClade; 
+	var subtypeAlmtNS5B = resultNS5B.subtypeFinalClade; 
+    var genotypeCladeBalanceNS5B = resultNS5B.genotypeCladeBalance.split(":"); 
     var genotypeCladePercentageNS5B = genotypeCladeBalanceNS5B[1] ;
-    var genotypeClosestMemberSequenceIDNS5B = resultNS5B.genotypeClosestMemberSequenceID; //"AB661382"
-    var subtypeCladeBalanceNS5B = resultNS5B.subtypeCladeBalance.split(":"); //"AL_2b:100.00%",
+    var genotypeClosestMemberSequenceIDNS5B = resultNS5B.genotypeClosestMemberSequenceID; 
+    var subtypeCladeBalanceNS5B = resultNS5B.subtypeCladeBalance.split(":"); 
     var subtypetypeCladePercentageNS5B = subtypeCladeBalanceNS5B[1] ;
-    var subtypeClosestMemberSequenceIDNS5B = resultNS5B.subtypeClosestMemberSequenceID; //"AB661382"
+    var subtypeClosestMemberSequenceIDNS5B = resultNS5B.subtypeClosestMemberSequenceID; 
 
-    /** Update the result of the genotyping in the table sequence*/	
+    	
     glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() 
     {
     var genotyping_ns5b =""
@@ -441,14 +431,14 @@ glue.logInfo("genotypingResults NS5B",genotypingResultsNS5B)
             var stRegex = /AL_[\d](.+)/;
             var stMatchNS5B = stRegex.exec(subtypeAlmtNS5B);
             genotyping_ns5b += stMatchNS5B[1];}
-    //add in a single column
-    glue.command(["set", "field", "genotyping_ns5b", genotyping_ns5b ]) //}
+   
+    glue.command(["set", "field", "genotyping_ns5b", genotyping_ns5b ])
                                             
         });
                                         }
 
 //ADDING GENOTYPING RESULTS TO FIELD GENOTYPE IN TABLE SEQUENCE
-// sourceName comes from line 24
+// sourceName comes from line 16
 
 Results = glue.tableToObjects(glue.command([
     "list", "sequence", "--whereClause", "source.name like 'NGS99%'","sequenceID", "genotyping_core","genotyping_e1","genotyping_e2", "genotyping_p7", "genotyping_ns2", "genotyping_ns3", "genotyping_ns4a", "genotyping_ns4b", "genotyping_ns5a", "genotyping_ns5b"]));
