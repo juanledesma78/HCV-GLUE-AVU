@@ -1,10 +1,9 @@
 <!-- 
     Uses RAxML to generate a phylogenetic tree from a project Alignment
-	<substitutionModel>GTRGAMMAI</substitutionModel>
  -->
 <raxmlPhylogenyGenerator>
 	<raxmlPhylogenyRunner>
-		<substitutionModel>GTRGAMMA</substitutionModel>
+		<substitutionModel>GTRGAMMAI</substitutionModel>
 		<bootstrapReplicates>1000</bootstrapReplicates>
 	</raxmlPhylogenyRunner>
 </raxmlPhylogenyGenerator>
